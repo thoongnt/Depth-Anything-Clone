@@ -1,8 +1,14 @@
 import argparse
+import os
+import warnings
+warnings.filterwarnings("ignore")
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from huggingface_hub import PyTorchModelHubMixin, hf_hub_download
+
+
 
 from depth_anything.blocks import FeatureFusionBlock, _make_scratch
 
@@ -171,6 +177,32 @@ class DepthAnything(DPT_DINOv2, PyTorchModelHubMixin):
         super().__init__(**config)
 
 
+def load_depth_anything(encoder='vitl', checkpoints_dir='./checkpoints', device='cpu'):
+    model_configs = {
+        'vitl': {'encoder': 'vitl', 'features': 256, 'out_channels': [256, 512, 1024, 1024]},
+        'vitb': {'encoder': 'vitb', 'features': 128, 'out_channels': [96, 192, 384, 768]},
+        'vits': {'encoder': 'vits', 'features': 64, 'out_channels': [48, 96, 192, 384]}
+    }
+    
+    os.makedirs(checkpoints_dir, exist_ok=True)
+    local_path = os.path.join(checkpoints_dir, f'depth_anything_{encoder}14.pth')
+    
+    if not os.path.exists(local_path):
+        print(f'Model checkpoint for "{encoder}" not found in {checkpoints_dir}. Downloading from HuggingFace to {local_path}...')
+        downloaded = hf_hub_download(
+            repo_id=f'LiheYoung/depth_anything_{encoder}14',
+            filename='pytorch_model.bin',
+            local_dir=checkpoints_dir
+        )
+        if downloaded != local_path and os.path.exists(downloaded):
+            os.replace(downloaded, local_path)
+            
+    model = DepthAnything(model_configs[encoder])
+    model.load_state_dict(torch.load(local_path, map_location='cpu', weights_only=True))
+    return model.to(device).eval()
+
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -181,7 +213,8 @@ if __name__ == '__main__':
     )
     args = parser.parse_args()
     
-    model = DepthAnything.from_pretrained("LiheYoung/depth_anything_{:}14".format(args.encoder))
+    model = load_depth_anything(encoder=args.encoder)
     
     print(model)
+
     
