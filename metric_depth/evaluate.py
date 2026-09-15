@@ -23,10 +23,19 @@
 # File author: Shariq Farooq Bhat
 
 import argparse
+import os
+import sys
+
+# Ensure current working directory is metric_depth directory
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+if '.' not in sys.path:
+    sys.path.insert(0, '.')
+
 from pprint import pprint
 
 import torch
 from zoedepth.utils.easydict import EasyDict as edict
+
 from tqdm import tqdm
 
 from zoedepth.data.data_mono import DepthDataLoader

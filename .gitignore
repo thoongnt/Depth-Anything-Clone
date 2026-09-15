@@ -21,6 +21,10 @@ __pycache__/
 *.engine
 weights/
 checkpoints/
+data/
+vis_depth/
+vis_video_depth/
+
 
 # Environments & IDE
 .vscode/
