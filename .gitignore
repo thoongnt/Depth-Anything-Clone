@@ -34,3 +34,6 @@ vis_video_depth/
 # OS specific
 .DS_Store
 Thumbs.db
+
+# Reusable NYUv2 predictions (large, reproducible artifacts)
+.cache/

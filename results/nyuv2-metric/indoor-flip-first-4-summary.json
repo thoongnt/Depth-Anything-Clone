@@ -1,0 +1,73 @@
+{
+  "created_at": "2026-11-26T14:57:29.160254+00:00",
+  "experiment": "in-domain metric depth, evaluation of released NYUv2-finetuned checkpoint",
+  "paper_table": 3,
+  "num_images": 4,
+  "full_test_split": false,
+  "metrics": {
+    "delta1": 0.9950107983499918,
+    "delta2": 0.9996846447624996,
+    "delta3": 0.9999956655917335,
+    "abs_rel": 0.061526186764240265,
+    "rmse": 0.1562218852341175,
+    "log10": 0.0255220967810601
+  },
+  "paper_reference": {
+    "delta1": 0.984,
+    "delta2": 0.998,
+    "delta3": 1.0,
+    "abs_rel": 0.056,
+    "rmse": 0.206,
+    "log10": 0.024
+  },
+  "difference_from_paper": {
+    "delta1": 0.011010798349991857,
+    "delta2": 0.001684644762499632,
+    "delta3": -4.334408266526424e-06,
+    "abs_rel": 0.005526186764240264,
+    "rmse": -0.04977811476588248,
+    "log10": 0.001522096781060099
+  },
+  "protocol": {
+    "checkpoint_sha256": "e25a96605a2ea2dbbe57308d024e89a803fa87fe981bd51d4cee245f1de57977",
+    "encoder_checkpoint_sha256": "6fda5199f0043e91e1c6117df00313db57c630d8ed0306070b43da1ecfffbd9d",
+    "model_source_sha256": "55bcc650ed16a4ac496ee7e6e51afe8ad0233c774c58111161484f7d703cc076",
+    "split_sha256": "6e081404491a8bfba2f066beaa9713ef6046f9007aa5f799f2a350506a580cee",
+    "dataset": "D:\\Code\\Master\\Depth-Anything\\data\\nyuv2\\nyu_depth_v2_labeled.mat",
+    "dataset_size": 2972037809,
+    "dataset_mtime_ns": 1789322032414348800,
+    "flip": true,
+    "input": "BTS export: black boundary [7:474,7:632], OpenCV JPEG quality 95, PIL decode RGB float32 [0,1]; internal model norm/resize",
+    "opencv": "4.11.0",
+    "img_size": [
+      392,
+      518
+    ],
+    "keep_aspect_ratio": false,
+    "output_resize": "bilinear align_corners=True, after flip averaging",
+    "precision": "float32",
+    "torch": "2.4.0+cu121",
+    "ground_truth_field": "rawDepths; BTS uint16 millimeter truncation then /1000",
+    "mask": "Eigen [45:471,41:601], finite GT, 0.001 < depth < 10 m",
+    "alignment": "none; no median scaling or affine fitting",
+    "prediction_clip_meters": [
+      0.001,
+      10.0
+    ],
+    "aggregation": "unweighted mean of per-image metrics; no skips",
+    "sources": [
+      "https://github.com/LiheYoung/Depth-Anything/tree/main/metric_depth",
+      "https://github.com/LiheYoung/Depth-Anything/blob/main/metric_depth/evaluate.py",
+      "https://github.com/cleinc/bts/blob/master/utils/extract_official_train_test_set_from_mat.py"
+    ]
+  },
+  "prediction_cache": "D:\\Code\\Master\\Depth-Anything\\.cache\\nyuv2-metric\\indoor-682e62396288bb03",
+  "elapsed_seconds": 16.5,
+  "environment": {
+    "torch": "2.4.0+cu121",
+    "numpy": "1.26.4",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU"
+  },
+  "training_performed": false
+}

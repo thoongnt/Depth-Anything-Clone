@@ -152,15 +152,27 @@ download_kitti() {
 # ---------------------------------------------------------------------------
 # DIODE — official S3 bucket. The validation tarball already contains both
 # indoor and outdoor scenes, i.e. it covers both "DIODE" (zero-shot relative
-# depth, 771 images) and "DIODE Outdoor" (zero-shot metric depth, 325 images)
+# depth, 771 images) and "DIODE Outdoor" (zero-shot metric depth, 446 images)
 # from docs/data.md.
 # ---------------------------------------------------------------------------
 download_diode() {
   local dest="$DATA_ROOT/diode"
   log "DIODE (validation, indoor+outdoor) -> $dest"
-  fetch "http://diode-dataset.s3.amazonaws.com/val.tar.gz" "$dest/val.tar.gz"
+  fetch "https://diode-dataset.s3.amazonaws.com/val.tar.gz" "$dest/val.tar.gz"
+  # Authenticate the public release before extracting RGB/depth/masks.
+  local expected_md5="5c895d09201b88973c8fe4552a67dd85" actual_md5
+  if command -v md5sum >/dev/null 2>&1; then
+    actual_md5="$(md5sum "$dest/val.tar.gz")"
+    actual_md5="${actual_md5%% *}"
+  elif command -v md5 >/dev/null 2>&1; then
+    actual_md5="$(md5 -q "$dest/val.tar.gz")"
+  else
+    die "DIODE checksum verification requires md5sum or md5"
+  fi
+  [ "$actual_md5" = "$expected_md5" ] || die "DIODE archive MD5 mismatch: $actual_md5"
+  log "DIODE archive MD5 verified: $actual_md5"
   extract "$dest/val.tar.gz" "$dest"
-  log "DIODE done. Outdoor subset is under $dest/val/outdoor, indoor under $dest/val/indoor."
+  log "DIODE done. Outdoor subset is under $dest/val/outdoor, indoor under $dest/val/indoors."
 }
 
 # ---------------------------------------------------------------------------

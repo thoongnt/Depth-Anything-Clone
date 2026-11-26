@@ -1,0 +1,14 @@
+{
+  "files": [
+    "checkpoints/depth_anything_vitl14.pth",
+    "checkpoints/original-release/depth_anything_vitl14.pth"
+  ],
+  "num_tensors": 407,
+  "identical_tensor_keys": true,
+  "different_tensors": [],
+  "hub_sha256": "6fda5199f0043e91e1c6117df00313db57c630d8ed0306070b43da1ecfffbd9d",
+  "original_release_sha256": "6c6a383e33e51c5fdfbf31e7ebcda943973a9e6a1cbef1564afe58d7f2e8fe63",
+  "conclusion": "All 407 tensors are exactly equal; file hashes differ due to serialization.",
+  "hub_source": "https://huggingface.co/LiheYoung/depth_anything_vitl14/blob/main/pytorch_model.bin",
+  "original_source": "https://huggingface.co/spaces/LiheYoung/Depth-Anything/blob/main/checkpoints/depth_anything_vitl14.pth"
+}

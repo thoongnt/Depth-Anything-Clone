@@ -1,0 +1,36 @@
+{
+  "note": "Full 654-image flip-augmentation diagnostic. Original production code and baseline are unchanged. The paper does not confirm using flip for relative-depth Table 2. Cached original and mirrored predictions are averaged after bilinear interpolation (linear operations commute, up to float rounding).",
+  "num_images": 654,
+  "full_test_split": true,
+  "baseline_metrics": {
+    "abs_rel": 0.043634992955800284,
+    "delta1": 0.9803277444460456,
+    "depth_abs_rel_diagnostic": 0.04344961586343511
+  },
+  "metrics": {
+    "abs_rel": 0.043291403345027964,
+    "delta1": 0.9807385071801061
+  },
+  "paper_reference": {
+    "abs_rel": 0.043,
+    "delta1": 0.981
+  },
+  "sources": [
+    "https://github.com/LiheYoung/Depth-Anything/issues/174",
+    "https://github.com/LiheYoung/Depth-Anything/blob/main/metric_depth/evaluate.py"
+  ],
+  "elapsed_seconds": 457.68799999999464,
+  "matches_paper_at_3_decimals": {
+    "abs_rel": true,
+    "delta1": true
+  },
+  "interpolation_commutation_validation": {
+    "num_images": 64,
+    "maximum_per_image_metric_difference": {
+      "abs_rel": 2.7287018478094893e-10,
+      "delta1": 0.0
+    },
+    "canonical_pipeline": "Matches existing --flip option (average before output interpolation) up to floating-point error on all 64 checked samples."
+  },
+  "baseline_files_unchanged": true
+}

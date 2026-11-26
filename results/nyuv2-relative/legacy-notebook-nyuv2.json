@@ -1,0 +1,38 @@
+{
+  "provenance": "Saved notebook output before NYUv2 evaluator fix; not rerun",
+  "encoder": "vitl",
+  "num_images": 654,
+  "metrics_space": "depth",
+  "abs_rel": 0.0527,
+  "delta1": 0.9653,
+  "original_cell_outputs": [
+    {
+      "name": "stdout",
+      "output_type": "stream",
+      "text": [
+        "[1/6] Đang chạy thực nghiệm trên NYUv2 Test Split (654 ảnh)...\n"
+      ]
+    },
+    {
+      "data": {
+        "application/vnd.jupyter.widget-view+json": {
+          "model_id": "b0d6de099fa54d5fb724ee43043c0552",
+          "version_major": 2,
+          "version_minor": 0
+        },
+        "text/plain": [
+          "NYUv2 Test:   0%|          | 0/654 [00:00<?, ?it/s]"
+        ]
+      },
+      "metadata": {},
+      "output_type": "display_data"
+    },
+    {
+      "name": "stdout",
+      "output_type": "stream",
+      "text": [
+        " -> NYUv2 KẾT QUẢ (654 ảnh): AbsRel = 0.0527 (Bài báo: 0.0430), Delta1 = 0.9653 (Bài báo: 0.9810)\n"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "indoors": {
+    "images": 325,
+    "bad_pairs_or_shapes": [],
+    "depth_shapes": [
+      [
+        768,
+        1024
+      ]
+    ],
+    "valid_pixels": 253024007,
+    "valid_pixels_above80m": 0,
+    "mask_invalid_but_positive_depth_pixels": 1961181,
+    "valid_depth_range_m": [
+      0.30000004172325134,
+      49.958248138427734
+    ]
+  },
+  "outdoor": {
+    "images": 446,
+    "bad_pairs_or_shapes": [],
+    "depth_shapes": [
+      [
+        768,
+        1024
+      ]
+    ],
+    "valid_pixels": 274749502,
+    "valid_pixels_above80m": 673048,
+    "mask_invalid_but_positive_depth_pixels": 5452716,
+    "valid_depth_range_m": [
+      0.3000014126300812,
+      299.82940673828125
+    ]
+  }
+}

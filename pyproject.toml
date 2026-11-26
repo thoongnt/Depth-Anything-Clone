@@ -17,6 +17,10 @@ dependencies = [
     "requests",
     "matplotlib",
     "timm",
+    "pandas",
+    "tabulate",
+    "jupyter",
+    "ipykernel",
 ]
 
 

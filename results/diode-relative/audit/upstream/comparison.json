@@ -1,0 +1,24 @@
+{
+  "sources": {
+    "dpt.py": "https://raw.githubusercontent.com/LiheYoung/Depth-Anything/main/depth_anything/dpt.py",
+    "transform.py": "https://raw.githubusercontent.com/LiheYoung/Depth-Anything/main/depth_anything/util/transform.py",
+    "run.py": "https://raw.githubusercontent.com/LiheYoung/Depth-Anything/main/run.py"
+  },
+  "class_comparisons": {
+    "depth_anything/dpt.py": {
+      "DPTHead": true,
+      "DPT_DINOv2": true,
+      "DepthAnything": true
+    },
+    "depth_anything/util/transform.py": {
+      "Resize": true,
+      "NormalizeImage": true,
+      "PrepareForNet": true
+    }
+  },
+  "source_hashes": {
+    "dpt.py": "25d21a89b1b737f3f0ca423738dcaed6612ceced3c6c04cd2b196c3d09fd8345",
+    "transform.py": "8bfe8e416e8f97df0187d7c4c8bec08bc9a8ec990080111c5ea996ae2992638d",
+    "run.py": "b6ddffdf7a2fc3b967162978a3b66170f01b1f46c4d84854a81d0639e0744f02"
+  }
+}

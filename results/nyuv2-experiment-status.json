@@ -1,0 +1,50 @@
+{
+  "dataset": "NYUv2",
+  "evaluation_scope": "Released-checkpoint evaluation, not training reproduction",
+  "experiments": [
+    {
+      "paper_table": 2,
+      "name": "zero-shot relative depth",
+      "status": "evaluated_654_images",
+      "summary": "nyuv2-relative/vitl-midas-summary.json"
+    },
+    {
+      "paper_table": 3,
+      "name": "in-domain metric depth",
+      "status": "evaluated_654_images",
+      "summary": "nyuv2-metric/indoor-flip-summary.json"
+    },
+    {
+      "paper_table": 6,
+      "name": "labeled-training-dataset ablation",
+      "status": "missing_variant_checkpoints"
+    },
+    {
+      "paper_table": 9,
+      "name": "unlabeled/perturbation/semantic ablation",
+      "status": "missing_variant_checkpoints"
+    },
+    {
+      "paper_table": 10,
+      "name": "MiDaS encoder comparison",
+      "status": "ours_evaluated_baseline_checkpoint_missing",
+      "ours_summary": "nyuv2-metric/indoor-flip-summary.json"
+    },
+    {
+      "paper_table": 11,
+      "name": "DINOv2 encoder comparison",
+      "status": "ours_evaluated_baseline_checkpoint_missing",
+      "ours_summary": "nyuv2-metric/indoor-flip-summary.json"
+    }
+  ],
+  "training": {
+    "performed": false,
+    "required_train_pairs": 24231,
+    "available_labeled_mat_train_samples": 795,
+    "note": "The labeled MAT is not the training corpus referenced by the repository train split."
+  },
+  "not_nyu_test_experiments": {
+    "table5": "NYUv2 is source domain, not test target; targets SUN RGB-D, iBims-1, HyperSim",
+    "tables7_8": "Semantic segmentation targets Cityscapes and ADE20K"
+  }
+}

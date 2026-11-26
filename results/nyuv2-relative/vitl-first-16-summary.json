@@ -1,0 +1,46 @@
+{
+  "created_at": "2026-11-26T14:09:01.931263+00:00",
+  "full_test_split": false,
+  "num_images": 16,
+  "metrics": {
+    "abs_rel": 0.05630026720045563,
+    "delta1": 0.9723285022635815,
+    "depth_abs_rel_diagnostic": 0.05399811374341967
+  },
+  "paper_table": 2,
+  "paper_reference": {
+    "abs_rel": 0.043,
+    "delta1": 0.981
+  },
+  "difference_from_paper": {
+    "abs_rel": 0.013300267200455636,
+    "delta1": -0.00867149773641851
+  },
+  "nonpositive_predictions": 0,
+  "protocol": {
+    "dataset": "NYUv2",
+    "encoder": "vitl",
+    "split_sha256": "6e081404491a8bfba2f066beaa9713ef6046f9007aa5f799f2a350506a580cee",
+    "checkpoint_sha256": "6fda5199f0043e91e1c6117df00313db57c630d8ed0306070b43da1ecfffbd9d",
+    "dataset_file": "D:\\Code\\Master\\Depth-Anything\\data\\nyuv2\\nyu_depth_v2_labeled.mat",
+    "dataset_size": 2972037809,
+    "dataset_mtime_ns": 1789322032414348800,
+    "input": "RGB float32, ImageNet norm, short side 518, multiple 14, full image",
+    "interpolation": "OpenCV cubic input; bilinear align_corners=False prediction",
+    "precision": "float32",
+    "flip_augmentation": false,
+    "evaluation_mask": "Eigen [45:471,41:601], finite GT, 0.1 < depth < 10 m",
+    "alignment": "per-image float64 affine least squares on evaluation mask in disparity space",
+    "metrics_space": "disparity",
+    "min_prediction": 1e-08,
+    "aggregation": "unweighted mean of per-image metrics, no skipped images",
+    "source": "https://github.com/LiheYoung/Depth-Anything/issues/174"
+  },
+  "environment": {
+    "torch": "2.4.0+cu121",
+    "cuda": "12.1",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU"
+  },
+  "prediction_cache": "D:\\Code\\Master\\Depth-Anything\\.cache\\nyuv2-relative\\vitl-a5b25d6ae98de397"
+}

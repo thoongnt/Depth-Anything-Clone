@@ -340,7 +340,9 @@ class DepthAnythingCore(nn.Module):
         
         depth_anything = DPT_DINOv2(out_channels=[256, 512, 1024, 1024], use_clstoken=False)
         
-        ckpt_path = '../checkpoints/depth_anything_vitl14.pth' if os.path.exists('../checkpoints/depth_anything_vitl14.pth') else './checkpoints/depth_anything_vitl14.pth'
+        from pathlib import Path
+        default_checkpoint = Path(__file__).resolve().parents[4] / 'checkpoints' / 'depth_anything_vitl14.pth'
+        ckpt_path = kwargs.pop('encoder_checkpoint', str(default_checkpoint))
         state_dict = torch.load(ckpt_path, map_location='cpu', weights_only=True)
         depth_anything.load_state_dict(state_dict)
 

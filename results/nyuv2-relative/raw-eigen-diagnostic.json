@@ -1,0 +1,8 @@
+{
+  "provenance": "Diagnostic only: same 654 cached predictions, rawDepths + Eigen mask; not the MiDaS reference mask",
+  "num_images": 654,
+  "metrics": {
+    "abs_rel": 0.04341737401226054,
+    "delta1": 0.9803159289944395
+  }
+}

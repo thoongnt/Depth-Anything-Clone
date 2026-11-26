@@ -1,0 +1,254 @@
+{
+  "scope": "Research probe only, not a full benchmark or claimed paper reproduction",
+  "num_images": 16,
+  "selection": "8 evenly spaced images per domain in sorted official val file layout; selected before scoring",
+  "encoder": "vitl",
+  "checkpoint_sha256": "6fda5199f0043e91e1c6117df00313db57c630d8ed0306070b43da1ecfffbd9d",
+  "protocol": {
+    "input": "Official 518 lower-bound, aspect-preserving, multiple 14, OpenCV cubic, ImageNet norm",
+    "output": "bilinear align_corners=False at native 768x1024",
+    "flip": false,
+    "valid_mask": "provided mask > 0 AND finite depth > 0",
+    "alignment": "float64 centered affine least squares to reciprocal ground truth on valid mask",
+    "score": "AbsRel in disparity without clipping; delta1 counts nonpositive aligned predictions as failures",
+    "depth_crop_or_cap": "none; exact paper cap/filter unspecified"
+  },
+  "by_domain": {
+    "indoors": {
+      "num_images": 8,
+      "abs_rel_disparity": 0.049719282382334265,
+      "delta1": 0.9618607761031909
+    },
+    "outdoor": {
+      "num_images": 8,
+      "abs_rel_disparity": 0.36392037905719676,
+      "delta1": 0.4769908386651304
+    }
+  },
+  "rows": [
+    {
+      "image": "indoors\\scene_00019\\scan_00183\\00019_00183_indoors_000_010.png",
+      "domain": "indoors",
+      "valid_pixels": 779672,
+      "nonpositive_aligned_prediction_pixels": 0,
+      "abs_rel_disparity": 0.05947866545152456,
+      "delta1": 0.9567228270349583,
+      "scale": 0.0009694470254452096,
+      "shift": 0.07658782784261098,
+      "valid_depth_range_m": [
+        0.9640641212463379,
+        17.83060646057129
+      ]
+    },
+    {
+      "image": "indoors\\scene_00019\\scan_00183\\00019_00183_indoors_250_010.png",
+      "domain": "indoors",
+      "valid_pixels": 781601,
+      "nonpositive_aligned_prediction_pixels": 0,
+      "abs_rel_disparity": 0.08151819137714988,
+      "delta1": 0.9497045167547125,
+      "scale": 0.0012010555862042853,
+      "shift": 0.06389689468189845,
+      "valid_depth_range_m": [
+        0.30090412497520447,
+        24.130186080932617
+      ]
+    },
+    {
+      "image": "indoors\\scene_00020\\scan_00184\\00020_00184_indoors_170_020.png",
+      "domain": "indoors",
+      "valid_pixels": 784513,
+      "nonpositive_aligned_prediction_pixels": 0,
+      "abs_rel_disparity": 0.041915224694114295,
+      "delta1": 0.9750278198066826,
+      "scale": 0.001717587005621658,
+      "shift": 0.16469320236159746,
+      "valid_depth_range_m": [
+        0.3148777186870575,
+        14.70119571685791
+      ]
+    },
+    {
+      "image": "indoors\\scene_00020\\scan_00186\\00020_00186_indoors_070_040.png",
+      "domain": "indoors",
+      "valid_pixels": 786022,
+      "nonpositive_aligned_prediction_pixels": 0,
+      "abs_rel_disparity": 0.024114000179879663,
+      "delta1": 0.9978028604797321,
+      "scale": 0.0014427316754335,
+      "shift": 0.39446644335740627,
+      "valid_depth_range_m": [
+        0.3051028251647949,
+        2.4377074241638184
+      ]
+    },
+    {
+      "image": "indoors\\scene_00020\\scan_00187\\00020_00187_indoors_120_000.png",
+      "domain": "indoors",
+      "valid_pixels": 784984,
+      "nonpositive_aligned_prediction_pixels": 0,
+      "abs_rel_disparity": 0.04459285170331713,
+      "delta1": 0.9772441221731908,
+      "scale": 0.0020876624078210045,
+      "shift": 0.391042306328206,
+      "valid_depth_range_m": [
+        0.3012472093105316,
+        9.607870101928711
+      ]
+    },
+    {
+      "image": "indoors\\scene_00021\\scan_00188\\00021_00188_indoors_220_040.png",
+      "domain": "indoors",
+      "valid_pixels": 786423,
+      "nonpositive_aligned_prediction_pixels": 0,
+      "abs_rel_disparity": 0.018268570933849308,
+      "delta1": 0.987674572081437,
+      "scale": 0.001366295463572527,
+      "shift": 0.2596070115324146,
+      "valid_depth_range_m": [
+        0.4250883460044861,
+        3.669431209564209
+      ]
+    },
+    {
+      "image": "indoors\\scene_00021\\scan_00190\\00021_00190_indoors_280_000.png",
+      "domain": "indoors",
+      "valid_pixels": 783569,
+      "nonpositive_aligned_prediction_pixels": 0,
+      "abs_rel_disparity": 0.11919398728415553,
+      "delta1": 0.855142303996202,
+      "scale": 0.003570184648114741,
+      "shift": 0.010405505279656169,
+      "valid_depth_range_m": [
+        0.3193364441394806,
+        19.436857223510742
+      ]
+    },
+    {
+      "image": "indoors\\scene_00021\\scan_00192\\00021_00192_indoors_350_030.png",
+      "domain": "indoors",
+      "valid_pixels": 786408,
+      "nonpositive_aligned_prediction_pixels": 0,
+      "abs_rel_disparity": 0.008672767434683783,
+      "delta1": 0.9955671864986114,
+      "scale": 0.0013835703591706056,
+      "shift": 0.3215523253542524,
+      "valid_depth_range_m": [
+        0.3317432999610901,
+        2.9806840419769287
+      ]
+    },
+    {
+      "image": "outdoor\\scene_00022\\scan_00193\\00022_00193_outdoor_000_000.png",
+      "domain": "outdoor",
+      "valid_pixels": 756327,
+      "nonpositive_aligned_prediction_pixels": 0,
+      "abs_rel_disparity": 0.2883063851419973,
+      "delta1": 0.6575938714339168,
+      "scale": 0.0010323878183763169,
+      "shift": 0.058375056024137756,
+      "valid_depth_range_m": [
+        0.3003349006175995,
+        135.5487518310547
+      ]
+    },
+    {
+      "image": "outdoor\\scene_00022\\scan_00194\\00022_00194_outdoor_070_030.png",
+      "domain": "outdoor",
+      "valid_pixels": 663253,
+      "nonpositive_aligned_prediction_pixels": 0,
+      "abs_rel_disparity": 0.5296840511135672,
+      "delta1": 0.12738879432132233,
+      "scale": 0.0006198835937008679,
+      "shift": 0.022308135054307628,
+      "valid_depth_range_m": [
+        0.3006855249404907,
+        95.36293029785156
+      ]
+    },
+    {
+      "image": "outdoor\\scene_00022\\scan_00195\\00022_00195_outdoor_270_000.png",
+      "domain": "outdoor",
+      "valid_pixels": 647711,
+      "nonpositive_aligned_prediction_pixels": 0,
+      "abs_rel_disparity": 0.3349839594027333,
+      "delta1": 0.5018426427835871,
+      "scale": 0.00036937058634194266,
+      "shift": 0.1570273039236109,
+      "valid_depth_range_m": [
+        0.3000691533088684,
+        19.51759147644043
+      ]
+    },
+    {
+      "image": "outdoor\\scene_00022\\scan_00196\\00022_00196_outdoor_300_000.png",
+      "domain": "outdoor",
+      "valid_pixels": 715584,
+      "nonpositive_aligned_prediction_pixels": 0,
+      "abs_rel_disparity": 0.6943680266360841,
+      "delta1": 0.4145704767015473,
+      "scale": 0.0013159503033730632,
+      "shift": 0.08516222533123752,
+      "valid_depth_range_m": [
+        0.3578319549560547,
+        63.49285888671875
+      ]
+    },
+    {
+      "image": "outdoor\\scene_00022\\scan_00197\\00022_00197_outdoor_310_040.png",
+      "domain": "outdoor",
+      "valid_pixels": 560935,
+      "nonpositive_aligned_prediction_pixels": 0,
+      "abs_rel_disparity": 0.4282668713768448,
+      "delta1": 0.31581555795234745,
+      "scale": 8.723785462860953e-05,
+      "shift": 0.06343001489450163,
+      "valid_depth_range_m": [
+        0.5973696112632751,
+        86.37846374511719
+      ]
+    },
+    {
+      "image": "outdoor\\scene_00023\\scan_00199\\00023_00199_outdoor_280_010.png",
+      "domain": "outdoor",
+      "valid_pixels": 775580,
+      "nonpositive_aligned_prediction_pixels": 0,
+      "abs_rel_disparity": 0.03508706726183664,
+      "delta1": 0.9955078779751928,
+      "scale": 0.0007372208831313204,
+      "shift": 0.03978795575966276,
+      "valid_depth_range_m": [
+        4.3442864418029785,
+        19.16362953186035
+      ]
+    },
+    {
+      "image": "outdoor\\scene_00024\\scan_00201\\00024_00201_outdoor_100_000.png",
+      "domain": "outdoor",
+      "valid_pixels": 775012,
+      "nonpositive_aligned_prediction_pixels": 0,
+      "abs_rel_disparity": 0.2496345826772362,
+      "delta1": 0.5439438357083504,
+      "scale": 0.001031350792813466,
+      "shift": 0.07769747385484127,
+      "valid_depth_range_m": [
+        0.3001289665699005,
+        48.18800354003906
+      ]
+    },
+    {
+      "image": "outdoor\\scene_00024\\scan_00202\\00024_00202_outdoor_340_030.png",
+      "domain": "outdoor",
+      "valid_pixels": 387806,
+      "nonpositive_aligned_prediction_pixels": 0,
+      "abs_rel_disparity": 0.3510320888472747,
+      "delta1": 0.2592636524447791,
+      "scale": 0.0003354388598182035,
+      "shift": 0.02178147727026371,
+      "valid_depth_range_m": [
+        5.628321170806885,
+        78.27958679199219
+      ]
+    }
+  ]
+}

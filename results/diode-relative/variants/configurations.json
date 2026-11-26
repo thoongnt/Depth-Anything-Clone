@@ -1,0 +1,89 @@
+{
+  "encoder": "vitl",
+  "paper_reference": {
+    "abs_rel": 0.066,
+    "delta1": 0.952
+  },
+  "configurations": [
+    {
+      "name": "native",
+      "alignment": "ols"
+    },
+    {
+      "name": "native-clamp-gt",
+      "alignment": "ols",
+      "floor": "gt-max"
+    },
+    {
+      "name": "native-depth-metric",
+      "alignment": "ols",
+      "floor": "gt-max",
+      "space": "depth"
+    },
+    {
+      "name": "range-80m",
+      "alignment": "ols",
+      "max_depth": 80
+    },
+    {
+      "name": "range-0.5-80m",
+      "alignment": "ols",
+      "min_depth": 0.5,
+      "max_depth": 80
+    },
+    {
+      "name": "range-0.6-80m",
+      "alignment": "ols",
+      "min_depth": 0.6,
+      "max_depth": 80
+    },
+    {
+      "name": "range-10m",
+      "alignment": "ols",
+      "max_depth": 10
+    },
+    {
+      "name": "range-10m-clamp10",
+      "alignment": "ols",
+      "max_depth": 10,
+      "floor": 0.1
+    },
+    {
+      "name": "range-0.5-10m",
+      "alignment": "ols",
+      "min_depth": 0.5,
+      "max_depth": 10
+    },
+    {
+      "name": "nyu-eigen-fraction-crop",
+      "alignment": "ols",
+      "crop": true
+    },
+    {
+      "name": "median-mad",
+      "alignment": "median-mad"
+    },
+    {
+      "name": "relative-ls",
+      "alignment": "relative-ls"
+    },
+    {
+      "name": "huber-8",
+      "alignment": "huber"
+    }
+  ],
+  "subsets": [
+    "all",
+    "indoors",
+    "outdoor"
+  ],
+  "inference": [
+    "no-flip",
+    "horizontal-flip-average"
+  ],
+  "additional_native_aggregation": [
+    "image-mean",
+    "pixel-mean"
+  ],
+  "comparison_scope": "exploratory protocol hypotheses; no configuration becomes an author-confirmed paper reproduction by proximity alone"
+}

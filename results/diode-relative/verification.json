@@ -1,0 +1,114 @@
+{
+  "status": "passed",
+  "full_manifest_and_csv_unique_images": 771,
+  "domain_counts": {
+    "indoors": 325,
+    "outdoor": 446
+  },
+  "all_gt_valid_pixel_counts_match_prior_dataset_audit": true,
+  "csv_aggregates_match_summary": true,
+  "source_hash_matches_cache": true,
+  "probe_prediction_and_independent_lstsq_checks": [
+    {
+      "image": "indoors/scene_00019/scan_00183/00019_00183_indoors_000_010.png",
+      "max_prediction_difference_from_probe": 0.0,
+      "independent_lstsq_abs_rel": 0.05947866546100218,
+      "reported_abs_rel": 0.05947866545152456
+    },
+    {
+      "image": "indoors/scene_00019/scan_00183/00019_00183_indoors_250_010.png",
+      "max_prediction_difference_from_probe": 0.0,
+      "independent_lstsq_abs_rel": 0.08151819139920048,
+      "reported_abs_rel": 0.08151819137714988
+    },
+    {
+      "image": "indoors/scene_00020/scan_00184/00020_00184_indoors_170_020.png",
+      "max_prediction_difference_from_probe": 0.0,
+      "independent_lstsq_abs_rel": 0.04191522466473816,
+      "reported_abs_rel": 0.041915224694114295
+    },
+    {
+      "image": "indoors/scene_00020/scan_00186/00020_00186_indoors_070_040.png",
+      "max_prediction_difference_from_probe": 0.0,
+      "independent_lstsq_abs_rel": 0.024114000206433624,
+      "reported_abs_rel": 0.024114000179879663
+    },
+    {
+      "image": "indoors/scene_00020/scan_00187/00020_00187_indoors_120_000.png",
+      "max_prediction_difference_from_probe": 0.0,
+      "independent_lstsq_abs_rel": 0.04459285172235138,
+      "reported_abs_rel": 0.04459285170331713
+    },
+    {
+      "image": "indoors/scene_00021/scan_00188/00021_00188_indoors_220_040.png",
+      "max_prediction_difference_from_probe": 0.0,
+      "independent_lstsq_abs_rel": 0.018268570937396,
+      "reported_abs_rel": 0.018268570933849308
+    },
+    {
+      "image": "indoors/scene_00021/scan_00190/00021_00190_indoors_280_000.png",
+      "max_prediction_difference_from_probe": 0.0,
+      "independent_lstsq_abs_rel": 0.1191939873291755,
+      "reported_abs_rel": 0.11919398728415553
+    },
+    {
+      "image": "indoors/scene_00021/scan_00192/00021_00192_indoors_350_030.png",
+      "max_prediction_difference_from_probe": 0.0,
+      "independent_lstsq_abs_rel": 0.008672767435715215,
+      "reported_abs_rel": 0.008672767434683783
+    },
+    {
+      "image": "outdoor/scene_00022/scan_00193/00022_00193_outdoor_000_000.png",
+      "max_prediction_difference_from_probe": 0.0,
+      "independent_lstsq_abs_rel": 0.2883063852120668,
+      "reported_abs_rel": 0.2883063851419973
+    },
+    {
+      "image": "outdoor/scene_00022/scan_00194/00022_00194_outdoor_070_030.png",
+      "max_prediction_difference_from_probe": 0.0,
+      "independent_lstsq_abs_rel": 0.5296840511650924,
+      "reported_abs_rel": 0.5296840511135672
+    },
+    {
+      "image": "outdoor/scene_00022/scan_00195/00022_00195_outdoor_270_000.png",
+      "max_prediction_difference_from_probe": 0.0,
+      "independent_lstsq_abs_rel": 0.3349839594408328,
+      "reported_abs_rel": 0.3349839594027333
+    },
+    {
+      "image": "outdoor/scene_00022/scan_00196/00022_00196_outdoor_300_000.png",
+      "max_prediction_difference_from_probe": 0.0,
+      "independent_lstsq_abs_rel": 0.6943680267178248,
+      "reported_abs_rel": 0.6943680266360841
+    },
+    {
+      "image": "outdoor/scene_00022/scan_00197/00022_00197_outdoor_310_040.png",
+      "max_prediction_difference_from_probe": 0.0,
+      "independent_lstsq_abs_rel": 0.4282668714284406,
+      "reported_abs_rel": 0.4282668713768448
+    },
+    {
+      "image": "outdoor/scene_00023/scan_00199/00023_00199_outdoor_280_010.png",
+      "max_prediction_difference_from_probe": 0.0,
+      "independent_lstsq_abs_rel": 0.03508706725871211,
+      "reported_abs_rel": 0.03508706726183664
+    },
+    {
+      "image": "outdoor/scene_00024/scan_00201/00024_00201_outdoor_100_000.png",
+      "max_prediction_difference_from_probe": 0.0,
+      "independent_lstsq_abs_rel": 0.24963458272372233,
+      "reported_abs_rel": 0.2496345826772362
+    },
+    {
+      "image": "outdoor/scene_00024/scan_00202/00024_00202_outdoor_340_030.png",
+      "max_prediction_difference_from_probe": 0.0,
+      "independent_lstsq_abs_rel": 0.35103208881150544,
+      "reported_abs_rel": 0.3510320888472747
+    }
+  ],
+  "notebook_executed_without_errors": true,
+  "notebook_cache_hits": 771,
+  "notebook_metrics_equal_initial_cli": true,
+  "unit_tests_passed": 23,
+  "nyuv2_evaluator_and_baseline_summary_unchanged": true
+}

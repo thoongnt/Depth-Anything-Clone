@@ -1,0 +1,163 @@
+{
+  "scope": "Same 16 diagnostic images; per-image GT-max depth clamp is a MoGe-inspired alternative, not confirmed Depth Anything protocol",
+  "by_domain": {
+    "indoors": {
+      "negative_fraction": 0.0,
+      "clamped_abs_rel_disparity": 0.04831090122809472,
+      "clamped_abs_rel_depth_diagnostic": 0.054474943831483456,
+      "clamped_delta1": 0.962395987424721
+    },
+    "outdoor": {
+      "negative_fraction": 0.0,
+      "clamped_abs_rel_disparity": 0.36392037905719676,
+      "clamped_abs_rel_depth_diagnostic": 0.33750152518274806,
+      "clamped_delta1": 0.4769908386651304
+    }
+  },
+  "rows": [
+    {
+      "domain": "indoors",
+      "image": "indoors\\scene_00019\\scan_00183\\00019_00183_indoors_000_010.png",
+      "negative_fraction": 0.0,
+      "per_image_cap_depth_m": 17.83060646057129,
+      "clamped_abs_rel_disparity": 0.05947866545152456,
+      "clamped_abs_rel_depth_diagnostic": 0.06395737332006098,
+      "clamped_delta1": 0.9567228270349583
+    },
+    {
+      "domain": "indoors",
+      "image": "indoors\\scene_00019\\scan_00183\\00019_00183_indoors_250_010.png",
+      "negative_fraction": 0.0,
+      "per_image_cap_depth_m": 24.13018608093262,
+      "clamped_abs_rel_disparity": 0.08151819137714988,
+      "clamped_abs_rel_depth_diagnostic": 0.09909183831062528,
+      "clamped_delta1": 0.9497045167547125
+    },
+    {
+      "domain": "indoors",
+      "image": "indoors\\scene_00020\\scan_00184\\00020_00184_indoors_170_020.png",
+      "negative_fraction": 0.0,
+      "per_image_cap_depth_m": 14.701195716857908,
+      "clamped_abs_rel_disparity": 0.041915224694114295,
+      "clamped_abs_rel_depth_diagnostic": 0.04414854905127866,
+      "clamped_delta1": 0.9750278198066826
+    },
+    {
+      "domain": "indoors",
+      "image": "indoors\\scene_00020\\scan_00186\\00020_00186_indoors_070_040.png",
+      "negative_fraction": 0.0,
+      "per_image_cap_depth_m": 2.4377074241638184,
+      "clamped_abs_rel_disparity": 0.024114000179879663,
+      "clamped_abs_rel_depth_diagnostic": 0.024995971453761423,
+      "clamped_delta1": 0.9978028604797321
+    },
+    {
+      "domain": "indoors",
+      "image": "indoors\\scene_00020\\scan_00187\\00020_00187_indoors_120_000.png",
+      "negative_fraction": 0.0,
+      "per_image_cap_depth_m": 9.607870101928711,
+      "clamped_abs_rel_disparity": 0.04459285170331713,
+      "clamped_abs_rel_depth_diagnostic": 0.051770483419419845,
+      "clamped_delta1": 0.9772441221731908
+    },
+    {
+      "domain": "indoors",
+      "image": "indoors\\scene_00021\\scan_00188\\00021_00188_indoors_220_040.png",
+      "negative_fraction": 0.0,
+      "per_image_cap_depth_m": 3.6694312095642094,
+      "clamped_abs_rel_disparity": 0.018268570933849308,
+      "clamped_abs_rel_depth_diagnostic": 0.02074270491911348,
+      "clamped_delta1": 0.987674572081437
+    },
+    {
+      "domain": "indoors",
+      "image": "indoors\\scene_00021\\scan_00190\\00021_00190_indoors_280_000.png",
+      "negative_fraction": 0.0,
+      "per_image_cap_depth_m": 19.436857223510742,
+      "clamped_abs_rel_disparity": 0.10792693805023913,
+      "clamped_abs_rel_depth_diagnostic": 0.12172320916453065,
+      "clamped_delta1": 0.8594239945684427
+    },
+    {
+      "domain": "indoors",
+      "image": "indoors\\scene_00021\\scan_00192\\00021_00192_indoors_350_030.png",
+      "negative_fraction": 0.0,
+      "per_image_cap_depth_m": 2.9806840419769287,
+      "clamped_abs_rel_disparity": 0.008672767434683783,
+      "clamped_abs_rel_depth_diagnostic": 0.009369421013077351,
+      "clamped_delta1": 0.9955671864986114
+    },
+    {
+      "domain": "outdoor",
+      "image": "outdoor\\scene_00022\\scan_00193\\00022_00193_outdoor_000_000.png",
+      "negative_fraction": 0.0,
+      "per_image_cap_depth_m": 135.5487518310547,
+      "clamped_abs_rel_disparity": 0.2883063851419973,
+      "clamped_abs_rel_depth_diagnostic": 0.2731376274858768,
+      "clamped_delta1": 0.6575938714339168
+    },
+    {
+      "domain": "outdoor",
+      "image": "outdoor\\scene_00022\\scan_00194\\00022_00194_outdoor_070_030.png",
+      "negative_fraction": 0.0,
+      "per_image_cap_depth_m": 95.36293029785156,
+      "clamped_abs_rel_disparity": 0.5296840511135672,
+      "clamped_abs_rel_depth_diagnostic": 0.5689157482902618,
+      "clamped_delta1": 0.12738879432132233
+    },
+    {
+      "domain": "outdoor",
+      "image": "outdoor\\scene_00022\\scan_00195\\00022_00195_outdoor_270_000.png",
+      "negative_fraction": 0.0,
+      "per_image_cap_depth_m": 19.51759147644043,
+      "clamped_abs_rel_disparity": 0.3349839594027333,
+      "clamped_abs_rel_depth_diagnostic": 0.3660109150597948,
+      "clamped_delta1": 0.5018426427835871
+    },
+    {
+      "domain": "outdoor",
+      "image": "outdoor\\scene_00022\\scan_00196\\00022_00196_outdoor_300_000.png",
+      "negative_fraction": 0.0,
+      "per_image_cap_depth_m": 63.49285888671875,
+      "clamped_abs_rel_disparity": 0.6943680266360841,
+      "clamped_abs_rel_depth_diagnostic": 0.402430017225444,
+      "clamped_delta1": 0.4145704767015473
+    },
+    {
+      "domain": "outdoor",
+      "image": "outdoor\\scene_00022\\scan_00197\\00022_00197_outdoor_310_040.png",
+      "negative_fraction": 0.0,
+      "per_image_cap_depth_m": 86.37846374511719,
+      "clamped_abs_rel_disparity": 0.4282668713768448,
+      "clamped_abs_rel_depth_diagnostic": 0.39793462923812767,
+      "clamped_delta1": 0.31581555795234745
+    },
+    {
+      "domain": "outdoor",
+      "image": "outdoor\\scene_00023\\scan_00199\\00023_00199_outdoor_280_010.png",
+      "negative_fraction": 0.0,
+      "per_image_cap_depth_m": 19.16362953186035,
+      "clamped_abs_rel_disparity": 0.03508706726183664,
+      "clamped_abs_rel_depth_diagnostic": 0.03562376076262874,
+      "clamped_delta1": 0.9955078779751928
+    },
+    {
+      "domain": "outdoor",
+      "image": "outdoor\\scene_00024\\scan_00201\\00024_00201_outdoor_100_000.png",
+      "negative_fraction": 0.0,
+      "per_image_cap_depth_m": 48.18800354003906,
+      "clamped_abs_rel_disparity": 0.2496345826772362,
+      "clamped_abs_rel_depth_diagnostic": 0.2682380315411977,
+      "clamped_delta1": 0.5439438357083504
+    },
+    {
+      "domain": "outdoor",
+      "image": "outdoor\\scene_00024\\scan_00202\\00024_00202_outdoor_340_030.png",
+      "negative_fraction": 0.0,
+      "per_image_cap_depth_m": 78.27958679199219,
+      "clamped_abs_rel_disparity": 0.3510320888472747,
+      "clamped_abs_rel_depth_diagnostic": 0.387721471858653,
+      "clamped_delta1": 0.2592636524447791
+    }
+  ]
+}

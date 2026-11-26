@@ -1,0 +1,22 @@
+{
+  "note": "All 654 images. Alternative arithmetic, clipping and aggregation are diagnostics, not settings selected to fit paper numbers.",
+  "num_images": 654,
+  "means": {
+    "float64": {
+      "abs_rel": 0.043634992955800284,
+      "delta1": 0.9803277444460456
+    },
+    "float32_normal_equations": {
+      "abs_rel": 0.043634991011438216,
+      "delta1": 0.9803277541894292
+    },
+    "without_10m_prediction_cap": {
+      "abs_rel": 0.04367948752610398,
+      "delta1": 0.980241706259934
+    },
+    "pixel_weighted_diagnostic": {
+      "abs_rel": 0.04269598133604737,
+      "delta1": 0.9815518349881052
+    }
+  }
+}

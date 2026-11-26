@@ -1,3 +1,7 @@
+> **Rà soát DIODE (2026-11-26):** Xem [protocol và probe DIODE](diode-relative-depth.md). Validation local có 325 indoor + 446 outdoor; split/protocol chính xác của số DIODE trong Table 2 chưa được xác nhận đầy đủ.
+
+> **Cập nhật NYUv2 (2026-11-26):** Xem [protocol và kết quả đã chạy](nyuv2-reproduction.md). Benchmark relative depth là Table 2 trong PDF CVPR; dùng rawDepths, mask MiDaS và metric disparity. Một số mô tả bên dưới là ghi chú cũ, không thay thế protocol đã kiểm chứng.
+
 # Tìm hiểu về dataset, các bảng đánh giá hiện tại và đưa ra các phương án đề xuất để chạy thực nghiệm tối ưu trên bộ dữ liệu nhỏ
 
 > Nguồn tham khảo: Yang et al., *Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data*, CVPR 2024.
@@ -199,7 +203,7 @@ Tải tập test chuẩn, sử dụng trực tiếp trọng số checkpoint Metr
 
 - In-domain NYUv2 Test: 654 ảnh.
 - In-domain KITTI Test (Eigen Split): 652 ảnh.
-- **Zero-shot Metric Sets:** SUN RGB-D (~5.050 ảnh test), iBims-1 (100 ảnh), DIODE Outdoor (325 ảnh validation).
+- **Zero-shot Metric Sets:** SUN RGB-D (~5.050 ảnh test), iBims-1 (100 ảnh), DIODE Outdoor (446 ảnh validation).
 
 ---
 
@@ -308,7 +312,7 @@ Chỉ chạy suy luận đánh giá checkpoint đã fine-tune:
 2. iBims-1: *Indoor Benchmark Set* (100 ảnh).
 3. HyperSim: *Indoor Synthetic Test Set*.
 4. Virtual KITTI 2: *Outdoor Synthetic Test Set*.
-5. DIODE Outdoor: *Outdoor Validation Subset* (325 ảnh).
+5. DIODE Outdoor: *Outdoor Validation Subset* (446 ảnh).
 
 **3. Đánh giá Chuyển giao Nhiệm vụ Phân đoạn Ngữ nghĩa**
 

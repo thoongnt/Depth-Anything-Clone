@@ -1,0 +1,2082 @@
+{
+  "sha": "1d03336771fe09c5398ffdd211441e33941a97dc",
+  "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/1d03336771fe09c5398ffdd211441e33941a97dc",
+  "tree": [
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "size": 11357,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fcc5b4ce02891f6f2fa4be0b64b0f86d59a1b70",
+      "size": 14821,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/6fcc5b4ce02891f6f2fa4be0b64b0f86d59a1b70"
+    },
+    {
+      "path": "app.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35e85e8e19c1df651c5f7427713c016607a9b691",
+      "size": 3390,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/35e85e8e19c1df651c5f7427713c016607a9b691"
+    },
+    {
+      "path": "assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "842925ad80afa70a6bf91144c94734c4212336f0",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/842925ad80afa70a6bf91144c94734c4212336f0"
+    },
+    {
+      "path": "assets/controlnet_demo1.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "553a9b75d9a7a0717963b5ff66e6430ac33e6652",
+      "size": 4213405,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/553a9b75d9a7a0717963b5ff66e6430ac33e6652"
+    },
+    {
+      "path": "assets/controlnet_demo2.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4884cd5050fbb29fb1dd2f40d86d30ae27fac205",
+      "size": 4106241,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/4884cd5050fbb29fb1dd2f40d86d30ae27fac205"
+    },
+    {
+      "path": "assets/examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0e78b6b0e5d7a39a0d23f6ddc7c61ad4ce6b5aed",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/0e78b6b0e5d7a39a0d23f6ddc7c61ad4ce6b5aed"
+    },
+    {
+      "path": "assets/examples/demo1.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f1d3b5ed9750a2ef9631d47756cae5e08d188a2",
+      "size": 883552,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/2f1d3b5ed9750a2ef9631d47756cae5e08d188a2"
+    },
+    {
+      "path": "assets/examples/demo10.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "030dc8ed1739d5713538db07bc206995610172ef",
+      "size": 4050059,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/030dc8ed1739d5713538db07bc206995610172ef"
+    },
+    {
+      "path": "assets/examples/demo11.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82cd0a1e4cef45aa8b2d0408245e2188d5481bca",
+      "size": 4615752,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/82cd0a1e4cef45aa8b2d0408245e2188d5481bca"
+    },
+    {
+      "path": "assets/examples/demo12.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7e0785bec0455790591e04b1495749d81893718",
+      "size": 4604990,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/e7e0785bec0455790591e04b1495749d81893718"
+    },
+    {
+      "path": "assets/examples/demo13.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b46e525fcb5a60e8a22cf091018502edeba3f5b",
+      "size": 6186363,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/3b46e525fcb5a60e8a22cf091018502edeba3f5b"
+    },
+    {
+      "path": "assets/examples/demo14.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "037e6c4619a075bb9387808b936ac12d1e4a296f",
+      "size": 6618679,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/037e6c4619a075bb9387808b936ac12d1e4a296f"
+    },
+    {
+      "path": "assets/examples/demo15.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03fa17db75a6d5ac3bf1f484c2e012010ded4700",
+      "size": 8133712,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/03fa17db75a6d5ac3bf1f484c2e012010ded4700"
+    },
+    {
+      "path": "assets/examples/demo16.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aaf76044aa996a22e9bde74ba373b5b4038dc95c",
+      "size": 5601533,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/aaf76044aa996a22e9bde74ba373b5b4038dc95c"
+    },
+    {
+      "path": "assets/examples/demo17.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e77574560e9b01f122b4f137a472d050e37350db",
+      "size": 2823792,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/e77574560e9b01f122b4f137a472d050e37350db"
+    },
+    {
+      "path": "assets/examples/demo18.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee1a00acb679d840244ca2b87a819711eae0c51e",
+      "size": 6690880,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/ee1a00acb679d840244ca2b87a819711eae0c51e"
+    },
+    {
+      "path": "assets/examples/demo19.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62641ff0b48bea71ade9b2beafcfffdd5017e7d8",
+      "size": 6295997,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/62641ff0b48bea71ade9b2beafcfffdd5017e7d8"
+    },
+    {
+      "path": "assets/examples/demo2.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f91ea4ebebad934d368a6f85bb1892dd46ab442",
+      "size": 1299674,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/5f91ea4ebebad934d368a6f85bb1892dd46ab442"
+    },
+    {
+      "path": "assets/examples/demo20.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9cc46fc82a2f9984846e7777e9d59c67895bd696",
+      "size": 5988754,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/9cc46fc82a2f9984846e7777e9d59c67895bd696"
+    },
+    {
+      "path": "assets/examples/demo3.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfdee0353b821c634b894a3591b28a0a88651f32",
+      "size": 1046311,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/bfdee0353b821c634b894a3591b28a0a88651f32"
+    },
+    {
+      "path": "assets/examples/demo4.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6705f46147676a9406ffc19b38b11cf2f83cff9a",
+      "size": 4958676,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/6705f46147676a9406ffc19b38b11cf2f83cff9a"
+    },
+    {
+      "path": "assets/examples/demo5.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d68bbbd1d2376bbec36a4e652dc20b5e1c26871",
+      "size": 5218502,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/6d68bbbd1d2376bbec36a4e652dc20b5e1c26871"
+    },
+    {
+      "path": "assets/examples/demo7.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc37866020a598ba42a1174de13abde06dac6dea",
+      "size": 4697044,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/bc37866020a598ba42a1174de13abde06dac6dea"
+    },
+    {
+      "path": "assets/examples/demo8.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d47af2fffa8e5f829c114003ecacd350c87ed95c",
+      "size": 3943054,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/d47af2fffa8e5f829c114003ecacd350c87ed95c"
+    },
+    {
+      "path": "assets/examples/demo9.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65c29b1b61d47733b5c7f90e8a78e3cbf6b0df58",
+      "size": 8760316,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/65c29b1b61d47733b5c7f90e8a78e3cbf6b0df58"
+    },
+    {
+      "path": "assets/examples_video",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "32bd8c4c21ce7744fffe70b7e23dcddfb9719bb4",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/32bd8c4c21ce7744fffe70b7e23dcddfb9719bb4"
+    },
+    {
+      "path": "assets/examples_video/davis_dolphins.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53596aa4f5b2098649330a54258545b8c9db8bf7",
+      "size": 820644,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/53596aa4f5b2098649330a54258545b8c9db8bf7"
+    },
+    {
+      "path": "assets/examples_video/davis_rollercoaster.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f385e1bb30f90b48e0c6a8f485b8ff4862f082a5",
+      "size": 1809560,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/f385e1bb30f90b48e0c6a8f485b8ff4862f082a5"
+    },
+    {
+      "path": "assets/examples_video/davis_seasnake.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72d14d46d6b586bb1f37d0f735574071d0642d4a",
+      "size": 7624047,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/72d14d46d6b586bb1f37d0f735574071d0642d4a"
+    },
+    {
+      "path": "assets/gallery",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8f38b4e6dd6c1d04dccc94429901e01f1d401ba9",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/8f38b4e6dd6c1d04dccc94429901e01f1d401ba9"
+    },
+    {
+      "path": "assets/gallery/3d_video.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad43495a0c6d1fe0a2d9b71f4dc948141d8d9ced",
+      "size": 16428894,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/ad43495a0c6d1fe0a2d9b71f4dc948141d8d9ced"
+    },
+    {
+      "path": "assets/gallery/3d_vis1.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63cfeab6e38c2033196f209a061caf0df809a719",
+      "size": 11644134,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/63cfeab6e38c2033196f209a061caf0df809a719"
+    },
+    {
+      "path": "assets/gallery/3d_vis2.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "568243766efb9ca11268aaecbe44a43b373b39b3",
+      "size": 17714697,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/568243766efb9ca11268aaecbe44a43b373b39b3"
+    },
+    {
+      "path": "assets/gallery/aerial_image.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c12cb6c81dc1c2b96e70915632b7df1e1eafedef",
+      "size": 246417,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/c12cb6c81dc1c2b96e70915632b7df1e1eafedef"
+    },
+    {
+      "path": "assets/gallery/animation_image.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86b3af71bf045ed8e98df98c4f3425a92394d58d",
+      "size": 937597,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/86b3af71bf045ed8e98df98c4f3425a92394d58d"
+    },
+    {
+      "path": "assets/gallery/artistic_image.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f45f0ad5aa46ecd61a7e1b9b4986575a4c9c7fd",
+      "size": 572427,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/1f45f0ad5aa46ecd61a7e1b9b4986575a4c9c7fd"
+    },
+    {
+      "path": "assets/gallery/astronaut_cat.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "655eb4d6f09db5d39d2535de04f02d0a9750d87e",
+      "size": 862590,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/655eb4d6f09db5d39d2535de04f02d0a9750d87e"
+    },
+    {
+      "path": "assets/gallery/building.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26f822fa880640607a0d0d5a5a23e950fc1e7e06",
+      "size": 6032058,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/26f822fa880640607a0d0d5a5a23e950fc1e7e06"
+    },
+    {
+      "path": "assets/gallery/cat.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2f51a444b4bbb98b39e902112c1e931b7464060",
+      "size": 109736,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/f2f51a444b4bbb98b39e902112c1e931b7464060"
+    },
+    {
+      "path": "assets/gallery/chibi_cateared_character.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "190270fa70ac52e8618585f452e4c3f0dfadfc4e",
+      "size": 722578,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/190270fa70ac52e8618585f452e4c3f0dfadfc4e"
+    },
+    {
+      "path": "assets/gallery/cyber_rabbit.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6af1fa51c1f70bd675dccb22864e99eacf9a28fc",
+      "size": 721611,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/6af1fa51c1f70bd675dccb22864e99eacf9a28fc"
+    },
+    {
+      "path": "assets/gallery/dalle_bear.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2911e022d0dc315c483666b1339a2f8b14dc8e1",
+      "size": 518205,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/b2911e022d0dc315c483666b1339a2f8b14dc8e1"
+    },
+    {
+      "path": "assets/gallery/diner_scene.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "057ebc3b4204d90725c857f257e89473dba9df47",
+      "size": 227369,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/057ebc3b4204d90725c857f257e89473dba9df47"
+    },
+    {
+      "path": "assets/gallery/distracted_man.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "653d085d9ceb8cab9544ee13f5e339f262e4a2ed",
+      "size": 714226,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/653d085d9ceb8cab9544ee13f5e339f262e4a2ed"
+    },
+    {
+      "path": "assets/gallery/elon_musk.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbc285e7b4476e8b787efe5956a040dddb2b0a91",
+      "size": 581611,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/fbc285e7b4476e8b787efe5956a040dddb2b0a91"
+    },
+    {
+      "path": "assets/gallery/eye-stalked.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c824dbff9d5c535e91ddba5a2644827f12c387e3",
+      "size": 721204,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/c824dbff9d5c535e91ddba5a2644827f12c387e3"
+    },
+    {
+      "path": "assets/gallery/football_game.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "849b0ab46f075a7dec08755107aec6b31e151b97",
+      "size": 315251,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/849b0ab46f075a7dec08755107aec6b31e151b97"
+    },
+    {
+      "path": "assets/gallery/gamer_celebration.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfbf35aa1c53e5fd14a9be5788e9373cf0ac166a",
+      "size": 911831,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/dfbf35aa1c53e5fd14a9be5788e9373cf0ac166a"
+    },
+    {
+      "path": "assets/gallery/grilled_chicken_skewers.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ce0bd6ab943ee3bd71a86f4d980d032f10a0de4",
+      "size": 346089,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/5ce0bd6ab943ee3bd71a86f4d980d032f10a0de4"
+    },
+    {
+      "path": "assets/gallery/indoor_moving.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09beef7dc4b65dad3b900a362f1322361310d008",
+      "size": 17941181,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/09beef7dc4b65dad3b900a362f1322361310d008"
+    },
+    {
+      "path": "assets/gallery/iron_man.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1da3ef39148d13236aef54b6a2bd983cf8a6acc6",
+      "size": 591464,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/1da3ef39148d13236aef54b6a2bd983cf8a6acc6"
+    },
+    {
+      "path": "assets/gallery/minecraft.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6888c2e6f946fd8908a07e2bbbe38daed6716ddf",
+      "size": 830413,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/6888c2e6f946fd8908a07e2bbbe38daed6716ddf"
+    },
+    {
+      "path": "assets/gallery/monster.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7519443aed61b5e3c88854d0cb29a4cfeec9c5c",
+      "size": 5747632,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/a7519443aed61b5e3c88854d0cb29a4cfeec9c5c"
+    },
+    {
+      "path": "assets/gallery/monument_valley.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0d6def1dd4a001d95b2b9a2f1ebd6202d324a9a",
+      "size": 422381,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/c0d6def1dd4a001d95b2b9a2f1ebd6202d324a9a"
+    },
+    {
+      "path": "assets/gallery/nuscenes.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe30720b5d414098b8ad26f355e4a3cff67ef448",
+      "size": 13155282,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/fe30720b5d414098b8ad26f355e4a3cff67ef448"
+    },
+    {
+      "path": "assets/gallery/ocean.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "108c8acf0766dcef999bf67623349b442331c74b",
+      "size": 891275,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/108c8acf0766dcef999bf67623349b442331c74b"
+    },
+    {
+      "path": "assets/gallery/painted_tunnel.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "652baab288ac3afffc8691beb3589a8f0c017380",
+      "size": 310622,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/652baab288ac3afffc8691beb3589a8f0c017380"
+    },
+    {
+      "path": "assets/gallery/racing_car.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce1f10fe2d411aa721d2f9c67d4432a8eb9c9aaf",
+      "size": 23747377,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/ce1f10fe2d411aa721d2f9c67d4432a8eb9c9aaf"
+    },
+    {
+      "path": "assets/gallery/raft_painting.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75b07567017bc651b385f01fa5d12d6e343985f7",
+      "size": 617440,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/75b07567017bc651b385f01fa5d12d6e343985f7"
+    },
+    {
+      "path": "assets/gallery/reconstruction.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c087878d6d196e80684046824a2181ca4500652a",
+      "size": 551969,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/c087878d6d196e80684046824a2181ca4500652a"
+    },
+    {
+      "path": "assets/gallery/reconstruction2.jpeg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fb3747b66084ff368d307a14360c529ed6d923b",
+      "size": 161386,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/3fb3747b66084ff368d307a14360c529ed6d923b"
+    },
+    {
+      "path": "assets/gallery/robotic_knight.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27464063157444e148cb6c869325c187adc00344",
+      "size": 579909,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/27464063157444e148cb6c869325c187adc00344"
+    },
+    {
+      "path": "assets/gallery/skull.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f7cb7731e9ac66712e5765834793b340f981a51",
+      "size": 494631,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/9f7cb7731e9ac66712e5765834793b340f981a51"
+    },
+    {
+      "path": "assets/gallery/surprised_bald_man.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5958570580916a3f4a54460f1f9f25fb50db7101",
+      "size": 510626,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/5958570580916a3f4a54460f1f9f25fb50db7101"
+    },
+    {
+      "path": "assets/gallery/tearful_green_frog.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe1a8d2a3bcd7ccdcdd907eaea505e0f0e620c0c",
+      "size": 398207,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/fe1a8d2a3bcd7ccdcdd907eaea505e0f0e620c0c"
+    },
+    {
+      "path": "assets/gallery/videoframe_10000.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43505edf2bd651e3879f85dbdfda6fa3f7513a79",
+      "size": 261530,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/43505edf2bd651e3879f85dbdfda6fa3f7513a79"
+    },
+    {
+      "path": "assets/paper.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b517cb57e85375e6ab1592fc57eb3b78b62a3eae",
+      "size": 4549655,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/b517cb57e85375e6ab1592fc57eb3b78b62a3eae"
+    },
+    {
+      "path": "assets/teaser.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "299d16ba41054f2ac44437ee1fa1b38133a15e17",
+      "size": 5657444,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/299d16ba41054f2ac44437ee1fa1b38133a15e17"
+    },
+    {
+      "path": "assets/video_edit",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e844102f06a2c0179f360b1442635377a82284d2",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/e844102f06a2c0179f360b1442635377a82284d2"
+    },
+    {
+      "path": "assets/video_edit/demo1_midas.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b34c6455c8d558525abb316e52e006424f5e587",
+      "size": 187513,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/5b34c6455c8d558525abb316e52e006424f5e587"
+    },
+    {
+      "path": "assets/video_edit/demo1_ours.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc32a894f5964214f414176e74d2487302e2d07f",
+      "size": 431370,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/bc32a894f5964214f414176e74d2487302e2d07f"
+    },
+    {
+      "path": "assets/video_edit/demo1_video.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44ca907474545bfd7ccd7d1cbdbc8bd79199bc97",
+      "size": 174791,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/44ca907474545bfd7ccd7d1cbdbc8bd79199bc97"
+    },
+    {
+      "path": "assets/video_edit/demo2_midas.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7704a7c51857a28568a19eae29de4b3e1e06dd53",
+      "size": 145623,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/7704a7c51857a28568a19eae29de4b3e1e06dd53"
+    },
+    {
+      "path": "assets/video_edit/demo2_ours.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc5b56111cdb6f13b87bdd858ad147a80647b185",
+      "size": 222693,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/fc5b56111cdb6f13b87bdd858ad147a80647b185"
+    },
+    {
+      "path": "assets/video_edit/demo2_video.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1db92ebf68dcc8758295ee4f494edf9c1a380966",
+      "size": 112277,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/1db92ebf68dcc8758295ee4f494edf9c1a380966"
+    },
+    {
+      "path": "controlnet",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2203781410cc4c79e8bcce592216e1bc2ca38d2f",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/2203781410cc4c79e8bcce592216e1bc2ca38d2f"
+    },
+    {
+      "path": "controlnet/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce0c909020b1654ad41e6348a46c3ed7f88106c6",
+      "size": 832,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/ce0c909020b1654ad41e6348a46c3ed7f88106c6"
+    },
+    {
+      "path": "controlnet/config.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c50f0e99e8a1fa9a3a5fbf1838a7249e7d9d48cf",
+      "size": 1264,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/c50f0e99e8a1fa9a3a5fbf1838a7249e7d9d48cf"
+    },
+    {
+      "path": "depth_anything",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bb826f1c626c81e28908b552448c28856a5f2abc",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/bb826f1c626c81e28908b552448c28856a5f2abc"
+    },
+    {
+      "path": "depth_anything/blocks.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38dbcfeffc0c38ef51bcb20dfd347e50b2a60616",
+      "size": 4009,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/38dbcfeffc0c38ef51bcb20dfd347e50b2a60616"
+    },
+    {
+      "path": "depth_anything/dpt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56b9545cb2cd787bb9e1c5a85cb6001f038f50b4",
+      "size": 6673,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/56b9545cb2cd787bb9e1c5a85cb6001f038f50b4"
+    },
+    {
+      "path": "depth_anything/util",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fc676760734aaf2fb1298fd5ee6519c3157972a6",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/fc676760734aaf2fb1298fd5ee6519c3157972a6"
+    },
+    {
+      "path": "depth_anything/util/transform.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7beab14a9a1e18a8e46e7666fe5bdec223074155",
+      "size": 8572,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/7beab14a9a1e18a8e46e7666fe5bdec223074155"
+    },
+    {
+      "path": "gallery.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43b35b09e32d6e59b41df41c4a9d8582c1705804",
+      "size": 5373,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/43b35b09e32d6e59b41df41c4a9d8582c1705804"
+    },
+    {
+      "path": "metric_depth",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "26fe1ec26d75ed237836918a18191f156bf35b7f",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/26fe1ec26d75ed237836918a18191f156bf35b7f"
+    },
+    {
+      "path": "metric_depth/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "323d2a0a9d5809c934148e251fbb5412bed192be",
+      "size": 3736,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/323d2a0a9d5809c934148e251fbb5412bed192be"
+    },
+    {
+      "path": "metric_depth/depth_to_pointcloud.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33b263a61e3b09d1b57ddf83041d2eab68790a3c",
+      "size": 3463,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/33b263a61e3b09d1b57ddf83041d2eab68790a3c"
+    },
+    {
+      "path": "metric_depth/environment.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60d27771ee57eb447fc568af916b67d5583e4577",
+      "size": 455,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/60d27771ee57eb447fc568af916b67d5583e4577"
+    },
+    {
+      "path": "metric_depth/evaluate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34926303b14092a00f8c0bdb3f7969b47d8357f0",
+      "size": 6478,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/34926303b14092a00f8c0bdb3f7969b47d8357f0"
+    },
+    {
+      "path": "metric_depth/point_cloud_on_trackbar.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8591ba2d923f270d8fb98c7272a63dca5217ead",
+      "size": 7324,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/b8591ba2d923f270d8fb98c7272a63dca5217ead"
+    },
+    {
+      "path": "metric_depth/train_mix.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03256ed612e73a6cd9c9aaee0ef7c7ccd5b7d791",
+      "size": 5731,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/03256ed612e73a6cd9c9aaee0ef7c7ccd5b7d791"
+    },
+    {
+      "path": "metric_depth/train_mono.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f9b7a8dc8de8f0c2c944c3ed543b1482757c677",
+      "size": 5705,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/4f9b7a8dc8de8f0c2c944c3ed543b1482757c677"
+    },
+    {
+      "path": "metric_depth/train_test_inputs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8ccc33400556eb2af68beaec0dbdc6d3ad1960d7",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/8ccc33400556eb2af68beaec0dbdc6d3ad1960d7"
+    },
+    {
+      "path": "metric_depth/train_test_inputs/kitti_eigen_test_files_with_gt.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "575b66115c160f6c9df37a206ac8ba17e6771ccc",
+      "size": 101394,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/575b66115c160f6c9df37a206ac8ba17e6771ccc"
+    },
+    {
+      "path": "metric_depth/train_test_inputs/kitti_eigen_train_files_with_gt.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49a88e0c9cd6b37c0ecc82e599fb470ec64dc7a2",
+      "size": 3467886,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/49a88e0c9cd6b37c0ecc82e599fb470ec64dc7a2"
+    },
+    {
+      "path": "metric_depth/train_test_inputs/nyudepthv2_test_files_with_gt.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7939f5716d7147348e774b9d270dab14a068a447",
+      "size": 41047,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/7939f5716d7147348e774b9d270dab14a068a447"
+    },
+    {
+      "path": "metric_depth/train_test_inputs/nyudepthv2_train_files_with_gt.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "278b2dd04e145ed2b4063d31bc4f5346164bd09d",
+      "size": 1855580,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/278b2dd04e145ed2b4063d31bc4f5346164bd09d"
+    },
+    {
+      "path": "metric_depth/zoedepth",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a6164eb640bce6d04b1659aeb7b316fe6c04d93c",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/a6164eb640bce6d04b1659aeb7b316fe6c04d93c"
+    },
+    {
+      "path": "metric_depth/zoedepth/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "86fe017384cff616732899c6fc4928f7910f04bc",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/86fe017384cff616732899c6fc4928f7910f04bc"
+    },
+    {
+      "path": "metric_depth/zoedepth/data/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f2668792389157609abb2a0846fb620e7d67eb9",
+      "size": 1154,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/5f2668792389157609abb2a0846fb620e7d67eb9"
+    },
+    {
+      "path": "metric_depth/zoedepth/data/data_mono.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80a8486f239a35331df553f490e213f9bf71e735",
+      "size": 22680,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/80a8486f239a35331df553f490e213f9bf71e735"
+    },
+    {
+      "path": "metric_depth/zoedepth/data/ddad.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "378eb33a8d7319090ae094a292ee31a53b3705d8",
+      "size": 4349,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/378eb33a8d7319090ae094a292ee31a53b3705d8"
+    },
+    {
+      "path": "metric_depth/zoedepth/data/diml_indoor_test.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f720ad9aefaee78ef4ec363dfef0f82ace850a6d",
+      "size": 4344,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/f720ad9aefaee78ef4ec363dfef0f82ace850a6d"
+    },
+    {
+      "path": "metric_depth/zoedepth/data/diml_outdoor_test.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a6569ecffb17c7e565801117217998491d1aa4d",
+      "size": 4079,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/1a6569ecffb17c7e565801117217998491d1aa4d"
+    },
+    {
+      "path": "metric_depth/zoedepth/data/diode.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1510c87116b8f70ce2e1428873a8e4da042bee23",
+      "size": 4266,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/1510c87116b8f70ce2e1428873a8e4da042bee23"
+    },
+    {
+      "path": "metric_depth/zoedepth/data/hypersim.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4334198971830200f72ea2910d03f4c7d6a43334",
+      "size": 5174,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/4334198971830200f72ea2910d03f4c7d6a43334"
+    },
+    {
+      "path": "metric_depth/zoedepth/data/ibims.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b66abfabcf4cfc617d4a60ec818780c3548d9920",
+      "size": 3229,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/b66abfabcf4cfc617d4a60ec818780c3548d9920"
+    },
+    {
+      "path": "metric_depth/zoedepth/data/preprocess.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e08cc309dc823ae6efd7cda8db9eb37130dc5499",
+      "size": 5507,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/e08cc309dc823ae6efd7cda8db9eb37130dc5499"
+    },
+    {
+      "path": "metric_depth/zoedepth/data/sun_rgbd_loader.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93f03683506350d6b61037d720a4b2c73bc37955",
+      "size": 4450,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/93f03683506350d6b61037d720a4b2c73bc37955"
+    },
+    {
+      "path": "metric_depth/zoedepth/data/transforms.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "374416dff24fb4fd55598f3946d6d6b091ddefc9",
+      "size": 15290,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/374416dff24fb4fd55598f3946d6d6b091ddefc9"
+    },
+    {
+      "path": "metric_depth/zoedepth/data/vkitti.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72a2e5a8346f6e630ede0e28d6959725af8d7e72",
+      "size": 5270,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/72a2e5a8346f6e630ede0e28d6959725af8d7e72"
+    },
+    {
+      "path": "metric_depth/zoedepth/data/vkitti2.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d591fef5ec4e0c341361286f34dc5ea8b70614a0",
+      "size": 7310,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/d591fef5ec4e0c341361286f34dc5ea8b70614a0"
+    },
+    {
+      "path": "metric_depth/zoedepth/models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c5de048d424b3c890cc045031ae3449ad83f1890",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/c5de048d424b3c890cc045031ae3449ad83f1890"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f2668792389157609abb2a0846fb620e7d67eb9",
+      "size": 1154,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/5f2668792389157609abb2a0846fb620e7d67eb9"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/base_models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "615f8f5d407114822a562edf07986e0c391addfa",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/615f8f5d407114822a562edf07986e0c391addfa"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/base_models/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f2668792389157609abb2a0846fb620e7d67eb9",
+      "size": 1154,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/5f2668792389157609abb2a0846fb620e7d67eb9"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/base_models/depth_anything.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3e6d4a426fc1a3a85fd3896d46f9b60820c161a",
+      "size": 15084,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/e3e6d4a426fc1a3a85fd3896d46f9b60820c161a"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/base_models/dpt_dinov2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "572bf98be4dd669591e3e0918137f7258ae82422",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/572bf98be4dd669591e3e0918137f7258ae82422"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/base_models/dpt_dinov2/blocks.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38dbcfeffc0c38ef51bcb20dfd347e50b2a60616",
+      "size": 4009,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/38dbcfeffc0c38ef51bcb20dfd347e50b2a60616"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/base_models/dpt_dinov2/dpt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cfb869adad61780746c6b4914567d48cd605016",
+      "size": 5653,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/4cfb869adad61780746c6b4914567d48cd605016"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/base_models/midas.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "209958ec469eae88df3ea1a0d62964c016f2245e",
+      "size": 15277,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/209958ec469eae88df3ea1a0d62964c016f2245e"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/builder.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4363d59689158912a412feb5c296b4a72bc2c608",
+      "size": 2405,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/4363d59689158912a412feb5c296b4a72bc2c608"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/depth_model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc421c108ea3928c9add62b4c190500d9bd4eda1",
+      "size": 7362,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/fc421c108ea3928c9add62b4c190500d9bd4eda1"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/layers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5fa96794f46cc94ae5e902ead95cfbcadd19b5e6",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/5fa96794f46cc94ae5e902ead95cfbcadd19b5e6"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/layers/attractor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a8efe645adea1d88a12e2ac5cc6bb2a251eef9d",
+      "size": 8693,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/2a8efe645adea1d88a12e2ac5cc6bb2a251eef9d"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/layers/dist_layers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3208405dfb78fdfc28d5765e5a6d5dbe31967a23",
+      "size": 4838,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/3208405dfb78fdfc28d5765e5a6d5dbe31967a23"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/layers/localbins_layers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f94481605c3e6958ce50e73b2eb31d9f0c07dc67",
+      "size": 6733,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/f94481605c3e6958ce50e73b2eb31d9f0c07dc67"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/layers/patch_transformer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99d9e51a06b981bae45ce7dd64eaef19a4121991",
+      "size": 4163,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/99d9e51a06b981bae45ce7dd64eaef19a4121991"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/model_io.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78b6579631dd847ac76651238cb5a948b5a66286",
+      "size": 3438,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/78b6579631dd847ac76651238cb5a948b5a66286"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/zoedepth",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1d3de88e2f7da367476c8367e8430a6c67f2c3ea",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/1d3de88e2f7da367476c8367e8430a6c67f2c3ea"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/zoedepth/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc33f737d238766559f0e3a8def3c0b568f23b7f",
+      "size": 1270,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/cc33f737d238766559f0e3a8def3c0b568f23b7f"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/zoedepth/config_zoedepth.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7135e333c980ee30995882abd15777792163032",
+      "size": 1738,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/d7135e333c980ee30995882abd15777792163032"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/zoedepth/config_zoedepth_kitti.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b51802aa44b91c39e15aacaac4b5ab6bec884414",
+      "size": 556,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/b51802aa44b91c39e15aacaac4b5ab6bec884414"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/zoedepth/zoedepth_v1.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "810203d8aa9166375f2b46da71d87217a13f840d",
+      "size": 13416,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/810203d8aa9166375f2b46da71d87217a13f840d"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/zoedepth_nk",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "02dc6a7d55564ea08c581eb73e38fdecd1d1b141",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/02dc6a7d55564ea08c581eb73e38fdecd1d1b141"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/zoedepth_nk/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "513a278b939c10c010e3c0250ec73544d5663886",
+      "size": 1276,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/513a278b939c10c010e3c0250ec73544d5663886"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/zoedepth_nk/config_zoedepth_nk.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff1e15fbc35a71b2c67feef5e6af90c80cb67ba3",
+      "size": 1971,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/ff1e15fbc35a71b2c67feef5e6af90c80cb67ba3"
+    },
+    {
+      "path": "metric_depth/zoedepth/models/zoedepth_nk/zoedepth_nk_v1.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be13ce3e2077d729679b84fcab189c019603ad3b",
+      "size": 16863,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/be13ce3e2077d729679b84fcab189c019603ad3b"
+    },
+    {
+      "path": "metric_depth/zoedepth/trainers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0671bf813d4289f5d94b1acdf8f7626a7a133fb8",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/0671bf813d4289f5d94b1acdf8f7626a7a133fb8"
+    },
+    {
+      "path": "metric_depth/zoedepth/trainers/base_trainer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33fbbea3a7d49efe11b005adb5127f441eabfaf6",
+      "size": 14220,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/33fbbea3a7d49efe11b005adb5127f441eabfaf6"
+    },
+    {
+      "path": "metric_depth/zoedepth/trainers/builder.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a663541b08912ebedce21a68c7599ce4c06e85d0",
+      "size": 2130,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/a663541b08912ebedce21a68c7599ce4c06e85d0"
+    },
+    {
+      "path": "metric_depth/zoedepth/trainers/loss.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c5a1c15cdf5628c1474c566fdc6e58159d7f5ab",
+      "size": 11041,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/0c5a1c15cdf5628c1474c566fdc6e58159d7f5ab"
+    },
+    {
+      "path": "metric_depth/zoedepth/trainers/zoedepth_nk_trainer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d528ae126f1c51b2f25fd31f94a39591ceb2f43a",
+      "size": 6068,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/d528ae126f1c51b2f25fd31f94a39591ceb2f43a"
+    },
+    {
+      "path": "metric_depth/zoedepth/trainers/zoedepth_trainer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ac1c24c0512c1c1b191670a7c24abb4fca47ba1",
+      "size": 7465,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/3ac1c24c0512c1c1b191670a7c24abb4fca47ba1"
+    },
+    {
+      "path": "metric_depth/zoedepth/utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e69e38c7df58650444f468d24d9268c21a3489a7",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/e69e38c7df58650444f468d24d9268c21a3489a7"
+    },
+    {
+      "path": "metric_depth/zoedepth/utils/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f2668792389157609abb2a0846fb620e7d67eb9",
+      "size": 1154,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/5f2668792389157609abb2a0846fb620e7d67eb9"
+    },
+    {
+      "path": "metric_depth/zoedepth/utils/arg_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a3004ec3679c0a40fd8961253733fb4343ad545",
+      "size": 624,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/8a3004ec3679c0a40fd8961253733fb4343ad545"
+    },
+    {
+      "path": "metric_depth/zoedepth/utils/config.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a411e63b442e994ab74d38539c459685ae4f934",
+      "size": 16007,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/2a411e63b442e994ab74d38539c459685ae4f934"
+    },
+    {
+      "path": "metric_depth/zoedepth/utils/easydict",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c6d7f36706187d2222377118bd1183adcb909e10",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/c6d7f36706187d2222377118bd1183adcb909e10"
+    },
+    {
+      "path": "metric_depth/zoedepth/utils/easydict/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15928179b0182c6045d98bc0a7be1c6ca45f675e",
+      "size": 3426,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/15928179b0182c6045d98bc0a7be1c6ca45f675e"
+    },
+    {
+      "path": "metric_depth/zoedepth/utils/geometry.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3da8c75b5a8e39b4b58a4dcd827b84d79b9115c",
+      "size": 3734,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/e3da8c75b5a8e39b4b58a4dcd827b84d79b9115c"
+    },
+    {
+      "path": "metric_depth/zoedepth/utils/misc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4bbe403d3669829eecdf658458c76aa5e87e2b33",
+      "size": 13104,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/4bbe403d3669829eecdf658458c76aa5e87e2b33"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4044895e48636dce2f382aa12f5a65d1dbb4aef0",
+      "size": 81,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/4044895e48636dce2f382aa12f5a65d1dbb4aef0"
+    },
+    {
+      "path": "run.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06c7716b6f135e9c9f4862a325d86842b1734119",
+      "size": 4347,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/06c7716b6f135e9c9f4862a325d86842b1734119"
+    },
+    {
+      "path": "run_video.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16edb66248c8b1cc505c7312318ee87b19f57b20",
+      "size": 3665,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/16edb66248c8b1cc505c7312318ee87b19f57b20"
+    },
+    {
+      "path": "semseg",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e8f2810f45d9ea03be4d51d277ee778c3e0af5dc",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/e8f2810f45d9ea03be4d51d277ee778c3e0af5dc"
+    },
+    {
+      "path": "semseg/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb6beec232d30f9f729c3b5804b5fb43a3404f2b",
+      "size": 2434,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/bb6beec232d30f9f729c3b5804b5fb43a3404f2b"
+    },
+    {
+      "path": "semseg/config",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d8c6a36e8805d09bd55e6d86e28681a1c48bd3ee",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/d8c6a36e8805d09bd55e6d86e28681a1c48bd3ee"
+    },
+    {
+      "path": "semseg/config/depth_anything",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "99b7548a1af64f57f2f56211974bcec29faaf3aa",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/99b7548a1af64f57f2f56211974bcec29faaf3aa"
+    },
+    {
+      "path": "semseg/config/depth_anything/depth_anything_large_mask2former_16xb1_160k_ade20k_896x896.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5bc733c43a384a96d5ed7dcc73f7e04ab25b6b64",
+      "size": 8297,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/5bc733c43a384a96d5ed7dcc73f7e04ab25b6b64"
+    },
+    {
+      "path": "semseg/config/depth_anything/depth_anything_large_mask2former_16xb1_80k_cityscapes_896x896.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "614daddfa55e5d4e6b1dbfa0d4fab4c450ab75d6",
+      "size": 7968,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/614daddfa55e5d4e6b1dbfa0d4fab4c450ab75d6"
+    },
+    {
+      "path": "semseg/config/depth_anything/depth_anything_large_mask2former_16xb1_80k_cityscapes_896x896_ms.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ae5de1ae482c35c234d3b979707da93d3407e7d",
+      "size": 8695,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/8ae5de1ae482c35c234d3b979707da93d3407e7d"
+    },
+    {
+      "path": "semseg/dinov2.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "047a4e0d22b84b00c2059e376f7d461c88c638c1",
+      "size": 1425,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/047a4e0d22b84b00c2059e376f7d461c88c638c1"
+    },
+    {
+      "path": "torchhub",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f90c202a1c1cfedbf87b3dd0ddfe772aa1731f55",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/f90c202a1c1cfedbf87b3dd0ddfe772aa1731f55"
+    },
+    {
+      "path": "torchhub/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eade757c3b0a25c350ba6bf3b5d2e6f048ad1de6",
+      "size": 113,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/eade757c3b0a25c350ba6bf3b5d2e6f048ad1de6"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d762abf13f2c8fb2c8ae9d4d9d25245d49a96845",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/d762abf13f2c8fb2c8ae9d4d9d25245d49a96845"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/CODE_OF_CONDUCT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3232ed665566ec047ce55a929db1581dbda266a1",
+      "size": 3537,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/3232ed665566ec047ce55a929db1581dbda266a1"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afc89823fc90b920f0758f50e4d808df6a884a34",
+      "size": 1239,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/afc89823fc90b920f0758f50e4d808df6a884a34"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a115f899f8d09ef3b1def4a16c7bae1a0bd50fbe",
+      "size": 19334,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/a115f899f8d09ef3b1def4a16c7bae1a0bd50fbe"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/MODEL_CARD.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cd35748eb3c5d8f607f83ff068367a0102117c5",
+      "size": 6641,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/5cd35748eb3c5d8f607f83ff068367a0102117c5"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96453e567dee10148be83b5e92d91f347f8521d5",
+      "size": 11072,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/96453e567dee10148be83b5e92d91f347f8521d5"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/conda.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35dfc30adc275da51b58ff2340dd1d53d2cb9250",
+      "size": 436,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/35dfc30adc275da51b58ff2340dd1d53d2cb9250"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1367aa6a61c9931064bcfa60e9424b53c1f343a1",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/1367aa6a61c9931064bcfa60e9424b53c1f343a1"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b4afb514783786adf76744f9b97f3e1db1d6081",
+      "size": 221,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/5b4afb514783786adf76744f9b97f3e1db1d6081"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/configs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "348e3e0965111262a855cef4df42af7ca1a7c7f7",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/348e3e0965111262a855cef4df42af7ca1a7c7f7"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/configs/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "033c35660450afec6612adb342c7c30e1ccd15ee",
+      "size": 684,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/033c35660450afec6612adb342c7c30e1ccd15ee"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/configs/eval",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a3ded87f270d69c94e0d66604288da75271602ee",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/a3ded87f270d69c94e0d66604288da75271602ee"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/configs/eval/vitb14_pretrain.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "117d0f027ca26cd8ce6c010bb78d5a8fac42c70e",
+      "size": 151,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/117d0f027ca26cd8ce6c010bb78d5a8fac42c70e"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/configs/eval/vitg14_pretrain.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a96dd5b117b4d59ee210b65037821f1b3e3f16e3",
+      "size": 178,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/a96dd5b117b4d59ee210b65037821f1b3e3f16e3"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/configs/eval/vitl14_pretrain.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a984548bd034f762d455419d7193917fa462dd8",
+      "size": 152,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/7a984548bd034f762d455419d7193917fa462dd8"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/configs/eval/vits14_pretrain.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afbdb4ba14f1c97130a25b579360f4d817cda495",
+      "size": 152,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/afbdb4ba14f1c97130a25b579360f4d817cda495"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/configs/ssl_default_config.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4ef04545ce9d6cc52b5179236008adc8a9bbda2",
+      "size": 2568,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/a4ef04545ce9d6cc52b5179236008adc8a9bbda2"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/configs/train",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9af74bf9ac182b5c0fdef6ecb3f1eff6517e790d",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/9af74bf9ac182b5c0fdef6ecb3f1eff6517e790d"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/configs/train/vitg14.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d05cf0d59e07ac6e4a2b0f9bdcb6131d7c508962",
+      "size": 528,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/d05cf0d59e07ac6e4a2b0f9bdcb6131d7c508962"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/configs/train/vitl14.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9b491dcc6a522c71328fc2933dd0501123c8f6b",
+      "size": 527,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/d9b491dcc6a522c71328fc2933dd0501123c8f6b"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/configs/train/vitl16_short.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e7e72864c92175a1354142ac1d64da8070d1e5e",
+      "size": 137,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/3e7e72864c92175a1354142ac1d64da8070d1e5e"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fc5716ae65c41825aa1d1141f373162f171c9ba8",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/fc5716ae65c41825aa1d1141f373162f171c9ba8"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/data/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "357db5c542c5810391ba2bd45a60c13c01c3737a",
+      "size": 444,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/357db5c542c5810391ba2bd45a60c13c01c3737a"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/data/adapters.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7dcbc68e046f03460d5867f1388d5380d9c6f603",
+      "size": 892,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/7dcbc68e046f03460d5867f1388d5380d9c6f603"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/data/augmentations.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ca28cb59a4de2566a6c9ef9c301cbbb4e54b5ee",
+      "size": 3980,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/7ca28cb59a4de2566a6c9ef9c301cbbb4e54b5ee"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/data/collate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f0d98906808ed326dff4486d95b3ec04f8a5e75",
+      "size": 2001,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/9f0d98906808ed326dff4486d95b3ec04f8a5e75"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/data/datasets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "649ff7a19e7cae52b949f847ab339c96a1aaf80c",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/649ff7a19e7cae52b949f847ab339c96a1aaf80c"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/data/datasets/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b537aee8fe31d7e0fa06713d2cfe9233ff0ef60",
+      "size": 270,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/7b537aee8fe31d7e0fa06713d2cfe9233ff0ef60"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/data/datasets/decoders.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "548720b3b9959b4949f71fb2dd5cf6af3d184066",
+      "size": 748,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/548720b3b9959b4949f71fb2dd5cf6af3d184066"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/data/datasets/extended.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4da831e6ad275025ed55eaa490f780ecf6083f2c",
+      "size": 1227,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/4da831e6ad275025ed55eaa490f780ecf6083f2c"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/data/datasets/image_net.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e1c384cc96ceb6afeb3e555d9b3e2a2c008c5d4",
+      "size": 10834,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/1e1c384cc96ceb6afeb3e555d9b3e2a2c008c5d4"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/data/datasets/image_net_22k.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c0bfd335a68b67e02c241f39b1ae06f9fbe1dd0",
+      "size": 10244,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/2c0bfd335a68b67e02c241f39b1ae06f9fbe1dd0"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/data/loaders.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fb6f25a0a3c3251b803f48d0a515aa0b9591226",
+      "size": 6714,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/9fb6f25a0a3c3251b803f48d0a515aa0b9591226"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/data/masking.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc3c72648c3e440dcdb284366b98d2df12ad1272",
+      "size": 2948,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/dc3c72648c3e440dcdb284366b98d2df12ad1272"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/data/samplers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e356edf603a33ce2d18a388fd799694e22d1980f",
+      "size": 7648,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/e356edf603a33ce2d18a388fd799694e22d1980f"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/data/transforms.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1bc4cbd1a459a9f44314806cf9ccedea112ab14",
+      "size": 3059,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/f1bc4cbd1a459a9f44314806cf9ccedea112ab14"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/distributed",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "68d96663a941e631c4644c2aa4c74a38b6188bb2",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/68d96663a941e631c4644c2aa4c74a38b6188bb2"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/distributed/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ccd663f33d5a21ad1f9d25db7bd378ec52aeac2",
+      "size": 8579,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/4ccd663f33d5a21ad1f9d25db7bd378ec52aeac2"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/eval",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b5820f812ef587549263c1e55ba885366e5c1025",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/b5820f812ef587549263c1e55ba885366e5c1025"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/eval/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0952fcc3f57e34b3747962e9ebd6fc57aeea63fa",
+      "size": 198,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/0952fcc3f57e34b3747962e9ebd6fc57aeea63fa"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/eval/knn.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02ee261348e9871b10bfc40b7283b4f6205cba18",
+      "size": 14458,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/02ee261348e9871b10bfc40b7283b4f6205cba18"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/eval/linear.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d8202606999c0c01353904d8b02d2ff3509fef9",
+      "size": 21429,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/3d8202606999c0c01353904d8b02d2ff3509fef9"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/eval/log_regression.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e6ede2b616208cb49c7af67d58c8e6e4afb60e1",
+      "size": 15141,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/2e6ede2b616208cb49c7af67d58c8e6e4afb60e1"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/eval/metrics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80bf88da224e749dd6b3dd4b2bd90ec99eaec34e",
+      "size": 3908,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/80bf88da224e749dd6b3dd4b2bd90ec99eaec34e"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/eval/setup.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7fadc2b63b994f569c8def82a43ed08ccd15b33",
+      "size": 2072,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/e7fadc2b63b994f569c8def82a43ed08ccd15b33"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/eval/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2f7e34f41ba6a0b911023e0c5375eef21f426fa",
+      "size": 5208,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/b2f7e34f41ba6a0b911023e0c5375eef21f426fa"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/fsdp",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "04c5f3c08da0a94d0784f5038cefbde9a3269171",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/04c5f3c08da0a94d0784f5038cefbde9a3269171"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/fsdp/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71d20397611619e6a02ea07f5305d650ffef2a51",
+      "size": 5118,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/71d20397611619e6a02ea07f5305d650ffef2a51"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/layers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "062961c4a1a9559e15c1f24785ce3cab1f05e151",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/062961c4a1a9559e15c1f24785ce3cab1f05e151"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/layers/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31f196aacac5be8a7c537a3dfa8f97084671b466",
+      "size": 414,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/31f196aacac5be8a7c537a3dfa8f97084671b466"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/layers/attention.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f9b0c94b40967dfdff4f261c127cbd21328c905",
+      "size": 2334,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/1f9b0c94b40967dfdff4f261c127cbd21328c905"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/layers/block.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25488f57cc0ad3c692f86b62555f6668e2a66db1",
+      "size": 9332,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/25488f57cc0ad3c692f86b62555f6668e2a66db1"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/layers/dino_head.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7212db92a4fd8d4c7230e284e551a0234e9d8623",
+      "size": 2010,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/7212db92a4fd8d4c7230e284e551a0234e9d8623"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/layers/drop_path.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af05625984dd14682cc96a63bf0c97bab1f123b1",
+      "size": 1160,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/af05625984dd14682cc96a63bf0c97bab1f123b1"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/layers/layer_scale.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca5daa52bd81d3581adeb2198ea5b7dba2a3aea1",
+      "size": 823,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/ca5daa52bd81d3581adeb2198ea5b7dba2a3aea1"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/layers/mlp.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e4b315f972f9a9f54aef1e4ef4e81b52976f018",
+      "size": 1272,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/5e4b315f972f9a9f54aef1e4ef4e81b52976f018"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/layers/patch_embed.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "574abe41175568d700a389b8b96d1ba554914779",
+      "size": 2832,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/574abe41175568d700a389b8b96d1ba554914779"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3324b266fb0a50ccf8c3a0ede2ae10ac4dfa03e",
+      "size": 1859,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/b3324b266fb0a50ccf8c3a0ede2ae10ac4dfa03e"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/logging",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "76b75a276949ff39a2c5835f2ce0bea01a3079d1",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/76b75a276949ff39a2c5835f2ce0bea01a3079d1"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/logging/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e80dadb2d57056e9f6f4989cd24a3c7e26fee23f",
+      "size": 3287,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/e80dadb2d57056e9f6f4989cd24a3c7e26fee23f"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/logging/helpers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16d643500d2ee10ffea5916aad07f9b9d7c0af6d",
+      "size": 6223,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/16d643500d2ee10ffea5916aad07f9b9d7c0af6d"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/loss",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "37c7ad0eee5b26e21b82c18612f80e79018d39b0",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/37c7ad0eee5b26e21b82c18612f80e79018d39b0"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/loss/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "477b71b28259bf97b806df3f3d2f392dded866d6",
+      "size": 317,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/477b71b28259bf97b806df3f3d2f392dded866d6"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/loss/dino_clstoken_loss.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f33897efb1084e6c1c14ae00bc93ab332c61074",
+      "size": 3650,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/2f33897efb1084e6c1c14ae00bc93ab332c61074"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/loss/ibot_patch_loss.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16bc5cf634d661f1fa337304273f60dcd43c79c3",
+      "size": 5721,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/16bc5cf634d661f1fa337304273f60dcd43c79c3"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/loss/koleo_loss.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e776d0426bb029cf48f25b0c94077720bc8421c4",
+      "size": 1611,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/e776d0426bb029cf48f25b0c94077720bc8421c4"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bfcf2c5ef345f4bd58670cc79f308a9b0466633c",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/bfcf2c5ef345f4bd58670cc79f308a9b0466633c"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/models/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e5a1f3832464f898752e57e865760e9864613cb",
+      "size": 1313,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/5e5a1f3832464f898752e57e865760e9864613cb"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/models/vision_transformer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18e159a986336af813c8f0e505b946f42cd83e47",
+      "size": 12689,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/18e159a986336af813c8f0e505b946f42cd83e47"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/run",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "908427797c6ca2ae814910d4036de0b94a58c974",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/908427797c6ca2ae814910d4036de0b94a58c974"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/run/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0952fcc3f57e34b3747962e9ebd6fc57aeea63fa",
+      "size": 198,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/0952fcc3f57e34b3747962e9ebd6fc57aeea63fa"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/run/eval",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "54ebf431b0a6d103400de59b9652af2ef739db43",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/54ebf431b0a6d103400de59b9652af2ef739db43"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/run/eval/knn.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15d674b78b0629aa0f041c2426c894925469a0e8",
+      "size": 1663,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/15d674b78b0629aa0f041c2426c894925469a0e8"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/run/eval/linear.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8c264762ac6bb82a3622c74e1e683ea5c6be437",
+      "size": 1692,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/f8c264762ac6bb82a3622c74e1e683ea5c6be437"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/run/eval/log_regression.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d3d5a5742792fc8d4ca3b39c15c47e8aa349bc7",
+      "size": 1758,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/9d3d5a5742792fc8d4ca3b39c15c47e8aa349bc7"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/run/submit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68140f3d6d93dc67ccd7c45fe712eb15483d1ad6",
+      "size": 3307,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/68140f3d6d93dc67ccd7c45fe712eb15483d1ad6"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/run/train",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "75c683f2e4b9a9af99b0f3daec95d6dcc302dfcb",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/75c683f2e4b9a9af99b0f3daec95d6dcc302dfcb"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/run/train/train.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24716f2a314820a4cc15289fe0cb13ad52cf343c",
+      "size": 1668,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/24716f2a314820a4cc15289fe0cb13ad52cf343c"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/train",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "532a1f030b309a8ce74448720583ba4f537203e4",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/532a1f030b309a8ce74448720583ba4f537203e4"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/train/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0b66d17aa547ed5560e75a03f5c1587da2d4fd7",
+      "size": 279,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/b0b66d17aa547ed5560e75a03f5c1587da2d4fd7"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/train/ssl_meta_arch.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86d0c2413f9abc61953d0e12b43a5a843d97d244",
+      "size": 18688,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/86d0c2413f9abc61953d0e12b43a5a843d97d244"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/train/train.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5279b9c4317e56b5c0a9c39f7bf9bf56b04a1f8b",
+      "size": 10684,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/5279b9c4317e56b5c0a9c39f7bf9bf56b04a1f8b"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b481ba48e125eb190678cf9073cb33167bdbb3d5",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/b481ba48e125eb190678cf9073cb33167bdbb3d5"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/utils/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0952fcc3f57e34b3747962e9ebd6fc57aeea63fa",
+      "size": 198,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/0952fcc3f57e34b3747962e9ebd6fc57aeea63fa"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/utils/cluster.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d98c05d68aa6e9dc165df3db06bd70d999b3fda",
+      "size": 3013,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/8d98c05d68aa6e9dc165df3db06bd70d999b3fda"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/utils/config.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3763a8b0808ad45cbbfc1dcb00d52b00113f9ad",
+      "size": 2214,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/c3763a8b0808ad45cbbfc1dcb00d52b00113f9ad"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/utils/dtype.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cef122b25ff3533e004799a1d977f63eb213fee0",
+      "size": 1107,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/cef122b25ff3533e004799a1d977f63eb213fee0"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/utils/param_groups.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d707e70cc11591858d4166410d6ed80621cd49ff",
+      "size": 3585,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/d707e70cc11591858d4166410d6ed80621cd49ff"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/dinov2/utils/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53e63eb427f6d5396c8dc153ab07e825c72b68b4",
+      "size": 3243,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/53e63eb427f6d5396c8dc153ab07e825c72b68b4"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/hubconf.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b36b42cd2136182ea956d8be785cf492418163d8",
+      "size": 5285,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/b36b42cd2136182ea956d8be785cf492418163d8"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da67abd8ceabe6d427a96e5d9d4f04b25aebcd32",
+      "size": 417,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/da67abd8ceabe6d427a96e5d9d4f04b25aebcd32"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/requirements-dev.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cad34c34cde3a182b616d68b168588827eb9b7c",
+      "size": 43,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/5cad34c34cde3a182b616d68b168588827eb9b7c"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04c159c443b89330ff3c84257c41b011f9791257",
+      "size": 213,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/04c159c443b89330ff3c84257c41b011f9791257"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a53c2de4943de3ad2119a35a62e08e0b12b1be9c",
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/a53c2de4943de3ad2119a35a62e08e0b12b1be9c"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/scripts/lint.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b91acaf762c4be3a0c9d2a162210bfebfaacba08",
+      "size": 303,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/b91acaf762c4be3a0c9d2a162210bfebfaacba08"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/setup.cfg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cac0c045434cde205eebe91fd5a2c35a1226b4b",
+      "size": 112,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/3cac0c045434cde205eebe91fd5a2c35a1226b4b"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/setup.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "001987cfeef6c5fe3469ea09cd4698352fa90939",
+      "size": 2627,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/001987cfeef6c5fe3469ea09cd4698352fa90939"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c6641404093652d5a2f19b4cf283d976ec39e64",
+      "size": 1260,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/9c6641404093652d5a2f19b4cf283d976ec39e64"
+    },
+    {
+      "path": "torchhub/facebookresearch_dinov2_main/vision_transformer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "121318f9c77a69a4467888cce44e49549e9954c0",
+      "size": 14712,
+      "url": "https://api.github.com/repos/LiheYoung/Depth-Anything/git/blobs/121318f9c77a69a4467888cce44e49549e9954c0"
+    }
+  ],
+  "truncated": false
+}

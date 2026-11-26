@@ -1,0 +1,79 @@
+{
+  "created_at": "2026-11-26T15:32:12.822430+00:00",
+  "num_images": 771,
+  "metrics": {
+    "abs_rel": 0.2678724206100358,
+    "delta1": 0.7536446312872283
+  },
+  "valid_pixels": 527773509,
+  "nonpositive_predictions": 242811,
+  "subset": "all",
+  "full_requested_split": true,
+  "full_validation_split": true,
+  "by_domain": {
+    "indoors": {
+      "num_images": 325,
+      "metrics": {
+        "abs_rel": 0.057393578895084556,
+        "delta1": 0.9557522894205296
+      },
+      "valid_pixels": 253024007,
+      "nonpositive_predictions": 79411
+    },
+    "outdoor": {
+      "num_images": 446,
+      "metrics": {
+        "abs_rel": 0.42124825818259,
+        "delta1": 0.6063688714367282
+      },
+      "valid_pixels": 274749502,
+      "nonpositive_predictions": 163400
+    }
+  },
+  "paper_table": 2,
+  "paper_reference": {
+    "abs_rel": 0.066,
+    "delta1": 0.952
+  },
+  "paper_comparison_scope": "Published DIODE aggregate; domain/subset runs are diagnostic",
+  "difference_from_paper": {
+    "abs_rel": 0.2018724206100358,
+    "delta1": -0.1983553687127717
+  },
+  "protocol": {
+    "name": "native-mask-disparity",
+    "dataset": "DIODE",
+    "split": "native validation",
+    "encoder": "vitl",
+    "checkpoint_sha256": "6fda5199f0043e91e1c6117df00313db57c630d8ed0306070b43da1ecfffbd9d",
+    "input": "RGB float32/255, short side >=518, aspect preserved, multiple14, ImageNet norm",
+    "interpolation": "OpenCV cubic input; bilinear align_corners=False prediction",
+    "precision": "float32 inference; float64 affine fit and scoring",
+    "flip_augmentation": false,
+    "evaluation_mask": "provided mask > 0, finite mask and depth, depth > 0; full frame",
+    "depth_cap": null,
+    "prediction_clipping": null,
+    "alignment": "per-image least squares scale and shift to reciprocal GT on evaluation mask",
+    "metrics_space": "disparity",
+    "nonpositive_delta1": "count as failure; keep GT mask",
+    "aggregation": "unweighted mean of per-image metrics; no skipped images",
+    "source": "https://github.com/LiheYoung/Depth-Anything/issues/174",
+    "paper_protocol_fully_confirmed": false,
+    "unconfirmed_details": [
+      "exact paper split/manifest",
+      "depth caps and clipping",
+      "TTA"
+    ]
+  },
+  "manifest_sha256": "927447496fac9c5d496f4c600951c0a481c4de5b35f2940c01e33c59d46a4cb2",
+  "prediction_cache": "D:\\Code\\Master\\Depth-Anything\\.cache\\diode-relative\\vitl-61fe1a680036f14d",
+  "cache_hits": 771,
+  "environment": {
+    "torch": "2.4.0+cu121",
+    "cuda": "12.1",
+    "numpy": "1.26.4",
+    "opencv": "4.11.0",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU"
+  }
+}

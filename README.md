@@ -122,6 +122,46 @@ Note that in this locally loading manner, you also do not have to install the ``
 </details>
 
 
+## Thực nghiệm 1 trên DIODE
+
+Chạy từ repo root bằng môi trường đã cài dependencies:
+
+```powershell
+.venv\Scripts\python.exe thuc_nghiem_1_relative_depth.py --dataset diode --encoder vitl --data-audit results/diode-relative/audit/official-archive-verification.json
+```
+
+- [Notebook riêng cho DIODE](thuc_nghiem_1_diode_relative_depth.ipynb), hoặc cell DIODE trong [notebook thực nghiệm 1](thuc_nghiem_1_relative_depth.ipynb).
+- 771 ảnh native validation: 325 `indoors` + 446 `outdoor`; mask chính thức, fit/chấm disparity, không crop/depth cap. JSON, CSV và manifest lưu tại `results/diode-relative/`; prediction cache tại `.cache/diode-relative/`.
+- Chẩn đoán: thêm `--subset indoors` / `--subset outdoor` hoặc `--limit 8`; `--flip` tạo kết quả TTA riêng. Evaluator đầy đủ: `python evaluate_diode_relative.py --help`.
+- Đã chạy đủ 771 ảnh, ViT-L no-flip: **AbsRel 0.267872, δ₁ 0.753645**. Kết quả này chưa khớp paper; xem phân tích từng miền và protocol.
+- [Rà soát nguồn dữ liệu, nhãn và fresh rerun](docs/diode-audit.md): 2.313 file trùng bản chính thức; dùng `--data-audit` và `--refresh-cache` khi cần xác minh/chạy mới.
+- [Protocol, kết quả và giới hạn đối chiếu paper](docs/diode-relative-depth.md). Mốc ViT-L Table 2 là **0.066 / 0.952**; protocol DIODE chi tiết của paper chưa được xác nhận đầy đủ.
+
+## Tái hiện paper trên NYUv2
+
+| Thực nghiệm | Bảng CVPR | Các chỉ số tham chiếu của Depth Anything ViT-L | Cách chạy |
+|---|---|---|---|
+| Zero-shot relative depth | Table 2 | AbsRel **0.043**, δ₁ **0.981** | `python thuc_nghiem_1_relative_depth.py --dataset nyuv2 --encoder vitl` |
+| **In-domain metric depth** | **Table 3** | **δ₁ 0.984, δ₂ 0.998, δ₃ 1.000, AbsRel 0.056, RMSE 0.206 m, log10 0.024** | `python evaluate_nyuv2_metric.py` |
+
+**Kết quả metric đã đo, 654 ảnh:** δ₁ 0.983554, δ₂ 0.998000, δ₃ 0.999611, AbsRel 0.055980, RMSE 0.206143 m, log10 0.024387. Đây là số thực đo; hàng trong bảng trên là mốc paper.
+
+Dùng Python của `.venv`, ví dụ trên Windows:
+
+```powershell
+.\.venv\Scripts\python.exe evaluate_nyuv2_metric.py
+```
+
+- [Notebook thực nghiệm 1: relative depth](thuc_nghiem_1_relative_depth.ipynb)
+- [Notebook thực nghiệm 2: metric depth trên NYUv2](thuc_nghiem_2_nyuv2_metric_depth.ipynb)
+- [Toàn bộ phạm vi, protocol và trạng thái các thực nghiệm NYUv2](docs/nyuv2-experiments.md)
+- [Kết quả metric depth](results/nyuv2-metric/indoor-flip-summary.json) và [CSV từng ảnh](results/nyuv2-metric/indoor-flip-per-image.csv)
+
+Metric depth dùng checkpoint `depth_anything_metric_depth_indoor.pt` đã fine-tune trên NYUv2,
+dự đoán trực tiếp theo **mét**, không fit scale/shift với ground truth. Lệnh trên đánh giá
+checkpoint công bố; không huấn luyện lại. Nó đọc `.mat` đã có, mô phỏng chuẩn bị dữ liệu BTS trong bộ nhớ và lưu cache,
+không cần xuất lại hàng trăm ảnh PNG. Cấu hình relative depth trước đó được giữ nguyên.
+
 ## Usage 
 
 ### Installation
