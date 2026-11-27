@@ -1,0 +1,38 @@
+{
+  "domain": "indoor",
+  "images": 325,
+  "expected_images": 325,
+  "checkpoint": "depth_anything_metric_depth_indoor.pt",
+  "checkpoint_sha256": "e25a96605a2ea2dbbe57308d024e89a803fa87fe981bd51d4cee245f1de57977",
+  "encoder_sha256": "6fda5199f0043e91e1c6117df00313db57c630d8ed0306070b43da1ecfffbd9d",
+  "device": "cuda",
+  "protocol": {
+    "units": "meters",
+    "flip": true,
+    "affine_alignment": false,
+    "loader_rgb_short_side": 480,
+    "model_input_shape": [
+      392,
+      518
+    ],
+    "output_resize": "bilinear align_corners=True",
+    "crop": "Eigen",
+    "depth_range_m": [
+      0.001,
+      10
+    ],
+    "primary_mask": "Released evaluator crop and GT depth bounds",
+    "secondary_mask": "Primary mask intersected with DIODE sensor validity",
+    "aggregation": "mean of per-image metrics"
+  },
+  "released": {
+    "abs_rel": 0.3249508718917003,
+    "delta1": 0.3026339690727539
+  },
+  "sensor_mask": {
+    "abs_rel": 0.3129559204096978,
+    "delta1": 0.3026879246020986
+  },
+  "paper_table5": null,
+  "full_domain": true
+}

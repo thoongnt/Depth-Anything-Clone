@@ -1,0 +1,107 @@
+{
+  "mode": "mask-vitb",
+  "encoder": "vitb",
+  "checkpoint_sha256": "d25d4cf2b50e63198c42e684abb10b9d242714cec0fe3e2eb8f7da41fada25b3",
+  "paper_reference": {
+    "abs_rel": 0.069,
+    "delta1": 0.946
+  },
+  "archive": {
+    "path": ".cache\\moge-diode\\DIODE.zip",
+    "sha256": "3f3047150d309f822fc5dc68aa9a67c7eb3a1eb358c65420e85ffb36274af98a",
+    "identical_sample_ids": 771
+  },
+  "note": "Bundle scored on the stored 1024x768 grid, without a separate MoGe loader warp or depth truncation.",
+  "results": [
+    {
+      "configuration": "native-pred-native-depth-moge-mask",
+      "metric_space": "clamped-depth",
+      "subset": "all",
+      "num_images": 771,
+      "metrics": {
+        "abs_rel": 0.05874451972499648,
+        "delta1": 0.9549186989984264
+      },
+      "valid_pixels": 394531136,
+      "nonpositive_predictions": 0,
+      "native_valid_pixels": 527773509,
+      "native_overlap_fraction": 0.7475387249874264,
+      "scored_pixels_over_native": 0.7475387249874264
+    },
+    {
+      "configuration": "native-pred-native-depth-moge-mask",
+      "metric_space": "clamped-depth",
+      "subset": "indoors",
+      "num_images": 325,
+      "metrics": {
+        "abs_rel": 0.041191660005671586,
+        "delta1": 0.9740804637573952
+      },
+      "valid_pixels": 228884843,
+      "nonpositive_predictions": 0,
+      "native_valid_pixels": 253024007,
+      "native_overlap_fraction": 0.9045973372795413,
+      "scored_pixels_over_native": 0.9045973372795413
+    },
+    {
+      "configuration": "native-pred-native-depth-moge-mask",
+      "metric_space": "clamped-depth",
+      "subset": "outdoor",
+      "num_images": 446,
+      "metrics": {
+        "abs_rel": 0.07153528073123099,
+        "delta1": 0.9409555296112854
+      },
+      "valid_pixels": 165646293,
+      "nonpositive_predictions": 0,
+      "native_valid_pixels": 274749502,
+      "native_overlap_fraction": 0.6028993384672268,
+      "scored_pixels_over_native": 0.6028993384672268
+    },
+    {
+      "configuration": "native-pred-native-depth-moge-mask",
+      "metric_space": "disparity",
+      "subset": "all",
+      "num_images": 771,
+      "metrics": {
+        "abs_rel": 0.0674423862901533,
+        "delta1": 0.9507236771232334
+      },
+      "valid_pixels": 394531136,
+      "nonpositive_predictions": 271388,
+      "native_valid_pixels": 527773509,
+      "native_overlap_fraction": 0.7475387249874264,
+      "scored_pixels_over_native": 0.7475387249874264
+    },
+    {
+      "configuration": "native-pred-native-depth-moge-mask",
+      "metric_space": "disparity",
+      "subset": "indoors",
+      "num_images": 325,
+      "metrics": {
+        "abs_rel": 0.04575119930137399,
+        "delta1": 0.9715676452065546
+      },
+      "valid_pixels": 228884843,
+      "nonpositive_predictions": 169843,
+      "native_valid_pixels": 253024007,
+      "native_overlap_fraction": 0.9045973372795413,
+      "scored_pixels_over_native": 0.9045973372795413
+    },
+    {
+      "configuration": "native-pred-native-depth-moge-mask",
+      "metric_space": "disparity",
+      "subset": "outdoor",
+      "num_images": 446,
+      "metrics": {
+        "abs_rel": 0.08324874452188707,
+        "delta1": 0.9355346869279882
+      },
+      "valid_pixels": 165646293,
+      "nonpositive_predictions": 101545,
+      "native_valid_pixels": 274749502,
+      "native_overlap_fraction": 0.6028993384672268,
+      "scored_pixels_over_native": 0.6028993384672268
+    }
+  ]
+}

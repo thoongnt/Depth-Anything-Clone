@@ -1,0 +1,87 @@
+{
+  "created_at": "2026-11-27T12:12:12.697458+00:00",
+  "num_images": 771,
+  "metrics": {
+    "abs_rel": 0.2708082382304084,
+    "delta1": 0.7495086477413118
+  },
+  "valid_pixels": 527773509,
+  "nonpositive_predictions": 372241,
+  "subset": "all",
+  "full_requested_split": true,
+  "full_validation_split": true,
+  "by_domain": {
+    "indoors": {
+      "num_images": 325,
+      "metrics": {
+        "abs_rel": 0.06378567395465165,
+        "delta1": 0.9474224624140638
+      },
+      "valid_pixels": 253024007,
+      "nonpositive_predictions": 184853
+    },
+    "outdoor": {
+      "num_images": 446,
+      "metrics": {
+        "abs_rel": 0.4216654879829217,
+        "delta1": 0.605288939739867
+      },
+      "valid_pixels": 274749502,
+      "nonpositive_predictions": 187388
+    }
+  },
+  "paper_table": 2,
+  "paper_reference": {
+    "abs_rel": 0.069,
+    "delta1": 0.946
+  },
+  "paper_comparison_scope": "Published DIODE aggregate; domain/subset runs are diagnostic",
+  "difference_from_paper": {
+    "abs_rel": 0.2018082382304084,
+    "delta1": -0.1964913522586882
+  },
+  "protocol": {
+    "name": "native-mask-disparity",
+    "dataset": "DIODE",
+    "split": "native validation",
+    "encoder": "vitb",
+    "checkpoint_sha256": "d25d4cf2b50e63198c42e684abb10b9d242714cec0fe3e2eb8f7da41fada25b3",
+    "input": "RGB float32/255, short side >=518, aspect preserved, multiple14, ImageNet norm",
+    "interpolation": "OpenCV cubic input; bilinear align_corners=False prediction",
+    "precision": "float32 inference; float64 affine fit and scoring",
+    "flip_augmentation": false,
+    "evaluation_mask": "provided mask > 0, finite mask and depth, depth > 0; full frame",
+    "depth_cap": null,
+    "prediction_clipping": null,
+    "alignment": "per-image least squares scale and shift to reciprocal GT on evaluation mask",
+    "metrics_space": "disparity",
+    "nonpositive_delta1": "count as failure; keep GT mask",
+    "aggregation": "unweighted mean of per-image metrics; no skipped images",
+    "source": "https://github.com/LiheYoung/Depth-Anything/issues/174",
+    "paper_protocol_fully_confirmed": false,
+    "unconfirmed_details": [
+      "exact paper split/manifest",
+      "depth caps and clipping",
+      "TTA"
+    ]
+  },
+  "manifest_sha256": "927447496fac9c5d496f4c600951c0a481c4de5b35f2940c01e33c59d46a4cb2",
+  "prediction_cache": ".cache\\diode-followup\\native\\vitb-6d8f2418e97ca8e2",
+  "cache_hits": 0,
+  "data_integrity_verification": {
+    "verified": true,
+    "source": "https://diode-dataset.s3.amazonaws.com/val.tar.gz",
+    "archive_md5": "5c895d09201b88973c8fe4552a67dd85",
+    "files_checked": 2313,
+    "reference_report_sha256": "033481dc95082f3619c5419f0b8e2870ec04b96b7b661e4ea4c9e4978d2f7f93"
+  },
+  "refresh_cache": false,
+  "environment": {
+    "torch": "2.4.0+cu121",
+    "cuda": "12.1",
+    "numpy": "1.26.4",
+    "opencv": "4.11.0",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU"
+  }
+}

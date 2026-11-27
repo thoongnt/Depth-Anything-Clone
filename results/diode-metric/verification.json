@@ -1,0 +1,12 @@
+{
+  "unique_and_complete_images": {
+    "outdoor": 446,
+    "indoor": 325
+  },
+  "csv_aggregates_match_summary": true,
+  "table5_matches_at_3_decimals": false,
+  "outdoor_difference_from_table5": {
+    "abs_rel": 0.005440961848994452,
+    "delta1": 0.001340909046231742
+  }
+}

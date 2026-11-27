@@ -1,0 +1,29 @@
+{
+  "protocol": "Fit on intersection; score every original valid native pixel. Native RGB, GT and prediction.",
+  "results": {
+    "all": {
+      "num_images": 771,
+      "valid_pixels": 527773509,
+      "metrics": {
+        "abs_rel": 0.12654590253025272,
+        "delta1": 0.8398720994989725
+      }
+    },
+    "indoors": {
+      "num_images": 325,
+      "valid_pixels": 253024007,
+      "metrics": {
+        "abs_rel": 0.05145363162882959,
+        "delta1": 0.9539200796697324
+      }
+    },
+    "outdoor": {
+      "num_images": 446,
+      "valid_pixels": 274749502,
+      "metrics": {
+        "abs_rel": 0.1812656066624557,
+        "delta1": 0.7567653874911318
+      }
+    }
+  }
+}

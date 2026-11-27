@@ -1,0 +1,41 @@
+{
+  "domain": "outdoor",
+  "images": 446,
+  "expected_images": 446,
+  "checkpoint": "depth_anything_metric_depth_outdoor.pt",
+  "checkpoint_sha256": "50a33976a4c909bd2284395d686bd644ce06c5c1c70f870d032b0eee93bdc56e",
+  "encoder_sha256": "6fda5199f0043e91e1c6117df00313db57c630d8ed0306070b43da1ecfffbd9d",
+  "device": "cuda",
+  "protocol": {
+    "units": "meters",
+    "flip": true,
+    "affine_alignment": false,
+    "loader_rgb_short_side": 480,
+    "model_input_shape": [
+      392,
+      518
+    ],
+    "output_resize": "bilinear align_corners=True",
+    "crop": "Garg",
+    "depth_range_m": [
+      0.001,
+      80
+    ],
+    "primary_mask": "Released evaluator crop and GT depth bounds",
+    "secondary_mask": "Primary mask intersected with DIODE sensor validity",
+    "aggregation": "mean of per-image metrics"
+  },
+  "released": {
+    "abs_rel": 0.7994409618489945,
+    "delta1": 0.2893409090462317
+  },
+  "sensor_mask": {
+    "abs_rel": 0.5755339285584309,
+    "delta1": 0.2907258212537472
+  },
+  "paper_table5": {
+    "abs_rel": 0.794,
+    "delta1": 0.288
+  },
+  "full_domain": true
+}

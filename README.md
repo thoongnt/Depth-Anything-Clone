@@ -137,6 +137,26 @@ Chạy từ repo root bằng môi trường đã cài dependencies:
 - [Rà soát nguồn dữ liệu, nhãn và fresh rerun](docs/diode-audit.md): 2.313 file trùng bản chính thức; dùng `--data-audit` và `--refresh-cache` khi cần xác minh/chạy mới.
 - [Protocol, kết quả và giới hạn đối chiếu paper](docs/diode-relative-depth.md). Mốc ViT-L Table 2 là **0.066 / 0.952**; protocol DIODE chi tiết của paper chưa được xác nhận đầy đủ.
 
+### DIODE · Thực nghiệm 1 với mask MoGe
+
+[Script relative depth với mask MoGe](thuc_nghiem_1_diode_relative_depth_moge.py) chạy các cấu hình đối chứng trên DIODE Table 2. Chế độ `resolution` có cấu hình gần paper nhất đã thử, `moge-mask-short-side-392`, với **AbsRel 0.064582 / δ₁ 0.952898** trên 771 ảnh và 74,75% pixel hợp lệ gốc.
+
+```powershell
+.venv\Scripts\python.exe thuc_nghiem_1_diode_relative_depth_moge.py resolution
+```
+
+Xem [báo cáo, dữ liệu và cache cần có](docs/diode-followup.md). Thực nghiệm metric depth DIODE thuộc Table 5 và có [script riêng](evaluate_diode_metric.py) cùng [báo cáo](docs/diode-metric.md).
+
+## Thực nghiệm 1 trên ETH3D
+
+[Script relative depth ETH3D](thuc_nghiem_1_eth3d_relative_depth.py) chạy Depth Anything V1 trên 454 ảnh thuộc 13 cảnh của ETH3D High-res Multi-view. Mốc ViT-L trong Bảng 2 là **AbsRel 0.127 / δ₁ 0.882**.
+
+```powershell
+.venv\Scripts\python.exe thuc_nghiem_1_eth3d_relative_depth.py --flip --cache-predictions
+```
+
+Xem [nguồn dữ liệu, giao thức và kết quả](docs/eth3d-relative-depth.md).
+
 ## Tái hiện paper trên NYUv2
 
 | Thực nghiệm | Bảng CVPR | Các chỉ số tham chiếu của Depth Anything ViT-L | Cách chạy |

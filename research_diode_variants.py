@@ -3,11 +3,11 @@
 Full configured subsets and mask-retention counts are reported. Numbers selected
 by proximity to the paper are post-hoc exploration, not an official reproduction.
 """
+from concurrent.futures import ThreadPoolExecutor
 import argparse
 import csv
 import hashlib
 import json
-import time
 from pathlib import Path
 import numpy as np
 from evaluate_nyuv2 import align_disparity, sha256
@@ -111,22 +111,22 @@ def summarize(rows, expected, aggregation='image-mean'):
             'max_absolute_metric_gap': max(abs(metrics[k]-v) for k,v in REFERENCE.items()) if good else None}
 
 
-def run(summary_path, output_dir, wait_for_predictions=False):
+def run(summary_path, output_dir, workers=1):
     summary_path, output_dir = Path(summary_path), Path(output_dir)
     s = json.loads(summary_path.read_text(encoding='utf-8'))
-    pending = s.get('inference_pending', False)
-    if pending:
-        if not wait_for_predictions or s.get('expected_images') != 771:
-            raise ValueError('Pending inference requires explicit wait mode and 771 planned inputs')
-    elif not s['full_validation_split'] or s['num_images'] != 771:
+    if not s['full_validation_split'] or s['num_images'] != 771:
         raise ValueError('Require full 771-image prediction summary')
     if s['protocol']['encoder'] != 'vitl':
         raise ValueError('This comparison targets the ViT-L paper reference')
     flip = s['protocol']['flip_augmentation']
     tag = 'flip' if flip else 'no-flip'
     stem = 'vitl-native-all' + ('-flip' if flip else '')
-    manifest_path = Path(s['prediction_manifest']) if pending else summary_path.parent/f'{stem}-manifest.json'
+    manifest_path = summary_path.parent/f'{stem}-manifest.json'
     manifest = json.loads(manifest_path.read_text())
+    manifest_hash = hashlib.sha256(json.dumps(manifest, sort_keys=True).encode()).hexdigest()
+    if (manifest_hash != s['manifest_sha256'] or len(manifest) != 771
+            or len({sample['image'] for sample in manifest}) != 771):
+        raise ValueError('Invalid or incomplete input manifest')
     identity = {'summary_sha256': sha256(summary_path), 'source_sha256': sha256(Path(__file__)),
                 'manifest_sha256': s['manifest_sha256'], 'prediction_cache': s['prediction_cache']}
     key = hashlib.sha256(json.dumps(identity, sort_keys=True).encode()).hexdigest()[:12]
@@ -145,16 +145,11 @@ def run(summary_path, output_dir, wait_for_predictions=False):
         rows = []
         cache = Path(s['prediction_cache'])
         data = Path(s.get('protocol', {}).get('data_root', ROOT/'data/diode/val'))
-        for i, sample in enumerate(manifest):
+        def score_sample(sample):
+            sample_rows = []
             rgb = sample['files'][0]
             image_key = hashlib.sha256(json.dumps(rgb, sort_keys=True).encode()).hexdigest()[:16]
             prediction_file = cache/f'{Path(sample["image"]).stem}-{image_key}.npy'
-            if wait_for_predictions:
-                deadline = time.monotonic()+300
-                while not prediction_file.is_file():
-                    if time.monotonic() > deadline:
-                        raise TimeoutError(f'Prediction not produced: {prediction_file}')
-                    time.sleep(.5)
             pred = np.load(prediction_file, allow_pickle=False)
             depth = np.load(data/sample['files'][1]['path'], allow_pickle=False).squeeze()
             supplied = np.load(data/sample['files'][2]['path'], allow_pickle=False).squeeze()
@@ -190,12 +185,19 @@ def run(summary_path, output_dir, wait_for_predictions=False):
                         row.update(score_vectors(a, y), scale=scale, shift=shift)
                     except ValueError as error:
                         row['status'] = str(error)
-                rows.append(row)
-            if (i+1) % 25 == 0 or i == 770:
-                print(f'{tag} protocol grid: {i+1}/771 images, {len(rows)} rows', flush=True)
-        with rows_path.open('w', newline='', encoding='utf-8') as stream:
+                sample_rows.append(row)
+            return sample_rows
+
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            for i, sample_rows in enumerate(pool.map(score_sample, manifest), 1):
+                rows.extend(sample_rows)
+                if i % 25 == 0 or i == len(manifest):
+                    print(f'{tag} protocol grid: {i}/771 images, {len(rows)} rows', flush=True)
+        temporary = rows_path.with_suffix('.tmp')
+        with temporary.open('w', newline='', encoding='utf-8') as stream:
             writer = csv.DictWriter(stream, fieldnames=list(rows[0]))
             writer.writeheader(); writer.writerows(rows)
+        temporary.replace(rows_path)
     table = []
     for config in CONFIGS:
         for subset, count in [('all', 771), ('indoors', 325), ('outdoor', 446)]:
@@ -216,9 +218,9 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--summary', type=Path, nargs='+', required=True)
     parser.add_argument('--output-dir', type=Path, default=ROOT/'results/diode-relative/variants/protocol-grid')
-    parser.add_argument('--wait-for-predictions', action='store_true')
+    parser.add_argument('--workers', type=int, default=1)
     args = parser.parse_args()
-    reports = [run(p, args.output_dir, args.wait_for_predictions) for p in args.summary]
+    reports = [run(p, args.output_dir, args.workers) for p in args.summary]
     result = {'scope': reports[0]['scope'], 'paper_reference': REFERENCE,
               'configs': CONFIGS, 'results': [row for report in reports for row in report['results']]}
     args.output_dir.mkdir(parents=True, exist_ok=True)

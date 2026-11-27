@@ -1,0 +1,65 @@
+{
+  "protocol": "Native predictions, GT and original native OLS fit, with metrics decomposed by MoGe validity. The removed-region diagnostic has its own image count.",
+  "results": [
+    {
+      "subset": "all",
+      "region": "kept",
+      "num_images": 771,
+      "pixels": 394531136,
+      "metrics": {
+        "abs_rel": 0.34009581133531547,
+        "delta1": 0.7575874508817451
+      }
+    },
+    {
+      "subset": "all",
+      "region": "removed",
+      "num_images": 771,
+      "pixels": 133242373,
+      "metrics": {
+        "abs_rel": 0.31748520157432736,
+        "delta1": 0.6325146231935493
+      }
+    },
+    {
+      "subset": "indoors",
+      "region": "kept",
+      "num_images": 325,
+      "pixels": 228884843,
+      "metrics": {
+        "abs_rel": 0.04778558651804797,
+        "delta1": 0.9765999226790616
+      }
+    },
+    {
+      "subset": "indoors",
+      "region": "removed",
+      "num_images": 325,
+      "pixels": 24139164,
+      "metrics": {
+        "abs_rel": 0.1477290756551937,
+        "delta1": 0.7699010718740019
+      }
+    },
+    {
+      "subset": "outdoor",
+      "region": "kept",
+      "num_images": 446,
+      "pixels": 165646293,
+      "metrics": {
+        "abs_rel": 0.55310214107884,
+        "delta1": 0.5979931608949111
+      }
+    },
+    {
+      "subset": "outdoor",
+      "region": "removed",
+      "num_images": 446,
+      "pixels": 109103209,
+      "metrics": {
+        "abs_rel": 0.44118641440777684,
+        "delta1": 0.5324011796483767
+      }
+    }
+  ]
+}

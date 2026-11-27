@@ -7,7 +7,7 @@
    1. NYUv2   (654 ảnh test chuẩn)
    2. DIODE   (771 ảnh val chuẩn: indoor + outdoor)
    3. KITTI   (652 ảnh Eigen test split)
-   4. ETH3D   (454 ảnh test chuẩn)
+   4. ETH3D   (454 ảnh có nhãn, thuc_nghiem_1_eth3d_relative_depth.py)
    5. DDAD    (3,950 ảnh validation split)
    6. Sintel  (1,064 ảnh test/val)
 ================================================================================
@@ -16,6 +16,8 @@
 import os
 import sys
 import glob
+import json
+from pathlib import Path
 import numpy as np
 import cv2
 import torch
@@ -191,11 +193,36 @@ def run_experiment_1(encoder='vitl', data_dir='./data', checkpoint_dir='./checkp
     # 3. KITTI, 4. ETH3D, 5. DDAD, 6. Sintel
     for ds_name in ['KITTI', 'ETH3D', 'DDAD', 'Sintel']:
         bm = paper_benchmarks[ds_name]
-        results.append({
+        row = {
             'Dataset': ds_name, 'Loại môi trường': bm['type'], 'Số ảnh đã chạy': 0,
             'Our AbsRel ↓': '-', 'Paper AbsRel ↓': f"{bm['paper_abs_rel']:.4f}",
-            'Our Delta1 ↑': '-', 'Paper Delta1 ↑': f"{bm['paper_delta1']:.4f}", 'Trạng thái': 'Bỏ qua (Chưa có data)'
-        })
+            'Our Delta1 ↑': '-', 'Paper Delta1 ↑': f"{bm['paper_delta1']:.4f}",
+            'Trạng thái': 'Bỏ qua (Chưa có data)',
+        }
+        if ds_name == 'ETH3D':
+            from thuc_nghiem_1_eth3d_relative_depth import PAPER as eth3d_paper
+            paper_abs_rel, paper_delta1 = eth3d_paper[encoder]
+            row['Paper AbsRel ↓'] = f'{paper_abs_rel:.4f}'
+            row['Paper Delta1 ↑'] = f'{paper_delta1:.4f}'
+            row['Trạng thái'] = 'Xem thuc_nghiem_1_eth3d_relative_depth.py'
+            root = Path(__file__).resolve().parent / 'results/eth3d-relative'
+            for tag in (f'{encoder}-518', f'{encoder}-518-flip'):
+                path = root / f'{tag}-summary.json'
+                if not path.is_file():
+                    continue
+                saved = json.loads(path.read_text(encoding='utf-8'))
+                baseline = next((metric for metric in saved['comparisons']
+                                 if metric['images'] == 454 and metric['subset'] == 'all'
+                                 and metric['variant'] == 'no-flip' and metric['cap'] is None
+                                 and metric['space'] == 'disparity'
+                                 and metric['weighting'] == 'image'), None)
+                if baseline:
+                    row['Số ảnh đã chạy'] = baseline['images']
+                    row['Our AbsRel ↓'] = f"{baseline['abs_rel']:.4f}"
+                    row['Our Delta1 ↑'] = f"{baseline['delta1']:.4f}"
+                    row['Trạng thái'] = 'Kết quả đã lưu, MoGe 518 px'
+                    break
+        results.append(row)
 
     # BẢNG TỔNG HỢP KẾT QUẢ THỰC NGHIỆM 1
     df = pd.DataFrame(results)

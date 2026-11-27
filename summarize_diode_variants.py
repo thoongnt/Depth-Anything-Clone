@@ -72,6 +72,8 @@ Cùng checkpoint relative ViT-L và dữ liệu đã xác thực 2.313 file. Ful
                        and r['configuration'] == 'native' and r['aggregation'] == 'image-mean')
             text += f"| {flip} | {subset} | {row['num_images']} | {row['abs_rel']:.9f} | {row['delta1']:.9f} |\n"
     text += '''
+Ba cảnh outdoor đều lệch so với mốc Table 2. Với flip và cách chấm native, AbsRel từng cảnh nằm trong khoảng 0.266–0.482. [Kết quả từng scene](../results/diode-relative/variants/native-per-scene.csv).
+
 ## Gần số paper nhất theo phạm vi
 
 Xếp hạng bằng `max(|AbsRel−0.066|, |δ₁−0.952|)`, yêu cầu đủ ảnh của phạm vi đã chọn. Tỷ lệ pixel là số pixel được chấm chia tổng pixel native hợp lệ cùng phạm vi. Những dòng có ảnh mask rỗng không được xếp là đủ subset.
@@ -108,12 +110,11 @@ Mọi cấu hình giữ supplied mask DIODE và depth hữu hạn/dương. Ngư�
 - [Toàn bộ CSV](../results/diode-relative/variants/protocol-grid/comparison.csv), [JSON](../results/diode-relative/variants/protocol-grid/comparison.json), [định nghĩa cấu hình](../results/diode-relative/variants/configurations.json).
 - [Full flip summary](../results/diode-relative/variants/vitl-native-all-flip-summary.json), [CSV từng ảnh](../results/diode-relative/variants/vitl-native-all-flip-per-image.csv).
 - Thư mục `protocol-grid/no-flip-*` và `protocol-grid/flip-*` lưu CSV từng ảnh cho từng cấu hình: metric, pixel, scale/shift, trạng thái.
-- `grid-before-streaming.py` giữ source phiên bản no-flip; bản hiện tại thêm khả năng chờ prediction để chấm song song. Hàm mask/fit/metric/aggregation không đổi.
 
 ```powershell
 .venv\\Scripts\\python.exe evaluate_diode_relative.py --flip --data-audit results/diode-relative/audit/official-archive-verification.json --cache-dir .cache/diode-variants/predictions --output-dir results/diode-relative/variants
 
-.venv\\Scripts\\python.exe research_diode_variants.py --summary results/diode-relative/audit-rerun/fresh-inference-summary.json results/diode-relative/variants/vitl-native-all-flip-summary.json
+.venv\\Scripts\\python.exe research_diode_variants.py --workers 8 --summary results/diode-relative/audit-rerun/fresh-inference-summary.json results/diode-relative/variants/vitl-native-all-flip-summary.json
 ```
 
 Evaluator mặc định và kết quả NYUv2 không thay đổi. Những kết quả được chọn vì gần số đích là thăm dò sau khi biết số paper, không phải kiểm chứng độc lập protocol.
