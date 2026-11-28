@@ -1,6 +1,10 @@
-> **Rà soát DIODE (2026-11-26):** Xem [protocol và probe DIODE](diode-relative-depth.md). Validation local có 325 indoor + 446 outdoor; split/protocol chính xác của số DIODE trong Table 2 chưa được xác nhận đầy đủ.
+> **Cập nhật Table 5 — zero-shot metric depth (2026-11-28):** Xem [protocol và kết quả](table5-reproduction.md). SUN RGB-D, iBims-1 và DIODE Outdoor trùng paper ở 3 chữ số; vKITTI2 đạt 0.085 / 0.911 (seed 0), số paper nằm trong dao động theo split. SUN RGB-D của paper dùng GT bằng 0.8 × độ sâu thật.
 
-> **Cập nhật NYUv2 (2026-11-26):** Xem [protocol và kết quả đã chạy](nyuv2-reproduction.md). Benchmark relative depth là Table 2 trong PDF CVPR; dùng rawDepths, mask MiDaS và metric disparity. Một số mô tả bên dưới là ghi chú cũ, không thay thế protocol đã kiểm chứng.
+> **Cập nhật Table 2 — zero-shot relative depth (2026-11-28):** Xem [kết quả và protocol](table2-reproduction.md): NYUv2, KITTI, DIODE ĐẠT với một protocol chung cho 3 encoder; Sintel và ETH3D chưa tìm ra protocol của paper. Table 3 và Table 4 (metric in-domain) khớp 6/6 chỉ số: [Table 3](table3-reproduction.md), [Table 4](table4-reproduction.md). "Bảng 1" ở mục 2 bên dưới chính là **Table 2** trong PDF CVPR (Table 1 của PDF là danh sách dataset huấn luyện). Kết quả và tài liệu chi tiết đã chuyển vào `results/table2/` và `docs/table2/`. Đã sửa ViT-S Sintel AbsRel thành 0.464 theo PDF (trước đây ghi nhầm 0.432).
+
+> **Rà soát DIODE (2026-11-26):** Xem [protocol và probe DIODE](table2/diode-relative-depth.md). Validation local có 325 indoor + 446 outdoor; split/protocol chính xác của số DIODE trong Table 2 chưa được xác nhận đầy đủ.
+
+> **Cập nhật NYUv2 (2026-11-26):** Xem [protocol và kết quả đã chạy](table2/nyuv2-reproduction.md). Benchmark relative depth là Table 2 trong PDF CVPR; dùng rawDepths, mask MiDaS và metric disparity. Một số mô tả bên dưới là ghi chú cũ, không thay thế protocol đã kiểm chứng.
 
 # Tìm hiểu về dataset, các bảng đánh giá hiện tại và đưa ra các phương án đề xuất để chạy thực nghiệm tối ưu trên bộ dữ liệu nhỏ
 
@@ -69,7 +73,7 @@ Cách đánh giá đang được sử dụng trong bài: Vì mỗi tập dữ li
 | Method | Encoder | KITTI AbsRel↓ | KITTI δ₁↑ | NYUv2 AbsRel↓ | NYUv2 δ₁↑ | Sintel AbsRel↓ | Sintel δ₁↑ | DDAD AbsRel↓ | DDAD δ₁↑ | ETH3D AbsRel↓ | ETH3D δ₁↑ | DIODE AbsRel↓ | DIODE δ₁↑ |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | MiDaS v3.1 | ViT-L | 0.127 | 0.850 | 0.048 | 0.980 | 0.587 | 0.699 | 0.251 | 0.766 | 0.139 | 0.867 | 0.075 | 0.942 |
-| Depth Anything | ViT-S | 0.080 | 0.936 | 0.053 | 0.972 | 0.432 | 0.739 | 0.247 | 0.768 | 0.127 | 0.885 | 0.076 | 0.939 |
+| Depth Anything | ViT-S | 0.080 | 0.936 | 0.053 | 0.972 | 0.464 | 0.739 | 0.247 | 0.768 | 0.127 | 0.885 | 0.076 | 0.939 |
 | Depth Anything | ViT-B | 0.080 | 0.939 | 0.046 | 0.979 | 0.432 | 0.756 | 0.232 | 0.786 | 0.126 | 0.884 | 0.069 | 0.946 |
 | Depth Anything | ViT-L | **0.076** | **0.947** | **0.043** | **0.981** | 0.458 | 0.760 | **0.230** | **0.789** | 0.127 | 0.882 | **0.066** | **0.952** |
 

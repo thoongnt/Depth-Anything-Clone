@@ -1,0 +1,56 @@
+{
+  "dataset": "vkitti2",
+  "run": "vkitti2",
+  "overrides": {},
+  "n": 1701,
+  "variants": {
+    "base": {
+      "desc": "protocol gốc của evaluate.py",
+      "a1": 0.911,
+      "a2": 0.985,
+      "a3": 0.994,
+      "abs_rel": 0.085,
+      "rmse": 4.082,
+      "log_10": 0.039,
+      "rmse_log": 0.14,
+      "silog": 12.337,
+      "sq_rel": 0.446
+    },
+    "noflip": {
+      "desc": "không flip-TTA (chỉ 1 forward)",
+      "a1": 0.907,
+      "a2": 0.984,
+      "a3": 0.994,
+      "abs_rel": 0.087,
+      "rmse": 4.136,
+      "log_10": 0.04,
+      "rmse_log": 0.143,
+      "silog": 12.54,
+      "sq_rel": 0.458
+    },
+    "eigen_crop": {
+      "desc": "eigen crop KITTI thay cho garg crop",
+      "a1": 0.876,
+      "a2": 0.978,
+      "a3": 0.991,
+      "abs_rel": 0.099,
+      "rmse": 5.172,
+      "log_10": 0.046,
+      "rmse_log": 0.163,
+      "silog": 14.32,
+      "sq_rel": 0.673
+    },
+    "no_crop": {
+      "desc": "bỏ garg crop",
+      "a1": 0.801,
+      "a2": 0.945,
+      "a3": 0.979,
+      "abs_rel": 0.123,
+      "rmse": 7.332,
+      "log_10": 0.061,
+      "rmse_log": 0.218,
+      "silog": 19.009,
+      "sq_rel": 1.216
+    }
+  }
+}

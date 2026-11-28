@@ -1,0 +1,64 @@
+{
+  "dataset": "diode",
+  "source": "native",
+  "encoder": "vits",
+  "flip": false,
+  "images": 771,
+  "paper": {
+    "abs_rel": 0.076,
+    "delta1": 0.939
+  },
+  "seconds": 326,
+  "checkpoint_sha256": "59afe57cfd9f4284deaf5b753d954723d7136ae842fba3e068ba03537ca1e60e",
+  "protocol_fixed": "short side 518 /14 cubic, ImageNet norm, bilinear to GT, OLS on 1/GT in disparity, metrics in disparity, mean over images",
+  "grid": {
+    "crop=none,cap=None,clamp=cap": {
+      "cap": null,
+      "crop": "none",
+      "clamp": "cap",
+      "images": 771,
+      "skipped": 0,
+      "abs_rel": 0.27281787672411656,
+      "delta1": 0.7459485818577888,
+      "depth_abs_rel": 0.22162634302802234,
+      "depth_delta1": 0.7459485818577888,
+      "mean_valid_pixels": 684531.140077821
+    },
+    "crop=none,cap=None,clamp=none": {
+      "cap": null,
+      "crop": "none",
+      "clamp": "none",
+      "images": 771,
+      "skipped": 0,
+      "abs_rel": 0.2736670693594377,
+      "delta1": 0.7453371239951351,
+      "depth_abs_rel": 0.22162634302802234,
+      "depth_delta1": 0.7459485818577888,
+      "mean_valid_pixels": 684531.140077821
+    },
+    "crop=none,cap=80,clamp=cap": {
+      "cap": 80,
+      "crop": "none",
+      "clamp": "cap",
+      "images": 771,
+      "skipped": 0,
+      "abs_rel": 0.26221742408033144,
+      "delta1": 0.7470782954293125,
+      "depth_abs_rel": 0.22211810235051668,
+      "depth_delta1": 0.7470782954293125,
+      "mean_valid_pixels": 683658.1854734111
+    },
+    "crop=none,cap=80,clamp=none": {
+      "cap": 80,
+      "crop": "none",
+      "clamp": "none",
+      "images": 771,
+      "skipped": 0,
+      "abs_rel": 0.262759942474833,
+      "delta1": 0.7468016061629805,
+      "depth_abs_rel": 0.22211810235051668,
+      "depth_delta1": 0.7470782954293125,
+      "mean_valid_pixels": 683658.1854734111
+    }
+  }
+}

@@ -2,7 +2,7 @@
 
 Biến thể dùng mask MoGe và các đối chứng trên cùng 771 ảnh. Chạy chế độ
 `resolution` để tái chạy cấu hình gần paper nhất `moge-mask-short-side-392`
-(ViT-L no-flip, AbsRel 0.064582 / delta1 0.952898). Xem docs/diode-followup.md
+(ViT-L no-flip, AbsRel 0.064582 / delta1 0.952898). Xem docs/table2/diode-followup.md
 để biết lệnh, dữ liệu, cache cần có và đường dẫn kết quả.
 """
 import argparse
@@ -25,9 +25,9 @@ from evaluate_diode_relative import PAPER, aggregate, discover_samples
 from evaluate_nyuv2 import align_disparity, make_transform, sha256
 
 ROOT = Path(__file__).resolve().parent
-RESULTS = ROOT / 'results/diode-relative/followup'
+RESULTS = ROOT / 'results/table2/diode/followup'
 ARCHIVE = ROOT / '.cache/moge-diode/DIODE.zip'
-BASE = ROOT / 'results/diode-relative/audit-rerun'
+BASE = ROOT / 'results/table2/diode/audit-rerun'
 NATIVE = ROOT / 'data/diode/val'
 MODES = ('mask', 'mask-flip', 'mask-vits', 'mask-vitb', 'bundle', 'resolution')
 

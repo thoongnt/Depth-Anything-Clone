@@ -97,7 +97,7 @@ def infer_metric(model, image, flip=True):
 
 
 def evaluate_nyuv2_metric(data_dir=ROOT / 'data', checkpoint_dir=ROOT / 'checkpoints',
-                          output_dir=ROOT / 'results' / 'nyuv2-metric',
+                          output_dir=ROOT / 'results' / 'table3' / 'nyuv2',
                           cache_dir=ROOT / '.cache' / 'nyuv2-metric',
                           limit=None, flip=True, device=None):
     data_dir, checkpoint_dir = Path(data_dir), Path(checkpoint_dir)
@@ -203,7 +203,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--data-dir', type=Path, default=ROOT / 'data')
     parser.add_argument('--checkpoint-dir', type=Path, default=ROOT / 'checkpoints')
-    parser.add_argument('--output-dir', type=Path, default=ROOT / 'results' / 'nyuv2-metric')
+    parser.add_argument('--output-dir', type=Path, default=ROOT / 'results' / 'table3' / 'nyuv2')
     parser.add_argument('--cache-dir', type=Path, default=ROOT / '.cache' / 'nyuv2-metric')
     parser.add_argument('--limit', type=int, help='Diagnostic subset only, separate output filenames')
     parser.add_argument('--device', choices=['cpu', 'cuda'])

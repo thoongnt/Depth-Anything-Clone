@@ -1,0 +1,52 @@
+{
+  "created_at": "2026-11-28T04:25:51.541583+00:00",
+  "full_test_split": true,
+  "num_images": 654,
+  "metrics": {
+    "abs_rel": 0.053173988432927415,
+    "delta1": 0.9716895783943998,
+    "depth_abs_rel_diagnostic": 0.05274636299171529
+  },
+  "paper_table": 2,
+  "paper_reference": {
+    "abs_rel": 0.053,
+    "delta1": 0.972
+  },
+  "difference_from_paper": {
+    "abs_rel": 0.00017398843292741606,
+    "delta1": -0.00031042160560013077
+  },
+  "nonpositive_predictions": 0,
+  "protocol": {
+    "name": "midas",
+    "ground_truth_field": "rawDepths",
+    "dataset": "NYUv2",
+    "encoder": "vits",
+    "split_sha256": "6e081404491a8bfba2f066beaa9713ef6046f9007aa5f799f2a350506a580cee",
+    "checkpoint_sha256": "59afe57cfd9f4284deaf5b753d954723d7136ae842fba3e068ba03537ca1e60e",
+    "dataset_file": "D:\\Master\\2025T2\\Machinelearning\\Depth-Anything-Clone\\data\\nyuv2\\nyu_depth_v2_labeled.mat",
+    "dataset_size": 2972037809,
+    "dataset_mtime_ns": 1789322032414348800,
+    "input": "RGB float32, ImageNet norm, short side 518, multiple 14, full image",
+    "interpolation": "OpenCV cubic input; bilinear align_corners=False prediction",
+    "precision": "float32",
+    "flip_augmentation": false,
+    "evaluation_mask": "Full image, finite raw GT, 0 < depth < 10 m",
+    "alignment": "per-image float64 affine least squares on evaluation mask in disparity space",
+    "metrics_space": "disparity",
+    "min_prediction": 0.1,
+    "aggregation": "unweighted mean of per-image metrics, no skipped images",
+    "source": "https://github.com/LiheYoung/Depth-Anything/issues/174",
+    "dataset_protocol_source": "https://gist.github.com/ranftlr/a1c7a24ebb24ce0e2f2ace5bce917022"
+  },
+  "environment": {
+    "torch": "2.4.0+cu121",
+    "cuda": "12.1",
+    "numpy": "1.26.4",
+    "opencv": "4.11.0",
+    "h5py": "3.16.0",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU"
+  },
+  "prediction_cache": "D:\\Master\\2025T2\\Machinelearning\\Depth-Anything-Clone\\.cache\\nyuv2-relative\\vits-d06514493cd8f83d"
+}

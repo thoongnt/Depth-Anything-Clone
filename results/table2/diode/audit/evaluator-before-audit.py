@@ -73,7 +73,7 @@ def aggregate(rows):
 
 @torch.inference_mode()
 def evaluate_diode(encoder='vitl', data_dir=ROOT/'data', checkpoint_dir=ROOT/'checkpoints',
-                   output_dir=ROOT/'results/diode-relative', cache_dir=ROOT/'.cache/diode-relative',
+                   output_dir=ROOT/'results/table2/diode', cache_dir=ROOT/'.cache/diode-relative',
                    subset='all', limit=None, flip=False, model=None, transform=None):
     if encoder not in PAPER:
         raise ValueError(f'Unknown encoder: {encoder}')
@@ -192,7 +192,7 @@ if __name__ == '__main__':
     parser.add_argument('--encoder', choices=list(PAPER), default='vitl')
     parser.add_argument('--data-dir', type=Path, default=ROOT/'data')
     parser.add_argument('--checkpoint-dir', type=Path, default=ROOT/'checkpoints')
-    parser.add_argument('--output-dir', type=Path, default=ROOT/'results/diode-relative')
+    parser.add_argument('--output-dir', type=Path, default=ROOT/'results/table2/diode')
     parser.add_argument('--cache-dir', type=Path, default=ROOT/'.cache/diode-relative')
     parser.add_argument('--subset', choices=['all', *COUNTS], default='all')
     parser.add_argument('--limit', type=int, help='Diagnostic first N only, not a paper reproduction')

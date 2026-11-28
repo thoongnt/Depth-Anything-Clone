@@ -1,6 +1,6 @@
 import urllib.request,json
 from pathlib import Path
-out=Path('results/diode-relative/audit/upstream')
+out=Path('results/table2/diode/audit/upstream')
 urls={'v1-tree':'https://api.github.com/repos/LiheYoung/Depth-Anything/git/trees/main?recursive=1',
       'v1-174-comments':'https://api.github.com/repos/LiheYoung/Depth-Anything/issues/174/comments',
       'v2-280-comments':'https://api.github.com/repos/DepthAnything/Depth-Anything-V2/issues/280/comments'}

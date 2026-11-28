@@ -24,7 +24,7 @@ Tham chiếu: [metric_depth README chính thức](https://github.com/LiheYoung/D
 .\.venv\Scripts\python.exe evaluate_nyuv2_metric.py
 ```
 
-Notebook: [thuc_nghiem_2_nyuv2_metric_depth.ipynb](../thuc_nghiem_2_nyuv2_metric_depth.ipynb).
+Notebook: [thuc_nghiem_2_nyuv2_metric_depth.ipynb](../../thuc_nghiem_2_nyuv2_metric_depth.ipynb).
 
 - Đầu vào: `data/nyuv2/nyu_depth_v2_labeled.mat` + `splits.mat`, đủ 654 official test IDs.
 - Checkpoint: `checkpoints/depth_anything_metric_depth_indoor.pt`; encoder khởi tạo
@@ -49,9 +49,9 @@ Tùy chọn `--limit 4` để kiểm tra nhanh (không được coi là full ben
 
 Kết quả lưu ở:
 
-- `results/nyuv2-metric/indoor-flip-summary.json`: sáu chỉ số chưa làm tròn,
+- `results/table3/nyuv2/indoor-flip-summary.json`: sáu chỉ số chưa làm tròn,
   mốc Table 3, độ lệch từng chỉ số, protocol, checksum, môi trường và số ảnh.
-- `results/nyuv2-metric/indoor-flip-per-image.csv`: từng sample ID và sáu metric.
+- `results/table3/nyuv2/indoor-flip-per-image.csv`: từng sample ID và sáu metric.
 - `.cache/nyuv2-metric/`: prediction float32 để resume hoặc re-score.
 
 Đây là **đánh giá checkpoint đã fine-tune**, không phải tái huấn luyện Table 3.

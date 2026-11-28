@@ -5,9 +5,9 @@ sys.path.insert(0,str(Path.cwd()))
 import numpy as np
 from evaluate_nyuv2 import align_disparity
 from evaluate_diode_relative import aggregate
-root=Path.cwd();out=root/'results/diode-relative/audit'
-s=json.loads((root/'results/diode-relative/initial-full-run-summary.json').read_text())
-m=json.loads((root/'results/diode-relative/vitl-native-all-manifest.json').read_text())
+root=Path.cwd();out=root/'results/table2/diode/audit'
+s=json.loads((root/'results/table2/diode/initial-full-run-summary.json').read_text())
+m=json.loads((root/'results/table2/diode/vitl-native-all-manifest.json').read_text())
 cache=Path(s['prediction_cache']);rows={k:[] for k in ['native-disparity','gt-range-clamped-disparity','gt-range-clamped-depth-diagnostic']}
 for i,sample in enumerate(m):
  rgb=sample['files'][0];key=hashlib.sha256(json.dumps(rgb,sort_keys=True).encode()).hexdigest()[:16]

@@ -1,0 +1,32 @@
+{
+  "nearest": {
+    "images": 40,
+    "abs_rel": 0.03301392802018797,
+    "delta1": 0.9974059512284814
+  },
+  "lin-depth/nn-mask": {
+    "images": 40,
+    "abs_rel": 1.5354709711216354,
+    "delta1": 0.24163556220832105
+  },
+  "lin-depth/strict": {
+    "images": 40,
+    "abs_rel": 0.03144130103025601,
+    "delta1": 0.9978648229789148
+  },
+  "lin-depth/half": {
+    "images": 40,
+    "abs_rel": 0.07656172287817913,
+    "delta1": 0.9304908721633639
+  },
+  "area-depth/nn-mask": {
+    "images": 40,
+    "abs_rel": 0.581557539844016,
+    "delta1": 0.2643692571998429
+  },
+  "lin-disp/nn-mask": {
+    "images": 40,
+    "abs_rel": 0.8899347344616096,
+    "delta1": 0.8509516967989338
+  }
+}

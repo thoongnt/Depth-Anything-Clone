@@ -67,6 +67,19 @@ def preprocessing_transforms(mode, **kwargs):
     ])
 
 
+# The zero-shot eval datasets keep `lambda` attributes, which cannot be pickled
+# into spawned DataLoader workers on Windows, so load them in-process there.
+EVAL_WORKERS = 0 if os.name == 'nt' else 1
+
+
+def as_bool(value):
+    # CLI overrides arrive as strings (infer_type leaves "False" as a str,
+    # and bool("False") is True), so parse them explicitly.
+    if isinstance(value, str):
+        return value.strip().lower() in ("1", "true", "yes", "on")
+    return bool(value)
+
+
 class DepthDataLoader(object):
     def __init__(self, config, mode, device='cpu', transform=None, **kwargs):
         """
@@ -82,47 +95,52 @@ class DepthDataLoader(object):
         self.config = config
 
         if config.dataset == 'ibims':
-            self.data = get_ibims_loader(config, batch_size=1, num_workers=1)
+            self.data = get_ibims_loader(config, batch_size=1, num_workers=EVAL_WORKERS)
             return
 
         if config.dataset == 'sunrgbd':
             self.data = get_sunrgbd_loader(
-                data_dir_root=config.sunrgbd_root, batch_size=1, num_workers=1)
+                data_dir_root=config.sunrgbd_root, batch_size=1, num_workers=EVAL_WORKERS,
+                depth_scale=float(config.get("sunrgbd_depth_scale", 10000.0)))
             return
 
         if config.dataset == 'diml_indoor':
             self.data = get_diml_indoor_loader(
-                data_dir_root=config.diml_indoor_root, batch_size=1, num_workers=1)
+                data_dir_root=config.diml_indoor_root, batch_size=1, num_workers=EVAL_WORKERS)
             return
 
         if config.dataset == 'diml_outdoor':
             self.data = get_diml_outdoor_loader(
-                data_dir_root=config.diml_outdoor_root, batch_size=1, num_workers=1)
+                data_dir_root=config.diml_outdoor_root, batch_size=1, num_workers=EVAL_WORKERS)
             return
 
         if "diode" in config.dataset:
             self.data = get_diode_loader(
-                config[config.dataset+"_root"], batch_size=1, num_workers=1)
+                config[config.dataset+"_root"], batch_size=1, num_workers=EVAL_WORKERS,
+                antialias=as_bool(config.get("diode_resize_antialias", False)))
             return
 
         if config.dataset == 'hypersim_test':
             self.data = get_hypersim_loader(
-                config.hypersim_test_root, batch_size=1, num_workers=1)
+                config.hypersim_test_root, batch_size=1, num_workers=EVAL_WORKERS)
             return
 
         if config.dataset == 'vkitti':
             self.data = get_vkitti_loader(
-                config.vkitti_root, batch_size=1, num_workers=1)
+                config.vkitti_root, batch_size=1, num_workers=EVAL_WORKERS)
             return
 
         if config.dataset == 'vkitti2':
+            seed = config.get("vkitti2_split_seed", None)
             self.data = get_vkitti2_loader(
-                config.vkitti2_root, batch_size=1, num_workers=1)
+                config.vkitti2_root, batch_size=1, num_workers=EVAL_WORKERS,
+                split=config.get("vkitti2_split", "test"),
+                seed=None if seed in (None, "", "none", "None") else int(seed))
             return
 
         if config.dataset == 'ddad':
             self.data = get_ddad_loader(config.ddad_root, resize_shape=(
-                352, 1216), batch_size=1, num_workers=1)
+                352, 1216), batch_size=1, num_workers=EVAL_WORKERS)
             return
 
         img_size = self.config.get("img_size", None)
@@ -171,7 +189,7 @@ class DepthDataLoader(object):
             self.testing_samples = DataLoadPreprocess(
                 config, mode, transform=transform)
             self.data = DataLoader(self.testing_samples,
-                                   1, shuffle=False, num_workers=1)
+                                   1, shuffle=False, num_workers=EVAL_WORKERS)
 
         else:
             print(

@@ -15,7 +15,7 @@ Cùng checkpoint relative ViT-L và dữ liệu đã xác thực 2.313 file. Ful
 | True | indoors | 325 | 0.056591391 | 0.956152959 |
 | True | outdoor | 446 | 0.420036761 | 0.606836393 |
 
-Ba cảnh outdoor đều lệch so với mốc Table 2. Với flip và cách chấm native, AbsRel từng cảnh nằm trong khoảng 0.266–0.482. [Kết quả từng scene](../results/diode-relative/variants/native-per-scene.csv).
+Ba cảnh outdoor đều lệch so với mốc Table 2. Với flip và cách chấm native, AbsRel từng cảnh nằm trong khoảng 0.266–0.482. [Kết quả từng scene](../../results/table2/diode/variants/native-per-scene.csv).
 
 ## Gần số paper nhất theo phạm vi
 
@@ -49,14 +49,14 @@ Mọi cấu hình giữ supplied mask DIODE và depth hữu hạn/dương. Ngư�
 
 ## Artefact và cách chạy
 
-- [Toàn bộ CSV](../results/diode-relative/variants/protocol-grid/comparison.csv), [JSON](../results/diode-relative/variants/protocol-grid/comparison.json), [định nghĩa cấu hình](../results/diode-relative/variants/configurations.json).
-- [Full flip summary](../results/diode-relative/variants/vitl-native-all-flip-summary.json), [CSV từng ảnh](../results/diode-relative/variants/vitl-native-all-flip-per-image.csv).
+- [Toàn bộ CSV](../../results/table2/diode/variants/protocol-grid/comparison.csv), [JSON](../../results/table2/diode/variants/protocol-grid/comparison.json), [định nghĩa cấu hình](../../results/table2/diode/variants/configurations.json).
+- [Full flip summary](../../results/table2/diode/variants/vitl-native-all-flip-summary.json), [CSV từng ảnh](../../results/table2/diode/variants/vitl-native-all-flip-per-image.csv).
 - Thư mục `protocol-grid/no-flip-*` và `protocol-grid/flip-*` lưu CSV từng ảnh cho từng cấu hình: metric, pixel, scale/shift, trạng thái.
 
 ```powershell
-.venv\Scripts\python.exe evaluate_diode_relative.py --flip --data-audit results/diode-relative/audit/official-archive-verification.json --cache-dir .cache/diode-variants/predictions --output-dir results/diode-relative/variants
+.venv\Scripts\python.exe evaluate_diode_relative.py --flip --data-audit results/table2/diode/audit/official-archive-verification.json --cache-dir .cache/diode-variants/predictions --output-dir results/table2/diode/variants
 
-.venv\Scripts\python.exe research_diode_variants.py --workers 8 --summary results/diode-relative/audit-rerun/fresh-inference-summary.json results/diode-relative/variants/vitl-native-all-flip-summary.json
+.venv\Scripts\python.exe research_diode_variants.py --workers 8 --summary results/table2/diode/audit-rerun/fresh-inference-summary.json results/table2/diode/variants/vitl-native-all-flip-summary.json
 ```
 
 Evaluator mặc định và kết quả NYUv2 không thay đổi. Những kết quả được chọn vì gần số đích là thăm dò sau khi biết số paper, không phải kiểm chứng độc lập protocol.

@@ -1,0 +1,20 @@
+A matching Triton is not available, some optimizations will not be enabled
+Traceback (most recent call last):
+  File "D:\Master\2025T2\Machinelearning\Depth-Anything-Clone\.venv\Lib\site-packages\xformers\__init__.py", line 57, in _is_triton_available
+    import triton  # noqa
+    ^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'triton'
+kitti/moge/vits: 0it [00:00, ?it/s]kitti/moge/vits: 19it [00:10,  1.87it/s]kitti/moge/vits: 40it [00:20,  1.95it/s]kitti/moge/vits: 61it [00:31,  1.98it/s]kitti/moge/vits: 82it [00:41,  2.02it/s]kitti/moge/vits: 103it [00:51,  2.02it/s]kitti/moge/vits: 124it [01:01,  2.03it/s]kitti/moge/vits: 145it [01:11,  2.04it/s]kitti/moge/vits: 166it [01:22,  2.01it/s]kitti/moge/vits: 186it [01:33,  1.99it/s]kitti/moge/vits: 206it [01:43,  1.99it/s]kitti/moge/vits: 226it [01:53,  1.99it/s]kitti/moge/vits: 247it [02:03,  2.01it/s]kitti/moge/vits: 268it [02:14,  1.97it/s]kitti/moge/vits: 288it [02:24,  1.97it/s]kitti/moge/vits: 308it [02:34,  1.96it/s]kitti/moge/vits: 328it [02:45,  1.96it/s]kitti/moge/vits: 348it [02:55,  1.96it/s]kitti/moge/vits: 370it [03:05,  2.02it/s]kitti/moge/vits: 393it [03:16,  2.07it/s]kitti/moge/vits: 416it [03:27,  2.07it/s]kitti/moge/vits: 437it [03:37,  2.05it/s]kitti/moge/vits: 458it [03:47,  2.07it/s]kitti/moge/vits: 479it [03:57,  2.06it/s]kitti/moge/vits: 500it [04:08,  2.05it/s]kitti/moge/vits: 521it [04:18,  2.05it/s]kitti/moge/vits: 542it [04:28,  2.05it/s]kitti/moge/vits: 563it [04:39,  2.02it/s]kitti/moge/vits: 583it [04:49,  2.02it/s]kitti/moge/vits: 604it [04:59,  2.01it/s]kitti/moge/vits: 604it [05:10,  2.01it/s]kitti/moge/vits: 625it [05:10,  2.00it/s]kitti/moge/vits: 646it [05:20,  2.01it/s]kitti/moge/vits: 652it [05:23,  2.01it/s]
+crop=none,cap=80,clamp=cap         n= 652 abs_rel=0.0789 d1=0.9370 | depth 0.0812/0.9370 *
+crop=none,cap=80,clamp=none        n= 652 abs_rel=0.0794 d1=0.9360 | depth 0.0812/0.9370
+crop=none,cap=None,clamp=cap       n= 652 abs_rel=0.0789 d1=0.9370 | depth 0.0810/0.9370
+crop=none,cap=None,clamp=none      n= 652 abs_rel=0.0795 d1=0.9358 | depth 0.0810/0.9370
+crop=garg,cap=80,clamp=cap         n= 652 abs_rel=0.0735 d1=0.9460 | depth 0.0755/0.9460
+crop=garg,cap=80,clamp=none        n= 652 abs_rel=0.0741 d1=0.9449 | depth 0.0755/0.9460
+crop=garg,cap=None,clamp=cap       n= 652 abs_rel=0.0735 d1=0.9459 | depth 0.0753/0.9459
+crop=garg,cap=None,clamp=none      n= 652 abs_rel=0.0742 d1=0.9447 | depth 0.0753/0.9459
+crop=eigen,cap=80,clamp=cap        n= 652 abs_rel=0.0817 d1=0.9337 | depth 0.0844/0.9337
+crop=eigen,cap=80,clamp=none       n= 652 abs_rel=0.0824 d1=0.9323 | depth 0.0844/0.9337
+crop=eigen,cap=None,clamp=cap      n= 652 abs_rel=0.0817 d1=0.9336 | depth 0.0842/0.9336
+crop=eigen,cap=None,clamp=none     n= 652 abs_rel=0.0825 d1=0.9322 | depth 0.0842/0.9336
+paper 0.080/0.936

@@ -23,6 +23,7 @@
 # File author: Shariq Farooq Bhat
 
 import os
+import re
 
 import cv2
 import numpy as np
@@ -80,47 +81,54 @@ class ToTensor(object):
             return img
 
 
+def rgb_to_depth_path(path):
+    """.../frames/rgb/Camera_0/rgb_00000.jpg -> .../frames/depth/Camera_0/depth_00000.png
+    (works with both / and \\ separators)."""
+    path = re.sub(r"([\\/])rgb([\\/])", r"\1depth\2", path)
+    head, tail = os.path.split(path)
+    return os.path.join(head, tail.replace("rgb_", "depth_").replace(".jpg", ".png"))
+
+
 class VKITTI2(Dataset):
-    def __init__(self, data_dir_root, do_kb_crop=True, split="test"):
+    def __init__(self, data_dir_root, do_kb_crop=True, split="test", seed=None):
         import glob
 
         # image paths are of the form <data_dir_root>/rgb/<scene>/<variant>/frames/<rgb,depth>/Camera<0,1>/rgb_{}.jpg
-        self.image_files = glob.glob(os.path.join(
-            data_dir_root, "**", "frames", "rgb", "Camera_0", '*.jpg'), recursive=True)
-        self.depth_files = [r.replace("/rgb/", "/depth/").replace(
-            "rgb_", "depth_").replace(".jpg", ".png") for r in self.image_files]
+        self.image_files = sorted(glob.glob(os.path.join(
+            data_dir_root, "**", "frames", "rgb", "Camera_0", '*.jpg'), recursive=True))
+        self.depth_files = [rgb_to_depth_path(r) for r in self.image_files]
         self.do_kb_crop = True
         self.transform = ToTensor()
 
-        # If train test split is not created, then create one.
-        # Split is such that 8% of the frames from each scene are used for testing.
-        if not os.path.exists(os.path.join(data_dir_root, "train.txt")):
+        # split="all" evaluates every Camera_0 frame.
+        # Otherwise 8% of the frames from each scene are used for testing. The
+        # original split was random and unseeded (and never released); with
+        # `seed` set it is deterministic and stored as {train,test}_seed{seed}.txt.
+        suffix = "" if seed is None else f"_seed{seed}"
+        train_txt = os.path.join(data_dir_root, f"train{suffix}.txt")
+        test_txt = os.path.join(data_dir_root, f"test{suffix}.txt")
+        if split != "all" and not os.path.exists(train_txt):
             import random
-            scenes = set([os.path.basename(os.path.dirname(
-                os.path.dirname(os.path.dirname(f)))) for f in self.image_files])
+            rng = random.Random(seed) if seed is not None else random
+            def scene_of(f):
+                return os.path.basename(os.path.dirname(os.path.dirname(os.path.dirname(f))))
+            scenes = sorted(set(scene_of(f) for f in self.image_files))
             train_files = []
             test_files = []
             for scene in scenes:
-                scene_files = [f for f in self.image_files if os.path.basename(
-                    os.path.dirname(os.path.dirname(os.path.dirname(f)))) == scene]
-                random.shuffle(scene_files)
+                scene_files = [f for f in self.image_files if scene_of(f) == scene]
+                rng.shuffle(scene_files)
                 train_files.extend(scene_files[:int(len(scene_files) * 0.92)])
                 test_files.extend(scene_files[int(len(scene_files) * 0.92):])
-            with open(os.path.join(data_dir_root, "train.txt"), "w") as f:
+            with open(train_txt, "w") as f:
                 f.write("\n".join(train_files))
-            with open(os.path.join(data_dir_root, "test.txt"), "w") as f:
+            with open(test_txt, "w") as f:
                 f.write("\n".join(test_files))
 
-        if split == "train":
-            with open(os.path.join(data_dir_root, "train.txt"), "r") as f:
+        if split in ("train", "test"):
+            with open(train_txt if split == "train" else test_txt, "r") as f:
                 self.image_files = f.read().splitlines()
-            self.depth_files = [r.replace("/rgb/", "/depth/").replace(
-                "rgb_", "depth_").replace(".jpg", ".png") for r in self.image_files]
-        elif split == "test":
-            with open(os.path.join(data_dir_root, "test.txt"), "r") as f:
-                self.image_files = f.read().splitlines()
-            self.depth_files = [r.replace("/rgb/", "/depth/").replace(
-                "rgb_", "depth_").replace(".jpg", ".png") for r in self.image_files]
+            self.depth_files = [rgb_to_depth_path(r) for r in self.image_files]
 
     def __getitem__(self, idx):
         image_path = self.image_files[idx]
@@ -169,8 +177,8 @@ class VKITTI2(Dataset):
         return len(self.image_files)
 
 
-def get_vkitti2_loader(data_dir_root, batch_size=1, **kwargs):
-    dataset = VKITTI2(data_dir_root)
+def get_vkitti2_loader(data_dir_root, batch_size=1, split="test", seed=None, **kwargs):
+    dataset = VKITTI2(data_dir_root, split=split, seed=seed)
     return DataLoader(dataset, batch_size, **kwargs)
 
 

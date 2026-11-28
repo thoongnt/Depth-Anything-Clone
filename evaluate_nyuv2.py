@@ -96,7 +96,7 @@ def make_transform():
 @torch.inference_mode()
 def evaluate_nyuv2(encoder='vitl', data_dir=ROOT / 'data',
                    checkpoint_dir=ROOT / 'checkpoints',
-                   output_dir=ROOT / 'results' / 'nyuv2-relative',
+                   output_dir=ROOT / 'results' / 'table2' / 'nyuv2',
                    cache_dir=ROOT / '.cache' / 'nyuv2-relative',
                    limit=None, flip=False, model=None, transform=None, protocol='midas'):
     data_dir, checkpoint_dir = Path(data_dir), Path(checkpoint_dir)
@@ -208,7 +208,7 @@ if __name__ == '__main__':
     parser.add_argument('--encoder', choices=list(PAPER), default='vitl')
     parser.add_argument('--data-dir', type=Path, default=ROOT / 'data')
     parser.add_argument('--checkpoint-dir', type=Path, default=ROOT / 'checkpoints')
-    parser.add_argument('--output-dir', type=Path, default=ROOT / 'results' / 'nyuv2-relative')
+    parser.add_argument('--output-dir', type=Path, default=ROOT / 'results' / 'table2' / 'nyuv2')
     parser.add_argument('--cache-dir', type=Path, default=ROOT / '.cache' / 'nyuv2-relative')
     parser.add_argument('--limit', type=int, help='Diagnostic subset only, not full benchmark')
     parser.add_argument('--protocol', choices=['midas', 'legacy-filled-eigen'], default='midas')

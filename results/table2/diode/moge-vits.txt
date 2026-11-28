@@ -1,0 +1,12 @@
+diode/moge/vits: 0it [00:00, ?it/s]A matching Triton is not available, some optimizations will not be enabled
+Traceback (most recent call last):
+  File "D:\Master\2025T2\Machinelearning\Depth-Anything-Clone\.venv\Lib\site-packages\xformers\__init__.py", line 57, in _is_triton_available
+    import triton  # noqa
+    ^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'triton'
+diode/moge/vits: 27it [00:10,  2.69it/s]diode/moge/vits: 60it [00:20,  3.03it/s]diode/moge/vits: 93it [00:30,  3.10it/s]diode/moge/vits: 125it [00:40,  3.11it/s]diode/moge/vits: 157it [00:50,  3.12it/s]diode/moge/vits: 189it [01:01,  3.11it/s]diode/moge/vits: 220it [01:11,  3.08it/s]diode/moge/vits: 251it [01:21,  3.08it/s]diode/moge/vits: 283it [01:31,  3.11it/s]diode/moge/vits: 315it [01:42,  3.03it/s]diode/moge/vits: 348it [01:52,  3.10it/s]diode/moge/vits: 390it [02:02,  3.43it/s]diode/moge/vits: 432it [02:13,  3.59it/s]diode/moge/vits: 472it [02:27,  3.35it/s]diode/moge/vits: 514it [02:37,  3.56it/s]diode/moge/vits: 556it [02:47,  3.73it/s]diode/moge/vits: 556it [03:00,  3.73it/s]diode/moge/vits: 597it [03:00,  3.54it/s]diode/moge/vits: 631it [03:10,  3.50it/s]diode/moge/vits: 667it [03:20,  3.52it/s]diode/moge/vits: 715it [03:30,  3.88it/s]diode/moge/vits: 763it [03:41,  3.99it/s]diode/moge/vits: 771it [03:43,  3.45it/s]
+crop=none,cap=None,clamp=cap       n= 771 abs_rel=0.0713 d1=0.9466 | depth 0.0658/0.9466
+crop=none,cap=None,clamp=none      n= 771 abs_rel=0.0751 d1=0.9433 | depth 0.0658/0.9466 *
+crop=none,cap=80,clamp=cap         n= 771 abs_rel=0.0678 d1=0.9460 | depth 0.0707/0.9460
+crop=none,cap=80,clamp=none        n= 771 abs_rel=0.0699 d1=0.9450 | depth 0.0707/0.9460
+paper 0.076/0.939

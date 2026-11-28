@@ -1,0 +1,16 @@
+DSC_0634.JPG {'a_distorted': (0.0177, 0.9998), 'b_undistorted': (0.0189, 0.9981)}
+DSC_0635.JPG {'a_distorted': (0.0199, 0.9998), 'b_undistorted': (0.0196, 0.9998)}
+DSC_0636.JPG {'a_distorted': (0.0268, 0.9996), 'b_undistorted': (0.0262, 0.9991)}
+DSC_0637.JPG {'a_distorted': (0.025, 0.9874), 'b_undistorted': (0.0261, 0.9875)}
+DSC_0638.JPG {'a_distorted': (0.025, 0.9944), 'b_undistorted': (0.0263, 0.9955)}
+DSC_0639.JPG {'a_distorted': (0.0754, 0.9199), 'b_undistorted': (0.0754, 0.9222)}
+DSC_0640.JPG {'a_distorted': (0.0669, 0.9365), 'b_undistorted': (0.0711, 0.9291)}
+DSC_0641.JPG {'a_distorted': (0.0742, 0.9397), 'b_undistorted': (0.0753, 0.9341)}
+DSC_0642.JPG {'a_distorted': (0.0548, 0.9592), 'b_undistorted': (0.046, 0.9782)}
+DSC_0643.JPG {'a_distorted': (0.0706, 0.9751), 'b_undistorted': (0.0589, 0.9848)}
+DSC_0644.JPG {'a_distorted': (0.0817, 0.956), 'b_undistorted': (0.0802, 0.9687)}
+DSC_0645.JPG {'a_distorted': (0.054, 0.9952), 'b_undistorted': (0.053, 0.9965)}
+DSC_0646.JPG {'a_distorted': (0.0387, 0.9909), 'b_undistorted': (0.0416, 0.9922)}
+DSC_0647.JPG {'a_distorted': (0.0562, 0.9384), 'b_undistorted': (0.0581, 0.9307)}
+a_distorted: n=14 abs_rel=0.0491 delta1=0.9708
+b_undistorted: n=14 abs_rel=0.0483 delta1=0.9726

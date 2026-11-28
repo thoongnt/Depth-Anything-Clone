@@ -32,7 +32,7 @@ Các hàng dưới dùng ViT-L, disparity và trung bình theo ảnh. Cả hai n
 - Riêng với MoGe 518 px OLS, 219 ảnh indoor đạt 0,039846 / 0,987832 và 235 ảnh outdoor đạt 0,054588 / 0,972328.
 - Đánh giá độc lập dùng giao thức Marigold cũng báo 0,058 / 0,984 cho Depth Anything trên ETH3D. Các công bố có thể dùng giao thức ETH3D khác nhau. [GenPercept, Bảng 6](https://proceedings.iclr.cc/paper_files/paper/2025/file/13b8d8fb8d05369480c2c344f2ce3f25-Paper-Conference.pdf)
 
-[CSV MoGe OLS](../results/eth3d-relative/vitl-518-flip-comparison.csv) · [CSV MoGe median–MAD](../results/eth3d-relative/vitl-518-median-mad-comparison.csv) · [CSV ETH3D chính thức OLS](../results/eth3d-relative/official-stride3-vitl-518-comparison.csv) · [CSV ETH3D chính thức median–MAD](../results/eth3d-relative/official-stride3-vitl-518-median-mad-comparison.csv)
+[CSV MoGe OLS](../../results/table2/eth3d/vitl-518-flip-comparison.csv) · [CSV MoGe median–MAD](../../results/table2/eth3d/vitl-518-median-mad-comparison.csv) · [CSV ETH3D chính thức OLS](../../results/table2/eth3d/official-stride3-vitl-518-comparison.csv) · [CSV ETH3D chính thức median–MAD](../../results/table2/eth3d/official-stride3-vitl-518-median-mad-comparison.csv)
 
 ### Đối chứng kích thước đầu vào
 
@@ -50,8 +50,8 @@ curl.exe -fL -o .cache/eth3d-relative/ETH3D.zip "https://huggingface.co/datasets
 .venv\Scripts\python.exe thuc_nghiem_1_eth3d_relative_depth.py --source official --cache-predictions
 ```
 
-Mã SHA-256 của gói MoGe đã tải là `a72592c238113e46e74cf29ca7df306a6c5c9d050de396cdd257d0ed2783ab10`. Các file *per-image.csv*, *comparison.csv* và *summary.json* nằm trong `results/eth3d-relative`. File JSON giữ SHA-256 của checkpoint và dữ liệu, cấu hình và số ảnh của từng hàng.
+Mã SHA-256 của gói MoGe đã tải là `a72592c238113e46e74cf29ca7df306a6c5c9d050de396cdd257d0ed2783ab10`. Các file *per-image.csv*, *comparison.csv* và *summary.json* nằm trong `results/table2/eth3d`. File JSON giữ SHA-256 của checkpoint và dữ liệu, cấu hình và số ảnh của từng hàng.
 
 ## Kiểm tra nhãn Pipes
 
-Đã so sánh 14 depth map MoGe với depth map ETH3D chính thức. Dùng intrinsics trong gói MoGe và mô hình THIN_PRISM_FISHEYE của ETH3D để xác định tọa độ pixel tương ứng. Có 4.407.618 pixel hợp lệ chung và sai số tương đối trung vị của mỗi ảnh khoảng 0,0008–0,0061%. Với cùng dự đoán và cùng mask giao, AbsRel đổi từ 0,036202 sang 0,036215 khi thay nhãn MoGe bằng nhãn chính thức. Trên lưới đã khử méo, MoGe có 27,28 triệu pixel hợp lệ, còn phép lấy mẫu gần nhất từ nhãn chính thức có 4,41 triệu. [Kết quả theo ảnh](../results/eth3d-relative/audit-pipes-ground-truth.json).
+Đã so sánh 14 depth map MoGe với depth map ETH3D chính thức. Dùng intrinsics trong gói MoGe và mô hình THIN_PRISM_FISHEYE của ETH3D để xác định tọa độ pixel tương ứng. Có 4.407.618 pixel hợp lệ chung và sai số tương đối trung vị của mỗi ảnh khoảng 0,0008–0,0061%. Với cùng dự đoán và cùng mask giao, AbsRel đổi từ 0,036202 sang 0,036215 khi thay nhãn MoGe bằng nhãn chính thức. Trên lưới đã khử méo, MoGe có 27,28 triệu pixel hợp lệ, còn phép lấy mẫu gần nhất từ nhãn chính thức có 4,41 triệu. [Kết quả theo ảnh](../../results/table2/eth3d/audit-pipes-ground-truth.json).

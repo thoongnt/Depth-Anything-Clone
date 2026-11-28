@@ -205,7 +205,7 @@ def run_experiment_1(encoder='vitl', data_dir='./data', checkpoint_dir='./checkp
             row['Paper AbsRel ↓'] = f'{paper_abs_rel:.4f}'
             row['Paper Delta1 ↑'] = f'{paper_delta1:.4f}'
             row['Trạng thái'] = 'Xem thuc_nghiem_1_eth3d_relative_depth.py'
-            root = Path(__file__).resolve().parent / 'results/eth3d-relative'
+            root = Path(__file__).resolve().parent / 'results/table2/eth3d'
             for tag in (f'{encoder}-518', f'{encoder}-518-flip'):
                 path = root / f'{tag}-summary.json'
                 if not path.is_file():

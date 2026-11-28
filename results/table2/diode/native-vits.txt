@@ -1,0 +1,12 @@
+A matching Triton is not available, some optimizations will not be enabled
+Traceback (most recent call last):
+  File "D:\Master\2025T2\Machinelearning\Depth-Anything-Clone\.venv\Lib\site-packages\xformers\__init__.py", line 57, in _is_triton_available
+    import triton  # noqa
+    ^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'triton'
+diode/native/vits: 0it [00:00, ?it/s]diode/native/vits: 24it [00:10,  2.35it/s]diode/native/vits: 48it [00:20,  2.30it/s]diode/native/vits: 72it [00:30,  2.33it/s]diode/native/vits: 96it [00:42,  2.23it/s]diode/native/vits: 118it [00:52,  2.19it/s]diode/native/vits: 140it [01:03,  2.12it/s]diode/native/vits: 160it [01:13,  2.08it/s]diode/native/vits: 183it [01:24,  2.13it/s]diode/native/vits: 209it [01:34,  2.26it/s]diode/native/vits: 235it [01:46,  2.20it/s]diode/native/vits: 259it [01:57,  2.23it/s]diode/native/vits: 283it [02:08,  2.21it/s]diode/native/vits: 305it [02:19,  2.14it/s]diode/native/vits: 326it [02:29,  2.11it/s]diode/native/vits: 349it [02:39,  2.16it/s]diode/native/vits: 376it [02:49,  2.31it/s]diode/native/vits: 376it [03:00,  2.31it/s]diode/native/vits: 403it [03:00,  2.39it/s]diode/native/vits: 430it [03:10,  2.45it/s]diode/native/vits: 457it [03:22,  2.39it/s]diode/native/vits: 481it [03:32,  2.39it/s]diode/native/vits: 505it [03:43,  2.35it/s]diode/native/vits: 528it [03:53,  2.32it/s]diode/native/vits: 551it [04:03,  2.29it/s]diode/native/vits: 574it [04:14,  2.23it/s]diode/native/vits: 600it [04:24,  2.33it/s]diode/native/vits: 631it [04:35,  2.54it/s]diode/native/vits: 662it [04:46,  2.57it/s]diode/native/vits: 690it [04:57,  2.63it/s]diode/native/vits: 718it [05:07,  2.62it/s]diode/native/vits: 747it [05:18,  2.68it/s]diode/native/vits: 771it [05:26,  2.36it/s]
+crop=none,cap=None,clamp=cap       n= 771 abs_rel=0.2728 d1=0.7459 | depth 0.2216/0.7459
+crop=none,cap=None,clamp=none      n= 771 abs_rel=0.2737 d1=0.7453 | depth 0.2216/0.7459
+crop=none,cap=80,clamp=cap         n= 771 abs_rel=0.2622 d1=0.7471 | depth 0.2221/0.7471 *
+crop=none,cap=80,clamp=none        n= 771 abs_rel=0.2628 d1=0.7468 | depth 0.2221/0.7471
+paper 0.076/0.939

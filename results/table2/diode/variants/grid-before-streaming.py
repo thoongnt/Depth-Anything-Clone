@@ -199,7 +199,7 @@ def run(summary_path, output_dir):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--summary', type=Path, nargs='+', required=True)
-    parser.add_argument('--output-dir', type=Path, default=ROOT/'results/diode-relative/variants/protocol-grid')
+    parser.add_argument('--output-dir', type=Path, default=ROOT/'results/table2/diode/variants/protocol-grid')
     args = parser.parse_args()
     reports = [run(p, args.output_dir) for p in args.summary]
     result = {'scope': reports[0]['scope'], 'paper_reference': REFERENCE,

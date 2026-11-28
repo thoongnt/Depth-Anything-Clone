@@ -1,0 +1,92 @@
+{
+  "dataset": "sunrgbd",
+  "run": "sunrgbd",
+  "overrides": {},
+  "n": 5050,
+  "variants": {
+    "base": {
+      "desc": "protocol gốc của evaluate.py",
+      "a1": 0.66,
+      "a2": 0.96,
+      "a3": 0.98,
+      "abs_rel": 0.5,
+      "rmse": 0.616,
+      "log_10": 0.088,
+      "rmse_log": 0.259,
+      "silog": 15.483,
+      "sq_rel": 2.175
+    },
+    "noflip": {
+      "desc": "không flip-TTA (chỉ 1 forward)",
+      "a1": 0.661,
+      "a2": 0.96,
+      "a3": 0.98,
+      "abs_rel": 0.5,
+      "rmse": 0.616,
+      "log_10": 0.088,
+      "rmse_log": 0.259,
+      "silog": 15.537,
+      "sq_rel": 2.175
+    },
+    "no_eigen_crop": {
+      "desc": "bỏ eigen crop",
+      "a1": 0.687,
+      "a2": 0.952,
+      "a3": 0.973,
+      "abs_rel": 0.546,
+      "rmse": 0.65,
+      "log_10": 0.089,
+      "rmse_log": 0.28,
+      "silog": 19.747,
+      "sq_rel": 2.461
+    },
+    "no_8m_cut": {
+      "desc": "không cắt GT > 8 m, max_depth_eval = 10",
+      "a1": 0.66,
+      "a2": 0.96,
+      "a3": 0.98,
+      "abs_rel": 0.513,
+      "rmse": 0.639,
+      "log_10": 0.088,
+      "rmse_log": 0.261,
+      "silog": 15.685,
+      "sq_rel": 2.377
+    },
+    "gt_raw": {
+      "desc": "GT: depth/ chính thức (chưa lấp lỗ) /10000",
+      "a1": 0.678,
+      "a2": 0.981,
+      "a3": 0.994,
+      "abs_rel": 0.351,
+      "rmse": 0.464,
+      "log_10": 0.078,
+      "rmse_log": 0.21,
+      "silog": 9.9,
+      "sq_rel": 1.187
+    },
+    "gt_mm_bfx": {
+      "desc": "GT đúng thang: depth_bfx giải mã mm /1000",
+      "a1": 0.831,
+      "a2": 0.973,
+      "a3": 0.987,
+      "abs_rel": 0.157,
+      "rmse": 0.466,
+      "log_10": 0.061,
+      "rmse_log": 0.188,
+      "silog": 13.619,
+      "sq_rel": 0.266
+    },
+    "gt_mm": {
+      "desc": "GT đúng thang: depth/ giải mã mm /1000",
+      "a1": 0.85,
+      "a2": 0.988,
+      "a3": 0.998,
+      "abs_rel": 0.114,
+      "rmse": 0.318,
+      "log_10": 0.053,
+      "rmse_log": 0.142,
+      "silog": 8.038,
+      "sq_rel": 0.051
+    }
+  }
+}

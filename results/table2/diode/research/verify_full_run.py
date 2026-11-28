@@ -3,7 +3,7 @@ from pathlib import Path
 import numpy as np
 
 root=Path.cwd()
-out=root/'results/diode-relative'
+out=root/'results/table2/diode'
 summary=json.loads((out/'vitl-native-all-summary.json').read_text())
 manifest=json.loads((out/'vitl-native-all-manifest.json').read_text())
 with (out/'vitl-native-all-per-image.csv').open(newline='',encoding='utf-8') as stream:

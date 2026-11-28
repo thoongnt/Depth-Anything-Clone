@@ -1,0 +1,20 @@
+A matching Triton is not available, some optimizations will not be enabled
+Traceback (most recent call last):
+  File "D:\Master\2025T2\Machinelearning\Depth-Anything-Clone\.venv\Lib\site-packages\xformers\__init__.py", line 57, in _is_triton_available
+    import triton  # noqa
+    ^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'triton'
+kitti/lidar/vits: 0it [00:00, ?it/s]kitti/lidar/vits: 21it [00:10,  2.08it/s]kitti/lidar/vits: 43it [00:20,  2.13it/s]kitti/lidar/vits: 65it [00:30,  2.15it/s]kitti/lidar/vits: 87it [00:40,  2.16it/s]kitti/lidar/vits: 109it [00:50,  2.16it/s]kitti/lidar/vits: 131it [01:00,  2.16it/s]kitti/lidar/vits: 153it [01:11,  2.14it/s]kitti/lidar/vits: 175it [01:21,  2.14it/s]kitti/lidar/vits: 197it [01:31,  2.14it/s]kitti/lidar/vits: 219it [01:42,  2.14it/s]kitti/lidar/vits: 241it [01:52,  2.14it/s]kitti/lidar/vits: 263it [02:02,  2.13it/s]kitti/lidar/vits: 285it [02:13,  2.12it/s]kitti/lidar/vits: 306it [02:24,  2.06it/s]kitti/lidar/vits: 326it [02:34,  2.02it/s]kitti/lidar/vits: 346it [02:45,  1.99it/s]kitti/lidar/vits: 366it [02:55,  1.96it/s]kitti/lidar/vits: 387it [03:05,  1.98it/s]kitti/lidar/vits: 408it [03:16,  1.99it/s]kitti/lidar/vits: 429it [03:27,  1.98it/s]kitti/lidar/vits: 451it [03:37,  2.02it/s]kitti/lidar/vits: 473it [03:48,  2.03it/s]kitti/lidar/vits: 494it [03:58,  2.03it/s]kitti/lidar/vits: 515it [04:09,  2.01it/s]kitti/lidar/vits: 536it [04:19,  2.02it/s]kitti/lidar/vits: 557it [04:29,  2.02it/s]kitti/lidar/vits: 557it [04:40,  2.02it/s]kitti/lidar/vits: 578it [04:40,  2.00it/s]kitti/lidar/vits: 599it [04:50,  2.02it/s]kitti/lidar/vits: 621it [05:01,  2.04it/s]kitti/lidar/vits: 642it [05:11,  2.03it/s]kitti/lidar/vits: 664it [05:22,  2.05it/s]kitti/lidar/vits: 686it [05:32,  2.07it/s]kitti/lidar/vits: 697it [05:37,  2.06it/s]
+crop=none,cap=80,clamp=cap         n= 697 abs_rel=0.1161 d1=0.8836 | depth 0.1127/0.8836
+crop=none,cap=80,clamp=none        n= 697 abs_rel=0.1171 d1=0.8822 | depth 0.1127/0.8836
+crop=none,cap=None,clamp=cap       n= 697 abs_rel=0.1159 d1=0.8838 | depth 0.1123/0.8838
+crop=none,cap=None,clamp=none      n= 697 abs_rel=0.1171 d1=0.8822 | depth 0.1123/0.8838
+crop=garg,cap=80,clamp=cap         n= 697 abs_rel=0.1064 d1=0.8994 | depth 0.1025/0.8994
+crop=garg,cap=80,clamp=none        n= 697 abs_rel=0.1073 d1=0.8979 | depth 0.1025/0.8994
+crop=garg,cap=None,clamp=cap       n= 697 abs_rel=0.1062 d1=0.8996 | depth 0.1021/0.8996 *
+crop=garg,cap=None,clamp=none      n= 697 abs_rel=0.1073 d1=0.8979 | depth 0.1021/0.8996
+crop=eigen,cap=80,clamp=cap        n= 697 abs_rel=0.1197 d1=0.8789 | depth 0.1151/0.8789
+crop=eigen,cap=80,clamp=none       n= 697 abs_rel=0.1206 d1=0.8776 | depth 0.1151/0.8789
+crop=eigen,cap=None,clamp=cap      n= 697 abs_rel=0.1196 d1=0.8791 | depth 0.1147/0.8791
+crop=eigen,cap=None,clamp=none     n= 697 abs_rel=0.1206 d1=0.8776 | depth 0.1147/0.8791
+paper 0.080/0.936

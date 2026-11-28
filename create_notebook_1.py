@@ -152,7 +152,7 @@ notebook = {'cells': [{'cell_type': 'markdown',
             'source': ['## 4.1. Đánh giá NYUv2: 654 ảnh test, protocol MiDaS\n',
                        'Lần kiểm chứng CLI 2026-11-26: ViT-L, AbsRel **0.0436349930**, δ₁ **0.9803277444**; '
                        'paper **0.043 / 0.981**. Đã gần nhưng chưa trùng tuyệt đối. Xem [báo cáo '
-                       'protocol](docs/nyuv2-reproduction.md). Cell dưới dùng lại evaluator và cache của '
+                       'protocol](docs/table2/nyuv2-reproduction.md). Cell dưới dùng lại evaluator và cache của '
                        'CLI.\n']},
            {'cell_type': 'code',
             'execution_count': None,
@@ -182,7 +182,7 @@ notebook = {'cells': [{'cell_type': 'markdown',
             'source': ['## 4.2. DIODE native validation: 325 indoor + 446 outdoor\n',
                        'Dùng chung `evaluate_diode_relative.py`: mask chính thức, fit và chấm disparity, '
                        'không crop/depth cap. Mốc ViT-L Table 2: **0.066 / 0.952**; split/clipping/TTA của '
-                       'paper chưa được xác nhận đầy đủ. Xem [protocol](docs/diode-relative-depth.md).\n',
+                       'paper chưa được xác nhận đầy đủ. Xem [protocol](docs/table2/diode-relative-depth.md).\n',
                        '\n',
                        'Chạy cell này riêng sau phần setup/model để chỉ đánh giá DIODE. '
                        "`diode_subset='all'`, `diode_limit=None` chạy đủ 771 ảnh; limit là chẩn đoán. Cache "
@@ -201,9 +201,9 @@ notebook = {'cells': [{'cell_type': 'markdown',
                        "    encoder=encoder, data_dir=data_dir, checkpoint_dir='./checkpoints',\n",
                        '    subset=diode_subset, limit=diode_limit, flip=diode_flip,\n',
                        '    model=model, transform=transform,\n',
-                       "    data_audit='results/diode-relative/audit/official-archive-verification.json',\n",
+                       "    data_audit='results/table2/diode/audit/official-archive-verification.json',\n",
                        "    cache_dir='.cache/diode-audit/fresh-predictions',\n",
-                       "    output_dir='results/diode-relative/audit-rerun',\n",
+                       "    output_dir='results/table2/diode/audit-rerun',\n",
                        ')\n',
                        '# Thay dòng DIODE cũ khi chạy lại cell, tránh lặp kết quả.\n',
                        "results = [row for row in results if row['Dataset'] != 'DIODE']\n",

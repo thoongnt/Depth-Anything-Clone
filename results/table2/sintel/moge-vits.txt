@@ -1,0 +1,14 @@
+A matching Triton is not available, some optimizations will not be enabled
+Traceback (most recent call last):
+  File "D:\Master\2025T2\Machinelearning\Depth-Anything-Clone\.venv\Lib\site-packages\xformers\__init__.py", line 57, in _is_triton_available
+    import triton  # noqa
+    ^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'triton'
+sintel/moge/vits: 0it [00:00, ?it/s]sintel/moge/vits: 21it [00:10,  2.04it/s]sintel/moge/vits: 42it [00:20,  2.07it/s]sintel/moge/vits: 63it [00:30,  2.06it/s]sintel/moge/vits: 84it [00:40,  2.06it/s]sintel/moge/vits: 107it [00:50,  2.14it/s]sintel/moge/vits: 134it [01:00,  2.32it/s]sintel/moge/vits: 161it [01:11,  2.38it/s]sintel/moge/vits: 186it [01:21,  2.41it/s]sintel/moge/vits: 212it [01:32,  2.44it/s]sintel/moge/vits: 238it [01:42,  2.47it/s]sintel/moge/vits: 264it [01:52,  2.48it/s]sintel/moge/vits: 290it [02:03,  2.48it/s]sintel/moge/vits: 315it [02:13,  2.49it/s]sintel/moge/vits: 340it [02:23,  2.48it/s]sintel/moge/vits: 366it [02:33,  2.49it/s]sintel/moge/vits: 392it [02:44,  2.48it/s]sintel/moge/vits: 417it [02:54,  2.48it/s]sintel/moge/vits: 442it [03:04,  2.48it/s]sintel/moge/vits: 467it [03:14,  2.48it/s]sintel/moge/vits: 492it [03:25,  2.45it/s]sintel/moge/vits: 518it [03:35,  2.47it/s]sintel/moge/vits: 544it [03:45,  2.47it/s]sintel/moge/vits: 569it [03:56,  2.48it/s]sintel/moge/vits: 594it [04:06,  2.48it/s]sintel/moge/vits: 619it [04:16,  2.47it/s]sintel/moge/vits: 644it [04:26,  2.44it/s]sintel/moge/vits: 669it [04:37,  2.43it/s]sintel/moge/vits: 694it [04:48,  2.38it/s]sintel/moge/vits: 722it [04:58,  2.49it/s]sintel/moge/vits: 758it [05:08,  2.79it/s]sintel/moge/vits: 758it [05:20,  2.79it/s]sintel/moge/vits: 789it [05:20,  2.74it/s]sintel/moge/vits: 816it [05:31,  2.67it/s]sintel/moge/vits: 842it [05:41,  2.62it/s]sintel/moge/vits: 868it [05:52,  2.57it/s]sintel/moge/vits: 894it [06:02,  2.55it/s]sintel/moge/vits: 920it [06:13,  2.52it/s]sintel/moge/vits: 945it [06:24,  2.44it/s]sintel/moge/vits: 968it [06:34,  2.37it/s]sintel/moge/vits: 993it [06:44,  2.39it/s]sintel/moge/vits: 1025it [06:55,  2.61it/s]sintel/moge/vits: 1058it [07:05,  2.81it/s]sintel/moge/vits: 1064it [07:06,  2.49it/s]
+crop=none,cap=None,clamp=cap       n=1064 abs_rel=0.5233 d1=0.6981 | depth 0.3280/0.6981 *
+crop=none,cap=None,clamp=none      n=1064 abs_rel=0.9362 d1=0.6850 | depth 0.3280/0.6981
+crop=none,cap=72,clamp=cap         n=1045 abs_rel=0.2908 d1=0.7250 | depth 0.2385/0.7250
+crop=none,cap=72,clamp=none        n=1045 abs_rel=0.3254 d1=0.7231 | depth 0.2385/0.7250
+crop=none,cap=80,clamp=cap         n=1045 abs_rel=0.3094 d1=0.7234 | depth 0.2468/0.7234
+crop=none,cap=80,clamp=none        n=1045 abs_rel=0.3534 d1=0.7211 | depth 0.2468/0.7234
+paper 0.464/0.739

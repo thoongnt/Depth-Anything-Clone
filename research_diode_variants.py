@@ -217,7 +217,7 @@ def run(summary_path, output_dir, workers=1):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--summary', type=Path, nargs='+', required=True)
-    parser.add_argument('--output-dir', type=Path, default=ROOT/'results/diode-relative/variants/protocol-grid')
+    parser.add_argument('--output-dir', type=Path, default=ROOT/'results/table2/diode/variants/protocol-grid')
     parser.add_argument('--workers', type=int, default=1)
     args = parser.parse_args()
     reports = [run(p, args.output_dir, args.workers) for p in args.summary]

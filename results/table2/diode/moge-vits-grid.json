@@ -1,0 +1,64 @@
+{
+  "dataset": "diode",
+  "source": "moge",
+  "encoder": "vits",
+  "flip": false,
+  "images": 771,
+  "paper": {
+    "abs_rel": 0.076,
+    "delta1": 0.939
+  },
+  "seconds": 224,
+  "checkpoint_sha256": "59afe57cfd9f4284deaf5b753d954723d7136ae842fba3e068ba03537ca1e60e",
+  "protocol_fixed": "short side 518 /14 cubic, ImageNet norm, bilinear to GT, OLS on 1/GT in disparity, metrics in disparity, mean over images",
+  "grid": {
+    "crop=none,cap=None,clamp=cap": {
+      "cap": null,
+      "crop": "none",
+      "clamp": "cap",
+      "images": 771,
+      "skipped": 0,
+      "abs_rel": 0.07126496126673192,
+      "delta1": 0.9466173924614734,
+      "depth_abs_rel": 0.06578213221926137,
+      "depth_delta1": 0.9466173924614734,
+      "mean_valid_pixels": 511713.5356679637
+    },
+    "crop=none,cap=None,clamp=none": {
+      "cap": null,
+      "crop": "none",
+      "clamp": "none",
+      "images": 771,
+      "skipped": 0,
+      "abs_rel": 0.07509744244556417,
+      "delta1": 0.9432898441048527,
+      "depth_abs_rel": 0.06578213221926137,
+      "depth_delta1": 0.9466173924614734,
+      "mean_valid_pixels": 511713.5356679637
+    },
+    "crop=none,cap=80,clamp=cap": {
+      "cap": 80,
+      "crop": "none",
+      "clamp": "cap",
+      "images": 771,
+      "skipped": 0,
+      "abs_rel": 0.06779298628506661,
+      "delta1": 0.9460165266026467,
+      "depth_abs_rel": 0.0707452062109633,
+      "depth_delta1": 0.9460165266026467,
+      "mean_valid_pixels": 511313.36835278856
+    },
+    "crop=none,cap=80,clamp=none": {
+      "cap": 80,
+      "crop": "none",
+      "clamp": "none",
+      "images": 771,
+      "skipped": 0,
+      "abs_rel": 0.0699341828714486,
+      "delta1": 0.9449797474225556,
+      "depth_abs_rel": 0.0707452062109633,
+      "depth_delta1": 0.9460165266026467,
+      "mean_valid_pixels": 511313.36835278856
+    }
+  }
+}

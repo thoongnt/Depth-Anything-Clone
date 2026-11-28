@@ -1,0 +1,31 @@
+courtyard: images so far 38
+delivery_area: images so far 82
+electro: images so far 127
+facade: images so far 203
+kicker: images so far 234
+meadow: images so far 249
+office: images so far 275
+pipes: images so far 289
+playground: images so far 327
+relief_2: images so far 358
+relief: images so far 389
+terrace: images so far 412
+terrains: images so far 454
+vits nearest        n=454 abs_rel=0.0606 d1=0.9654  (paper 0.127/0.885)
+vits lin/half       n=454 abs_rel=0.2025 d1=0.6201  (paper 0.127/0.885)
+vits lin/strict     n=319 abs_rel=0.0424 d1=0.9764  (paper 0.127/0.885)
+vits lin/nnmask     n=454 abs_rel=4.1789 d1=0.0648  (paper 0.127/0.885)
+vits area/half      n=300 abs_rel=0.1350 d1=0.8003  (paper 0.127/0.885)
+vits areanorm/half  n=300 abs_rel=0.0379 d1=0.9833  (paper 0.127/0.885)
+vitb nearest        n=454 abs_rel=0.0524 d1=0.9743  (paper 0.126/0.884)
+vitb lin/half       n=454 abs_rel=0.1990 d1=0.6235  (paper 0.126/0.884)
+vitb lin/strict     n=319 abs_rel=0.0364 d1=0.9819  (paper 0.126/0.884)
+vitb lin/nnmask     n=454 abs_rel=4.1682 d1=0.0649  (paper 0.126/0.884)
+vitb area/half      n=300 abs_rel=0.1328 d1=0.8035  (paper 0.126/0.884)
+vitb areanorm/half  n=300 abs_rel=0.0316 d1=0.9880  (paper 0.126/0.884)
+vitl nearest        n=454 abs_rel=0.0472 d1=0.9800  (paper 0.127/0.882)
+vitl lin/half       n=454 abs_rel=0.1963 d1=0.6278  (paper 0.127/0.882)
+vitl lin/strict     n=319 abs_rel=0.0336 d1=0.9858  (paper 0.127/0.882)
+vitl lin/nnmask     n=454 abs_rel=4.1606 d1=0.0647  (paper 0.127/0.882)
+vitl area/half      n=300 abs_rel=0.1304 d1=0.8095  (paper 0.127/0.882)
+vitl areanorm/half  n=300 abs_rel=0.0294 d1=0.9913  (paper 0.127/0.882)

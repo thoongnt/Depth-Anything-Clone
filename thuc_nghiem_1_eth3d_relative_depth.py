@@ -21,7 +21,7 @@ from evaluate_nyuv2 import make_transform, sha256
 
 ROOT = Path(__file__).resolve().parent
 CACHE = ROOT / '.cache/eth3d-relative'
-RESULTS = ROOT / 'results/eth3d-relative'
+RESULTS = ROOT / 'results/table2/eth3d'
 NATIVE = ROOT / 'data/eth3d/multi_view_training_dslr_undistorted'
 OFFICIAL = CACHE / 'official-stride3'
 PAPER = {'vitl': (0.127, 0.882), 'vitb': (0.126, 0.884), 'vits': (0.127, 0.885)}

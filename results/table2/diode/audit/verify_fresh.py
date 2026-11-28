@@ -1,8 +1,8 @@
 import json,csv,hashlib
 from pathlib import Path
 import numpy as np
-root=Path.cwd();out=root/'results/diode-relative/audit-rerun'
-old=json.loads((root/'results/diode-relative/initial-full-run-summary.json').read_text())
+root=Path.cwd();out=root/'results/table2/diode/audit-rerun'
+old=json.loads((root/'results/table2/diode/initial-full-run-summary.json').read_text())
 new=json.loads((out/'fresh-inference-summary.json').read_text())
 assert new['cache_hits']==0 and new['refresh_cache']
 assert new['num_images']==771 and new['full_validation_split']

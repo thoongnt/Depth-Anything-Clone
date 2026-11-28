@@ -33,7 +33,8 @@ import platform
 
 ROOT = pathlib.Path(__file__).parent.parent.resolve()
 
-HOME_DIR = os.path.expanduser("./data")
+# Datasets live in <repo>/data (override with DA_DATA_ROOT).
+HOME_DIR = os.environ.get("DA_DATA_ROOT", str(ROOT.parent.parent / "data"))
 
 COMMON_CONFIG = {
     "save_dir": os.path.expanduser("./depth_anything_finetune"),
@@ -56,8 +57,11 @@ DATASETS_CONFIG = {
         "filenames_file": "./train_test_inputs/kitti_eigen_train_files_with_gt.txt",
         "input_height": 352,
         "input_width": 1216,  # 704
-        "data_path_eval": os.path.join(HOME_DIR, "Kitti/raw_data"),
-        "gt_path_eval": os.path.join(HOME_DIR, "Kitti/data_depth_annotated_zoedepth"),
+        # Table 4 eval: raw KITTI drives + data_depth_annotated, whose train/ and val/
+        # drives are joined in kitti/gt_merged by directory junctions
+        # (see docs/table4-reproduction.md).
+        "data_path_eval": os.path.join(HOME_DIR, "kitti/raw"),
+        "gt_path_eval": os.path.join(HOME_DIR, "kitti/gt_merged"),
         "filenames_file_eval": "./train_test_inputs/kitti_eigen_test_files_with_gt.txt",
 
         "min_depth_eval": 1e-3,
@@ -119,7 +123,7 @@ DATASETS_CONFIG = {
     },
     "ibims": {
         "dataset": "ibims",
-        "ibims_root": os.path.join(HOME_DIR, "iBims1/m1455541/ibims1_core_raw/"),
+        "ibims_root": os.path.join(HOME_DIR, "ibims/ibims1_core_raw/"),
         "eigen_crop": True,
         "garg_crop": False,
         "do_kb_crop": False,
@@ -130,7 +134,11 @@ DATASETS_CONFIG = {
     },
     "sunrgbd": {
         "dataset": "sunrgbd",
-        "sunrgbd_root": os.path.join(HOME_DIR, "SUNRGB-D"),
+        # Paper protocol (Table 5): ankurhanda's SUN RGB-D test set, depth PNG / 10000.
+        # Those PNGs are the official depth_bfx files, so GT = 0.8 x true depth;
+        # for correctly scaled GT use sunrgbd/test_mm with sunrgbd_depth_scale=1000.
+        "sunrgbd_root": os.path.join(HOME_DIR, "sunrgbd/test_ahanda"),
+        "sunrgbd_depth_scale": 10000,
         "eigen_crop": True,
         "garg_crop": False,
         "do_kb_crop": False,
@@ -174,7 +182,7 @@ DATASETS_CONFIG = {
     },
     "diode_outdoor": {
         "dataset": "diode_outdoor",
-        "diode_outdoor_root": os.path.join(HOME_DIR, "DIODE/val/outdoor/"),
+        "diode_outdoor_root": os.path.join(HOME_DIR, "diode/val/outdoor/"),
         "eigen_crop": False,
         "garg_crop": True,
         "do_kb_crop": False,
@@ -207,7 +215,8 @@ DATASETS_CONFIG = {
     },
     "vkitti2": {
         "dataset": "vkitti2",
-        "vkitti2_root": os.path.join(HOME_DIR, "vKitti2/"),
+        "vkitti2_root": os.path.join(HOME_DIR, "vkitti2/"),
+        "vkitti2_split_seed": 0,
         "eigen_crop": False,
         "garg_crop": True,
         "do_kb_crop": True,

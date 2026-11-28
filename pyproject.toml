@@ -21,6 +21,7 @@ dependencies = [
     "tabulate",
     "jupyter",
     "ipykernel",
+    "tqdm>=4.66.5",
 ]
 
 

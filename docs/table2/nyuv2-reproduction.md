@@ -68,17 +68,17 @@ output riêng; kết quả đã báo cáo ở đây **không dùng flip**.
 
 ## Artifacts và kiểm tra
 
-- `results/nyuv2-relative/vitl-midas-summary.json`: metric chưa làm tròn,
+- `results/table2/nyuv2/vitl-midas-summary.json`: metric chưa làm tròn,
   số ảnh, protocol, checkpoint/split SHA-256, môi trường và độ lệch với paper.
-- `results/nyuv2-relative/vitl-midas-per-image.csv`: đủ 654 sample ID khác nhau,
+- `results/table2/nyuv2/vitl-midas-per-image.csv`: đủ 654 sample ID khác nhau,
   mask pixel count, scale, shift và metric từng ảnh.
-- `results/nyuv2-relative/legacy-notebook-nyuv2.json`: lưu output notebook cũ
+- `results/table2/nyuv2/legacy-notebook-nyuv2.json`: lưu output notebook cũ
   để không đánh mất mốc 0.0527 / 0.9653 khi sửa cell.
-- `results/nyuv2-relative/vitl-filled-eigen-disparity-diagnostic-summary.json`:
+- `results/table2/nyuv2/vitl-filled-eigen-disparity-diagnostic-summary.json`:
   đối chứng chỉ đổi không gian metric trên cùng 654 dự đoán.
-- `results/nyuv2-relative/raw-eigen-diagnostic.json`: đối chứng raw depth + Eigen
+- `results/table2/nyuv2/raw-eigen-diagnostic.json`: đối chứng raw depth + Eigen
   mask cho 654 ảnh (0.0434173740 / 0.9803159290); không chọn làm mặc định.
-- `results/nyuv2-relative/checkpoint-comparison.json`: hai bản checkpoint công bố
+- `results/table2/nyuv2/checkpoint-comparison.json`: hai bản checkpoint công bố
   có **407/407 tensor giống hệt**, dù hash file khác do serialization.
 - `.cache/nyuv2-relative/`: dự đoán float32 khoảng 0.8 GB, có manifest theo
   checkpoint, input, model/transform source và flip. Chạy lại sử dụng cache này.

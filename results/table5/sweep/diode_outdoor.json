@@ -1,0 +1,80 @@
+{
+  "dataset": "diode_outdoor",
+  "run": "diode_outdoor",
+  "overrides": {},
+  "n": 446,
+  "variants": {
+    "base": {
+      "desc": "protocol gốc của evaluate.py",
+      "a1": 0.288,
+      "a2": 0.61,
+      "a3": 0.836,
+      "abs_rel": 0.794,
+      "rmse": 6.653,
+      "log_10": 0.187,
+      "rmse_log": 0.531,
+      "silog": 34.926,
+      "sq_rel": 9.32
+    },
+    "noflip": {
+      "desc": "không flip-TTA (chỉ 1 forward)",
+      "a1": 0.289,
+      "a2": 0.61,
+      "a3": 0.835,
+      "abs_rel": 0.794,
+      "rmse": 6.668,
+      "log_10": 0.187,
+      "rmse_log": 0.532,
+      "silog": 34.974,
+      "sq_rel": 9.364
+    },
+    "no_crop": {
+      "desc": "bỏ garg crop",
+      "a1": 0.316,
+      "a2": 0.622,
+      "a3": 0.828,
+      "abs_rel": 0.867,
+      "rmse": 7.63,
+      "log_10": 0.187,
+      "rmse_log": 0.552,
+      "silog": 40.638,
+      "sq_rel": 12.014
+    },
+    "eigen_crop": {
+      "desc": "eigen crop KITTI thay cho garg crop",
+      "a1": 0.292,
+      "a2": 0.607,
+      "a3": 0.831,
+      "abs_rel": 0.867,
+      "rmse": 7.135,
+      "log_10": 0.19,
+      "rmse_log": 0.544,
+      "silog": 36.484,
+      "sq_rel": 11.176
+    },
+    "valid_mask": {
+      "desc": "áp depth_mask.npy (loader gốc bỏ qua)",
+      "a1": 0.29,
+      "a2": 0.613,
+      "a3": 0.838,
+      "abs_rel": 0.572,
+      "rmse": 6.476,
+      "log_10": 0.184,
+      "rmse_log": 0.51,
+      "silog": 32.21,
+      "sq_rel": 5.429
+    },
+    "max_eval_300": {
+      "desc": "max_depth_eval = 300 (giữ GT xa > 80 m)",
+      "a1": 0.286,
+      "a2": 0.608,
+      "a3": 0.833,
+      "abs_rel": 0.792,
+      "rmse": 7.914,
+      "log_10": 0.189,
+      "rmse_log": 0.539,
+      "silog": 35.856,
+      "sq_rel": 9.512
+    }
+  }
+}

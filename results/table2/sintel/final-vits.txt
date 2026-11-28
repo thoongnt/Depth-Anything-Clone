@@ -1,0 +1,14 @@
+A matching Triton is not available, some optimizations will not be enabled
+Traceback (most recent call last):
+  File "D:\Master\2025T2\Machinelearning\Depth-Anything-Clone\.venv\Lib\site-packages\xformers\__init__.py", line 57, in _is_triton_available
+    import triton  # noqa
+    ^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'triton'
+sintel/final/vits: 0it [00:00, ?it/s]sintel/final/vits: 19it [00:10,  1.85it/s]sintel/final/vits: 40it [00:20,  1.99it/s]sintel/final/vits: 64it [00:30,  2.15it/s]sintel/final/vits: 89it [00:40,  2.25it/s]sintel/final/vits: 115it [00:51,  2.37it/s]sintel/final/vits: 141it [01:02,  2.34it/s]sintel/final/vits: 164it [01:12,  2.28it/s]sintel/final/vits: 186it [01:22,  2.26it/s]sintel/final/vits: 208it [01:33,  2.23it/s]sintel/final/vits: 230it [01:43,  2.21it/s]sintel/final/vits: 254it [01:53,  2.25it/s]sintel/final/vits: 280it [02:03,  2.35it/s]sintel/final/vits: 306it [02:15,  2.31it/s]sintel/final/vits: 329it [02:25,  2.28it/s]sintel/final/vits: 353it [02:35,  2.31it/s]sintel/final/vits: 379it [02:45,  2.38it/s]sintel/final/vits: 405it [02:57,  2.33it/s]sintel/final/vits: 428it [03:08,  2.30it/s]sintel/final/vits: 451it [03:18,  2.27it/s]sintel/final/vits: 474it [03:28,  2.26it/s]sintel/final/vits: 497it [03:39,  2.25it/s]sintel/final/vits: 520it [03:49,  2.25it/s]sintel/final/vits: 543it [03:59,  2.22it/s]sintel/final/vits: 565it [04:10,  2.20it/s]sintel/final/vits: 565it [04:20,  2.20it/s]sintel/final/vits: 587it [04:20,  2.17it/s]sintel/final/vits: 611it [04:30,  2.24it/s]sintel/final/vits: 636it [04:41,  2.28it/s]sintel/final/vits: 660it [04:52,  2.25it/s]sintel/final/vits: 682it [05:02,  2.21it/s]sintel/final/vits: 704it [05:12,  2.19it/s]sintel/final/vits: 730it [05:23,  2.29it/s]sintel/final/vits: 760it [05:33,  2.49it/s]sintel/final/vits: 790it [05:46,  2.40it/s]sintel/final/vits: 813it [05:56,  2.35it/s]sintel/final/vits: 838it [06:06,  2.39it/s]sintel/final/vits: 864it [06:17,  2.43it/s]sintel/final/vits: 890it [06:27,  2.46it/s]sintel/final/vits: 916it [06:37,  2.46it/s]sintel/final/vits: 941it [06:48,  2.47it/s]sintel/final/vits: 966it [06:58,  2.44it/s]sintel/final/vits: 990it [07:08,  2.42it/s]sintel/final/vits: 1014it [07:18,  2.41it/s]sintel/final/vits: 1044it [07:29,  2.55it/s]sintel/final/vits: 1064it [07:37,  2.33it/s]
+crop=none,cap=None,clamp=cap       n=1064 abs_rel=693473.5437 d1=0.7014 | depth 1418747.8794/0.7014
+crop=none,cap=None,clamp=none      n=1064 abs_rel=693474.4631 d1=0.6777 | depth 1418747.8794/0.7014
+crop=none,cap=72,clamp=cap         n=1045 abs_rel=0.3023 d1=0.7328 | depth 0.2227/0.7328
+crop=none,cap=72,clamp=none        n=1045 abs_rel=0.3247 d1=0.7323 | depth 0.2227/0.7328
+crop=none,cap=80,clamp=cap         n=1045 abs_rel=0.3130 d1=0.7313 | depth 0.2284/0.7313
+crop=none,cap=80,clamp=none        n=1045 abs_rel=0.3398 d1=0.7306 | depth 0.2284/0.7313 *
+paper 0.464/0.739

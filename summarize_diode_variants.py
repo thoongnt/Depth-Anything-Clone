@@ -72,7 +72,7 @@ Cùng checkpoint relative ViT-L và dữ liệu đã xác thực 2.313 file. Ful
                        and r['configuration'] == 'native' and r['aggregation'] == 'image-mean')
             text += f"| {flip} | {subset} | {row['num_images']} | {row['abs_rel']:.9f} | {row['delta1']:.9f} |\n"
     text += '''
-Ba cảnh outdoor đều lệch so với mốc Table 2. Với flip và cách chấm native, AbsRel từng cảnh nằm trong khoảng 0.266–0.482. [Kết quả từng scene](../results/diode-relative/variants/native-per-scene.csv).
+Ba cảnh outdoor đều lệch so với mốc Table 2. Với flip và cách chấm native, AbsRel từng cảnh nằm trong khoảng 0.266–0.482. [Kết quả từng scene](../results/table2/diode/variants/native-per-scene.csv).
 
 ## Gần số paper nhất theo phạm vi
 
@@ -107,26 +107,26 @@ Mọi cấu hình giữ supplied mask DIODE và depth hữu hạn/dương. Ngư�
 
 ## Artefact và cách chạy
 
-- [Toàn bộ CSV](../results/diode-relative/variants/protocol-grid/comparison.csv), [JSON](../results/diode-relative/variants/protocol-grid/comparison.json), [định nghĩa cấu hình](../results/diode-relative/variants/configurations.json).
-- [Full flip summary](../results/diode-relative/variants/vitl-native-all-flip-summary.json), [CSV từng ảnh](../results/diode-relative/variants/vitl-native-all-flip-per-image.csv).
+- [Toàn bộ CSV](../results/table2/diode/variants/protocol-grid/comparison.csv), [JSON](../results/table2/diode/variants/protocol-grid/comparison.json), [định nghĩa cấu hình](../results/table2/diode/variants/configurations.json).
+- [Full flip summary](../results/table2/diode/variants/vitl-native-all-flip-summary.json), [CSV từng ảnh](../results/table2/diode/variants/vitl-native-all-flip-per-image.csv).
 - Thư mục `protocol-grid/no-flip-*` và `protocol-grid/flip-*` lưu CSV từng ảnh cho từng cấu hình: metric, pixel, scale/shift, trạng thái.
 
 ```powershell
-.venv\\Scripts\\python.exe evaluate_diode_relative.py --flip --data-audit results/diode-relative/audit/official-archive-verification.json --cache-dir .cache/diode-variants/predictions --output-dir results/diode-relative/variants
+.venv\\Scripts\\python.exe evaluate_diode_relative.py --flip --data-audit results/table2/diode/audit/official-archive-verification.json --cache-dir .cache/diode-variants/predictions --output-dir results/table2/diode/variants
 
-.venv\\Scripts\\python.exe research_diode_variants.py --workers 8 --summary results/diode-relative/audit-rerun/fresh-inference-summary.json results/diode-relative/variants/vitl-native-all-flip-summary.json
+.venv\\Scripts\\python.exe research_diode_variants.py --workers 8 --summary results/table2/diode/audit-rerun/fresh-inference-summary.json results/table2/diode/variants/vitl-native-all-flip-summary.json
 ```
 
 Evaluator mặc định và kết quả NYUv2 không thay đổi. Những kết quả được chọn vì gần số đích là thăm dò sau khi biết số paper, không phải kiểm chứng độc lập protocol.
 '''
-    (ROOT/'docs/diode-variants.md').write_text(text, encoding='utf-8')
+    (ROOT/'docs/table2/diode-variants.md').write_text(text, encoding='utf-8')
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--grid-dir', type=Path, default=ROOT/'results/diode-relative/variants/protocol-grid')
-    parser.add_argument('--baseline', type=Path, default=ROOT/'results/diode-relative/audit-rerun/fresh-inference-summary.json')
-    parser.add_argument('--flip-summary', type=Path, default=ROOT/'results/diode-relative/variants/vitl-native-all-flip-summary.json')
+    parser.add_argument('--grid-dir', type=Path, default=ROOT/'results/table2/diode/variants/protocol-grid')
+    parser.add_argument('--baseline', type=Path, default=ROOT/'results/table2/diode/audit-rerun/fresh-inference-summary.json')
+    parser.add_argument('--flip-summary', type=Path, default=ROOT/'results/table2/diode/variants/vitl-native-all-flip-summary.json')
     args = parser.parse_args()
     result = merge(args.grid_dir, args.baseline, args.flip_summary)
     write_report(result)

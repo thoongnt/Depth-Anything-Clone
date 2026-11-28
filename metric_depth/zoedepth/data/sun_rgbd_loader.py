@@ -76,7 +76,10 @@ class ToTensor(object):
 
 
 class SunRGBD(Dataset):
-    def __init__(self, data_dir_root):
+    def __init__(self, data_dir_root, depth_scale=10000.0):
+        # depth_scale: PNG value / depth_scale = depth used as GT. 10000 is the
+        # value shipped by Depth Anything; 1000 reads millimetre PNGs (ZoeDepth).
+        self.depth_scale = depth_scale
         # test_file_dirs = loadmat(train_test_file)['alltest'].squeeze()
         # all_test = [t[0].replace("/n/fs/sun3d/data/", "") for t in test_file_dirs]
         # self.all_test = [os.path.join(data_dir_root, t) for t in all_test]
@@ -100,7 +103,7 @@ class SunRGBD(Dataset):
         depth_path = self.depth_files[idx]
 
         image = np.asarray(Image.open(image_path), dtype=np.float32) / 255.0
-        depth = np.asarray(Image.open(depth_path), dtype='uint16') / 10000.0
+        depth = np.asarray(Image.open(depth_path), dtype='uint16') / self.depth_scale
         # print(depth, depth.min(), depth.max())
         depth[depth > 8] = -1
         depth = depth[..., None]
@@ -110,6 +113,6 @@ class SunRGBD(Dataset):
         return len(self.image_files)
 
 
-def get_sunrgbd_loader(data_dir_root, batch_size=1, **kwargs):
-    dataset = SunRGBD(data_dir_root)
+def get_sunrgbd_loader(data_dir_root, batch_size=1, depth_scale=10000.0, **kwargs):
+    dataset = SunRGBD(data_dir_root, depth_scale=depth_scale)
     return DataLoader(dataset, batch_size, **kwargs)

@@ -1,0 +1,12 @@
+diode/moge-mask/vits: 0it [00:00, ?it/s]A matching Triton is not available, some optimizations will not be enabled
+Traceback (most recent call last):
+  File "D:\Master\2025T2\Machinelearning\Depth-Anything-Clone\.venv\Lib\site-packages\xformers\__init__.py", line 57, in _is_triton_available
+    import triton  # noqa
+    ^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'triton'
+diode/moge-mask/vits: 23it [00:10,  2.27it/s]diode/moge-mask/vits: 48it [00:20,  2.36it/s]diode/moge-mask/vits: 73it [00:30,  2.42it/s]diode/moge-mask/vits: 100it [00:40,  2.51it/s]diode/moge-mask/vits: 127it [00:51,  2.46it/s]diode/moge-mask/vits: 151it [01:02,  2.43it/s]diode/moge-mask/vits: 175it [01:12,  2.39it/s]diode/moge-mask/vits: 199it [01:22,  2.38it/s]diode/moge-mask/vits: 223it [01:33,  2.36it/s]diode/moge-mask/vits: 247it [01:43,  2.35it/s]diode/moge-mask/vits: 274it [01:53,  2.44it/s]diode/moge-mask/vits: 301it [02:05,  2.37it/s]diode/moge-mask/vits: 325it [02:16,  2.35it/s]diode/moge-mask/vits: 356it [02:26,  2.57it/s]diode/moge-mask/vits: 396it [02:36,  2.97it/s]diode/moge-mask/vits: 436it [02:48,  3.06it/s]diode/moge-mask/vits: 469it [02:59,  3.03it/s]diode/moge-mask/vits: 506it [03:09,  3.20it/s]diode/moge-mask/vits: 545it [03:20,  3.38it/s]diode/moge-mask/vits: 545it [03:30,  3.38it/s]diode/moge-mask/vits: 575it [03:30,  3.24it/s]diode/moge-mask/vits: 605it [03:40,  3.15it/s]diode/moge-mask/vits: 638it [03:50,  3.17it/s]diode/moge-mask/vits: 671it [04:03,  3.00it/s]diode/moge-mask/vits: 710it [04:13,  3.25it/s]diode/moge-mask/vits: 749it [04:24,  3.35it/s]diode/moge-mask/vits: 771it [04:29,  2.86it/s]
+crop=none,cap=None,clamp=cap       n= 771 abs_rel=0.0701 d1=0.9478 | depth 0.0646/0.9478
+crop=none,cap=None,clamp=none      n= 771 abs_rel=0.0738 d1=0.9444 | depth 0.0646/0.9478 *
+crop=none,cap=80,clamp=cap         n= 771 abs_rel=0.0667 d1=0.9471 | depth 0.0688/0.9471
+crop=none,cap=80,clamp=none        n= 771 abs_rel=0.0688 d1=0.9461 | depth 0.0688/0.9471
+paper 0.076/0.939

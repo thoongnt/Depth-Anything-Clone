@@ -32,11 +32,14 @@ from torchvision import transforms
 
 
 class ToTensor(object):
-    def __init__(self):
+    def __init__(self, antialias=False):
         # self.normalize = transforms.Normalize(
         #     mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
         self.normalize = lambda x : x
-        self.resize = transforms.Resize(480)
+        # The original environment (metric_depth/environment.yml, torchvision 0.14)
+        # resized tensors without antialiasing; torchvision >= 0.17 defaults to
+        # antialias=True, so the legacy behaviour is requested explicitly.
+        self.resize = transforms.Resize(480, antialias=antialias)
 
     def __call__(self, sample):
         image, depth = sample['image'], sample['depth']
@@ -80,7 +83,7 @@ class ToTensor(object):
 
 
 class DIODE(Dataset):
-    def __init__(self, data_dir_root):
+    def __init__(self, data_dir_root, antialias=False):
         import glob
 
         # image paths are of the form <data_dir_root>/scene_#/scan_#/*.png
@@ -90,7 +93,7 @@ class DIODE(Dataset):
                             for r in self.image_files]
         self.depth_mask_files = [
             r.replace(".png", "_depth_mask.npy") for r in self.image_files]
-        self.transform = ToTensor()
+        self.transform = ToTensor(antialias=antialias)
 
     def __getitem__(self, idx):
         image_path = self.image_files[idx]
@@ -118,8 +121,8 @@ class DIODE(Dataset):
         return len(self.image_files)
 
 
-def get_diode_loader(data_dir_root, batch_size=1, **kwargs):
-    dataset = DIODE(data_dir_root)
+def get_diode_loader(data_dir_root, batch_size=1, antialias=False, **kwargs):
+    dataset = DIODE(data_dir_root, antialias=antialias)
     return DataLoader(dataset, batch_size, **kwargs)
 
 # get_diode_loader(data_dir_root="datasets/diode/val/outdoor")

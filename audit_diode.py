@@ -108,7 +108,7 @@ if __name__ == '__main__':
     group.add_argument('--reference-report', type=Path)
     parser.add_argument('--data-dir', type=Path, default=ROOT/'data')
     parser.add_argument('--output', type=Path,
-                        default=ROOT/'results/diode-relative/audit/official-archive-verification.json')
+                        default=ROOT/'results/table2/diode/audit/official-archive-verification.json')
     args = parser.parse_args()
     val_dir = (args.data_dir/'diode/val').resolve()
     if args.archive:

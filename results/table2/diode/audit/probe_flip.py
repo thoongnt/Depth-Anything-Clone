@@ -6,8 +6,8 @@ import torch.nn.functional as F
 from depth_anything.dpt import load_depth_anything
 from evaluate_nyuv2 import make_transform
 from evaluate_diode_relative import score_diode,aggregate
-root=Path.cwd();out=root/'results/diode-relative/audit'
-probe=json.loads((root/'results/diode-relative/research/sample-probe.json').read_text())
+root=Path.cwd();out=root/'results/table2/diode/audit'
+probe=json.loads((root/'results/table2/diode/research/sample-probe.json').read_text())
 model=load_depth_anything('vitl',str(root/'checkpoints'),'cuda').eval()
 transform=make_transform()
 torch.backends.cuda.matmul.allow_tf32=False;torch.backends.cudnn.allow_tf32=False

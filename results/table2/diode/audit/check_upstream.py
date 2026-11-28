@@ -1,6 +1,6 @@
 import urllib.request, ast, hashlib, json
 from pathlib import Path
-out=Path('results/diode-relative/audit/upstream');out.mkdir(exist_ok=True)
+out=Path('results/table2/diode/audit/upstream');out.mkdir(exist_ok=True)
 urls={name:'https://raw.githubusercontent.com/LiheYoung/Depth-Anything/main/'+path
       for name,path in [('dpt.py','depth_anything/dpt.py'),('transform.py','depth_anything/util/transform.py'),('run.py','run.py')]}
 for name,url in urls.items():

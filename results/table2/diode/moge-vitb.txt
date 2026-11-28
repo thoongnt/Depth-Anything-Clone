@@ -1,0 +1,12 @@
+diode/moge/vitb: 0it [00:00, ?it/s]A matching Triton is not available, some optimizations will not be enabled
+Traceback (most recent call last):
+  File "D:\Master\2025T2\Machinelearning\Depth-Anything-Clone\.venv\Lib\site-packages\xformers\__init__.py", line 57, in _is_triton_available
+    import triton  # noqa
+    ^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'triton'
+diode/moge/vitb: 16it [00:10,  1.58it/s]diode/moge/vitb: 39it [00:20,  1.96it/s]diode/moge/vitb: 63it [00:30,  2.12it/s]diode/moge/vitb: 87it [00:41,  2.16it/s]diode/moge/vitb: 110it [00:51,  2.19it/s]diode/moge/vitb: 133it [01:02,  2.17it/s]diode/moge/vitb: 155it [01:15,  2.02it/s]diode/moge/vitb: 173it [01:25,  1.93it/s]diode/moge/vitb: 192it [01:36,  1.90it/s]diode/moge/vitb: 211it [01:46,  1.86it/s]diode/moge/vitb: 230it [01:57,  1.85it/s]diode/moge/vitb: 249it [02:07,  1.86it/s]diode/moge/vitb: 268it [02:17,  1.85it/s]diode/moge/vitb: 289it [02:28,  1.90it/s]diode/moge/vitb: 311it [02:38,  1.97it/s]diode/moge/vitb: 334it [02:48,  2.06it/s]diode/moge/vitb: 358it [02:58,  2.15it/s]diode/moge/vitb: 386it [03:08,  2.32it/s]diode/moge/vitb: 386it [03:20,  2.32it/s]diode/moge/vitb: 414it [03:20,  2.36it/s]diode/moge/vitb: 439it [03:32,  2.29it/s]diode/moge/vitb: 461it [03:43,  2.18it/s]diode/moge/vitb: 486it [03:53,  2.25it/s]diode/moge/vitb: 511it [04:03,  2.31it/s]diode/moge/vitb: 539it [04:14,  2.43it/s]diode/moge/vitb: 567it [04:27,  2.33it/s]diode/moge/vitb: 590it [04:37,  2.30it/s]diode/moge/vitb: 613it [04:48,  2.23it/s]diode/moge/vitb: 635it [04:58,  2.21it/s]diode/moge/vitb: 635it [05:10,  2.21it/s]diode/moge/vitb: 656it [05:10,  2.10it/s]diode/moge/vitb: 680it [05:20,  2.17it/s]diode/moge/vitb: 707it [05:30,  2.31it/s]diode/moge/vitb: 734it [05:41,  2.36it/s]diode/moge/vitb: 759it [05:52,  2.34it/s]diode/moge/vitb: 771it [05:56,  2.16it/s]
+crop=none,cap=None,clamp=cap       n= 771 abs_rel=0.0646 d1=0.9526 | depth 0.0603/0.9526
+crop=none,cap=None,clamp=none      n= 771 abs_rel=0.0686 d1=0.9488 | depth 0.0603/0.9526 *
+crop=none,cap=80,clamp=cap         n= 771 abs_rel=0.0614 d1=0.9519 | depth 0.0665/0.9519
+crop=none,cap=80,clamp=none        n= 771 abs_rel=0.0636 d1=0.9508 | depth 0.0665/0.9519
+paper 0.069/0.946

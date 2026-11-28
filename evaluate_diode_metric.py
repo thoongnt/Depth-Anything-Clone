@@ -99,7 +99,7 @@ def evaluate(domain, output_dir, limit=None):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--domain', choices=['outdoor', 'indoor', 'both'], default='both')
-    parser.add_argument('--output-dir', type=Path, default=ROOT/'results/diode-metric')
+    parser.add_argument('--output-dir', type=Path, default=ROOT/'results/table5/diode-metric')
     parser.add_argument('--limit', type=int, help='Optional smoke test limit for each domain')
     args = parser.parse_args()
     for domain in ('outdoor', 'indoor') if args.domain == 'both' else (args.domain,):

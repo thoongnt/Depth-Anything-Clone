@@ -122,20 +122,29 @@ Note that in this locally loading manner, you also do not have to install the ``
 </details>
 
 
+## Tái hiện các bảng của paper (Table 2, 3, 4, 5)
+
+- [Table 2: zero-shot relative depth](docs/table2-reproduction.md): đã chạy đủ 5 dataset × 3 encoder (bỏ DDAD). **NYUv2, KITTI, DIODE ĐẠT** với một protocol chung cho cả 3 encoder (6 ô khớp 3 chữ số). Sintel và ETH3D chưa có protocol chung; khi chỉnh tham số riêng cho từng encoder thì thêm 3 ô ĐẠT (12/15 ô, ghi rõ là giả thuyết). Evaluator chung `scripts/eval_relative.py`, tổng hợp bằng `scripts/collect_table2.py`, kết quả ở `results/table2/`.
+- [Table 3: NYUv2 metric depth](docs/table3-reproduction.md): **hoàn thành, khớp 6/6 chỉ số** (cùng môi trường và checkpoint, không cần chạy lại). Kết quả ở `results/table3/`.
+- [Table 4: KITTI metric depth](docs/table4-reproduction.md): **hoàn thành, khớp 6/6 chỉ số** bằng lệnh chính thức `evaluate.py -d kitti` (652 ảnh). Kết quả ở `results/table4/`.
+- [Table 5: zero-shot metric depth](docs/table5-reproduction.md): SUN RGB-D, iBims-1, vKITTI2, DIODE Outdoor. Kết quả ở `results/table5/`, chạy bằng `scripts/run_table5.sh`.
+- Table 6–11: không thực nghiệm lại, vì cần checkpoint huấn luyện riêng hoặc nằm ngoài phạm vi.
+- [Ghi chép cải tiến](docs/improvements.md): mọi cấu hình cho kết quả tốt hơn paper, chia thành cải tiến phương pháp và khác biệt do protocol chấm; dùng cho giai đoạn cải tiến sau khi tái lập.
+
 ## Thực nghiệm 1 trên DIODE
 
 Chạy từ repo root bằng môi trường đã cài dependencies:
 
 ```powershell
-.venv\Scripts\python.exe thuc_nghiem_1_relative_depth.py --dataset diode --encoder vitl --data-audit results/diode-relative/audit/official-archive-verification.json
+.venv\Scripts\python.exe thuc_nghiem_1_relative_depth.py --dataset diode --encoder vitl --data-audit results/table2/diode/audit/official-archive-verification.json
 ```
 
 - [Notebook riêng cho DIODE](thuc_nghiem_1_diode_relative_depth.ipynb), hoặc cell DIODE trong [notebook thực nghiệm 1](thuc_nghiem_1_relative_depth.ipynb).
-- 771 ảnh native validation: 325 `indoors` + 446 `outdoor`; mask chính thức, fit/chấm disparity, không crop/depth cap. JSON, CSV và manifest lưu tại `results/diode-relative/`; prediction cache tại `.cache/diode-relative/`.
+- 771 ảnh native validation: 325 `indoors` + 446 `outdoor`; mask chính thức, fit/chấm disparity, không crop/depth cap. JSON, CSV và manifest lưu tại `results/table2/diode/`; prediction cache tại `.cache/diode-relative/`.
 - Chẩn đoán: thêm `--subset indoors` / `--subset outdoor` hoặc `--limit 8`; `--flip` tạo kết quả TTA riêng. Evaluator đầy đủ: `python evaluate_diode_relative.py --help`.
 - Đã chạy đủ 771 ảnh, ViT-L no-flip: **AbsRel 0.267872, δ₁ 0.753645**. Kết quả này chưa khớp paper; xem phân tích từng miền và protocol.
-- [Rà soát nguồn dữ liệu, nhãn và fresh rerun](docs/diode-audit.md): 2.313 file trùng bản chính thức; dùng `--data-audit` và `--refresh-cache` khi cần xác minh/chạy mới.
-- [Protocol, kết quả và giới hạn đối chiếu paper](docs/diode-relative-depth.md). Mốc ViT-L Table 2 là **0.066 / 0.952**; protocol DIODE chi tiết của paper chưa được xác nhận đầy đủ.
+- [Rà soát nguồn dữ liệu, nhãn và fresh rerun](docs/table2/diode-audit.md): 2.313 file trùng bản chính thức; dùng `--data-audit` và `--refresh-cache` khi cần xác minh/chạy mới.
+- [Protocol, kết quả và giới hạn đối chiếu paper](docs/table2/diode-relative-depth.md). Mốc ViT-L Table 2 là **0.066 / 0.952**; protocol DIODE chi tiết của paper chưa được xác nhận đầy đủ.
 
 ### DIODE · Thực nghiệm 1 với mask MoGe
 
@@ -145,7 +154,7 @@ Chạy từ repo root bằng môi trường đã cài dependencies:
 .venv\Scripts\python.exe thuc_nghiem_1_diode_relative_depth_moge.py resolution
 ```
 
-Xem [báo cáo, dữ liệu và cache cần có](docs/diode-followup.md). Thực nghiệm metric depth DIODE thuộc Table 5 và có [script riêng](evaluate_diode_metric.py) cùng [báo cáo](docs/diode-metric.md).
+Xem [báo cáo, dữ liệu và cache cần có](docs/table2/diode-followup.md). Thực nghiệm metric depth DIODE thuộc Table 5 và có [script riêng](evaluate_diode_metric.py) cùng [báo cáo](docs/table5/diode-metric.md).
 
 ## Thực nghiệm 1 trên ETH3D
 
@@ -155,7 +164,7 @@ Xem [báo cáo, dữ liệu và cache cần có](docs/diode-followup.md). Thực
 .venv\Scripts\python.exe thuc_nghiem_1_eth3d_relative_depth.py --flip --cache-predictions
 ```
 
-Xem [nguồn dữ liệu, giao thức và kết quả](docs/eth3d-relative-depth.md).
+Xem [nguồn dữ liệu, giao thức và kết quả](docs/table2/eth3d-relative-depth.md).
 
 ## Tái hiện paper trên NYUv2
 
@@ -174,8 +183,8 @@ Dùng Python của `.venv`, ví dụ trên Windows:
 
 - [Notebook thực nghiệm 1: relative depth](thuc_nghiem_1_relative_depth.ipynb)
 - [Notebook thực nghiệm 2: metric depth trên NYUv2](thuc_nghiem_2_nyuv2_metric_depth.ipynb)
-- [Toàn bộ phạm vi, protocol và trạng thái các thực nghiệm NYUv2](docs/nyuv2-experiments.md)
-- [Kết quả metric depth](results/nyuv2-metric/indoor-flip-summary.json) và [CSV từng ảnh](results/nyuv2-metric/indoor-flip-per-image.csv)
+- [Toàn bộ phạm vi, protocol và trạng thái các thực nghiệm NYUv2](docs/table3/nyuv2-experiments.md)
+- [Kết quả metric depth](results/table3/nyuv2/indoor-flip-summary.json) và [CSV từng ảnh](results/table3/nyuv2/indoor-flip-per-image.csv)
 
 Metric depth dùng checkpoint `depth_anything_metric_depth_indoor.pt` đã fine-tune trên NYUv2,
 dự đoán trực tiếp theo **mét**, không fit scale/shift với ground truth. Lệnh trên đánh giá

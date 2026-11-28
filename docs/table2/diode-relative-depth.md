@@ -6,7 +6,7 @@ Ngày rà soát: 2026-11-26. Đã triển khai evaluator zero-shot relative dept
 
 ## Mục tiêu và checkpoint
 
-Table 2 của [bài báo CVPR 2024](../paper/Yang_Depth_Anything_Unleashing_the_Power_of_Large-Scale_Unlabeled_Data_CVPR_2024_paper.pdf) báo cáo DIODE với Depth Anything V1 ViT-L: **AbsRel 0.066, δ₁ 0.952**. Dùng checkpoint relative `checkpoints/depth_anything_vitl14.pth`, không cần huấn luyện hoặc fine-tune trên DIODE. SHA256 checkpoint đã dùng cho probe: `6fda5199f0043e91e1c6117df00313db57c630d8ed0306070b43da1ecfffbd9d`.
+Table 2 của [bài báo CVPR 2024](../../paper/Yang_Depth_Anything_Unleashing_the_Power_of_Large-Scale_Unlabeled_Data_CVPR_2024_paper.pdf) báo cáo DIODE với Depth Anything V1 ViT-L: **AbsRel 0.066, δ₁ 0.952**. Dùng checkpoint relative `checkpoints/depth_anything_vitl14.pth`, không cần huấn luyện hoặc fine-tune trên DIODE. SHA256 checkpoint đã dùng cho probe: `6fda5199f0043e91e1c6117df00313db57c630d8ed0306070b43da1ecfffbd9d`.
 
 ## Dữ liệu hiện có
 
@@ -76,9 +76,9 @@ Có **527,773,509 pixel GT hợp lệ**, khớp audit dữ liệu trước đó;
 
 Artefact chính:
 
-- [Summary](../results/diode-relative/vitl-native-all-summary.json), [per-image CSV](../results/diode-relative/vitl-native-all-per-image.csv), [manifest](../results/diode-relative/vitl-native-all-manifest.json).
-- [Summary lượt suy luận đầu](../results/diode-relative/initial-full-run-summary.json) được giữ riêng trước khi notebook chấm lại từ cache.
-- [Kiểm chứng độc lập](../results/diode-relative/verification.json): 771 ảnh không trùng, đúng 325/446 theo miền, tổng hợp CSV khớp summary, số pixel khớp audit; prediction của 16 ảnh probe khớp, phép fit `numpy.linalg.lstsq` độc lập cho metric khớp trong sai số số học.
+- [Summary](../../results/table2/diode/vitl-native-all-summary.json), [per-image CSV](../../results/table2/diode/vitl-native-all-per-image.csv), [manifest](../../results/table2/diode/vitl-native-all-manifest.json).
+- [Summary lượt suy luận đầu](../../results/table2/diode/initial-full-run-summary.json) được giữ riêng trước khi notebook chấm lại từ cache.
+- [Kiểm chứng độc lập](../../results/table2/diode/verification.json): 771 ảnh không trùng, đúng 325/446 theo miền, tổng hợp CSV khớp summary, số pixel khớp audit; prediction của 16 ảnh probe khớp, phép fit `numpy.linalg.lstsq` độc lập cho metric khớp trong sai số số học.
 
 23 unit tests đã qua, gồm 9 test DIODE và 14 test NYUv2 hiện có. Notebook riêng đã thực thi thành công bằng `.venv`: đọc đủ **771 cache hits**, không có cell lỗi; metric từng miền/toàn bộ trùng khớp hoàn toàn lượt CLI đầu tiên.
 
@@ -93,7 +93,7 @@ Artefact chính:
 
 Chênh lệch outdoor cần được điều tra khi chạy toàn bộ, không chọn riêng indoor để đối chiếu số chung của paper. Thử bổ sung clamp disparity theo nghịch đảo depth GT lớn nhất mỗi ảnh trên cùng 16 ảnh không cải thiện outdoor. Đây chỉ là chẩn đoán; không phải protocol được tác giả xác nhận.
 
-Artefact lưu tại [results/diode-relative/research](../results/diode-relative/research/): `data-audit.json`, `sample-probe.json` (kèm từng ảnh), `clamp-diagnostic.json`, `probe_relative.py`. Có thể chạy lại probe từ repo root bằng `.venv\Scripts\python.exe results/diode-relative/research/probe_relative.py`; script cần CUDA, ghi dữ liệu làm việc vào `.cache/diode-research/`, không tạo kết quả full benchmark.
+Artefact lưu tại [results/table2/diode/research](../../results/table2/diode/research/): `data-audit.json`, `sample-probe.json` (kèm từng ảnh), `clamp-diagnostic.json`, `probe_relative.py`. Có thể chạy lại probe từ repo root bằng `.venv\Scripts\python.exe results/table2/diode/research/probe_relative.py`; script cần CUDA, ghi dữ liệu làm việc vào `.cache/diode-research/`, không tạo kết quả full benchmark.
 
 ## Cách chạy evaluator đã triển khai
 
@@ -112,9 +112,9 @@ Artefact lưu tại [results/diode-relative/research](../results/diode-relative/
 .venv\Scripts\python.exe evaluate_diode_relative.py --flip
 ```
 
-Notebook độc lập: [thuc_nghiem_1_diode_relative_depth.ipynb](../thuc_nghiem_1_diode_relative_depth.ipynb). Notebook tổng thực nghiệm 1 cũng gọi cùng evaluator ở cell DIODE, tái sử dụng model đã nạp để tránh nạp hai model trên GPU 4 GB.
+Notebook độc lập: [thuc_nghiem_1_diode_relative_depth.ipynb](../../thuc_nghiem_1_diode_relative_depth.ipynb). Notebook tổng thực nghiệm 1 cũng gọi cùng evaluator ở cell DIODE, tái sử dụng model đã nạp để tránh nạp hai model trên GPU 4 GB.
 
-Output mặc định: `results/diode-relative/vitl-native-all-summary.json`, `vitl-native-all-per-image.csv`, `vitl-native-all-manifest.json`. Tên file có subset, flip và limit để phân biệt các lần chạy. Summary ghi counts, metric từng miền/toàn bộ, pixel không dương, checkpoint hash, protocol, môi trường và cache hits. Manifest ghi đường dẫn, size, mtime của từng RGB/depth/mask; đây không phải checksum nội dung dataset.
+Output mặc định: `results/table2/diode/vitl-native-all-summary.json`, `vitl-native-all-per-image.csv`, `vitl-native-all-manifest.json`. Tên file có subset, flip và limit để phân biệt các lần chạy. Summary ghi counts, metric từng miền/toàn bộ, pixel không dương, checkpoint hash, protocol, môi trường và cache hits. Manifest ghi đường dẫn, size, mtime của từng RGB/depth/mask; đây không phải checksum nội dung dataset.
 
 Prediction cache dùng checkpoint/source/preprocessing/flip và metadata RGB để tách kết quả; fit/metric luôn tính lại từ GT/mask hiện tại. Prediction float32 được ghi qua file tạm trước khi đổi tên; lần chạy bị ngắt có thể chạy lại cùng lệnh. Cache native đủ 771 ảnh cần khoảng 2.43 GB (2.26 GiB). Thiếu cặp, sai số lượng/shape, mask rỗng hay prediction không hợp lệ đều báo lỗi, không bỏ mẫu âm thầm.
 

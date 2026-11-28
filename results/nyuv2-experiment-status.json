@@ -6,13 +6,13 @@
       "paper_table": 2,
       "name": "zero-shot relative depth",
       "status": "evaluated_654_images",
-      "summary": "nyuv2-relative/vitl-midas-summary.json"
+      "summary": "table2/nyuv2/vitl-midas-summary.json"
     },
     {
       "paper_table": 3,
       "name": "in-domain metric depth",
       "status": "evaluated_654_images",
-      "summary": "nyuv2-metric/indoor-flip-summary.json"
+      "summary": "table3/nyuv2/indoor-flip-summary.json"
     },
     {
       "paper_table": 6,
@@ -28,13 +28,13 @@
       "paper_table": 10,
       "name": "MiDaS encoder comparison",
       "status": "ours_evaluated_baseline_checkpoint_missing",
-      "ours_summary": "nyuv2-metric/indoor-flip-summary.json"
+      "ours_summary": "table3/nyuv2/indoor-flip-summary.json"
     },
     {
       "paper_table": 11,
       "name": "DINOv2 encoder comparison",
       "status": "ours_evaluated_baseline_checkpoint_missing",
-      "ours_summary": "nyuv2-metric/indoor-flip-summary.json"
+      "ours_summary": "table3/nyuv2/indoor-flip-summary.json"
     }
   ],
   "training": {

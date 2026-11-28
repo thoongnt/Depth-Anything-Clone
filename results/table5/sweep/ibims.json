@@ -1,0 +1,80 @@
+{
+  "dataset": "ibims",
+  "run": "ibims",
+  "overrides": {},
+  "n": 100,
+  "variants": {
+    "base": {
+      "desc": "protocol gốc của evaluate.py",
+      "a1": 0.714,
+      "a2": 0.966,
+      "a3": 0.991,
+      "abs_rel": 0.15,
+      "rmse": 0.593,
+      "log_10": 0.073,
+      "rmse_log": 0.185,
+      "silog": 7.515,
+      "sq_rel": 0.13
+    },
+    "noflip": {
+      "desc": "không flip-TTA (chỉ 1 forward)",
+      "a1": 0.713,
+      "a2": 0.966,
+      "a3": 0.991,
+      "abs_rel": 0.15,
+      "rmse": 0.594,
+      "log_10": 0.073,
+      "rmse_log": 0.185,
+      "silog": 7.584,
+      "sq_rel": 0.13
+    },
+    "no_eigen_crop": {
+      "desc": "bỏ eigen crop",
+      "a1": 0.648,
+      "a2": 0.941,
+      "a3": 0.987,
+      "abs_rel": 0.168,
+      "rmse": 0.667,
+      "log_10": 0.084,
+      "rmse_log": 0.218,
+      "silog": 10.339,
+      "sq_rel": 0.157
+    },
+    "max_eval_50": {
+      "desc": "max_depth_eval = 50 (toàn dải iBims)",
+      "a1": 0.711,
+      "a2": 0.963,
+      "a3": 0.99,
+      "abs_rel": 0.151,
+      "rmse": 0.697,
+      "log_10": 0.074,
+      "rmse_log": 0.187,
+      "silog": 7.708,
+      "sq_rel": 0.156
+    },
+    "no_transp_mask": {
+      "desc": "giữ pixel trong suốt (chỉ mask invalid)",
+      "a1": 0.714,
+      "a2": 0.965,
+      "a3": 0.99,
+      "abs_rel": 0.151,
+      "rmse": 0.608,
+      "log_10": 0.074,
+      "rmse_log": 0.187,
+      "silog": 7.827,
+      "sq_rel": 0.132
+    },
+    "no_masks": {
+      "desc": "không dùng mask invalid/trong suốt",
+      "a1": 0.714,
+      "a2": 0.965,
+      "a3": 0.99,
+      "abs_rel": 0.151,
+      "rmse": 0.608,
+      "log_10": 0.074,
+      "rmse_log": 0.187,
+      "silog": 7.848,
+      "sq_rel": 0.133
+    }
+  }
+}

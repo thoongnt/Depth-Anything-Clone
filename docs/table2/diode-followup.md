@@ -50,15 +50,15 @@ Kết quả gần paper cần cả fit lại và dùng vùng chấm đã xử l�
 
 ## Kết quả và lệnh chạy
 
-Script cho thực nghiệm 1 trên DIODE với mask MoGe: [thuc_nghiem_1_diode_relative_depth_moge.py](../thuc_nghiem_1_diode_relative_depth_moge.py). Chế độ `resolution` có dòng `moge-mask-short-side-392` trong [resolution-summary.json](../results/diode-relative/followup/resolution-summary.json).
+Script cho thực nghiệm 1 trên DIODE với mask MoGe: [thuc_nghiem_1_diode_relative_depth_moge.py](../../thuc_nghiem_1_diode_relative_depth_moge.py). Chế độ `resolution` có dòng `moge-mask-short-side-392` trong [resolution-summary.json](../../results/table2/diode/followup/resolution-summary.json).
 
-- [Bảng CSV toàn bộ cấu hình và từng miền](../results/diode-relative/followup/comparison.csv) và [kết quả xếp hạng](../results/diode-relative/followup/comparison.json).
-- [Đối chứng giữ fit native](../results/diode-relative/followup/fixed-native-fit-summary.json) và [đối chứng fit MoGe rồi chấm native](../results/diode-relative/followup/moge-fit-native-score-summary.json).
-- Các file `*-per-image.csv` trong thư mục `results/diode-relative/followup/` ghi số pixel và hai chỉ số từng ảnh. Đã kiểm tra lại tổng hợp từ CSV, số lượng ảnh và SHA256 chung của archive.
+- [Bảng CSV toàn bộ cấu hình và từng miền](../../results/table2/diode/followup/comparison.csv) và [kết quả xếp hạng](../../results/table2/diode/followup/comparison.json).
+- [Đối chứng giữ fit native](../../results/table2/diode/followup/fixed-native-fit-summary.json) và [đối chứng fit MoGe rồi chấm native](../../results/table2/diode/followup/moge-fit-native-score-summary.json).
+- Các file `*-per-image.csv` trong thư mục `results/table2/diode/followup/` ghi số pixel và hai chỉ số từng ảnh. Đã kiểm tra lại tổng hợp từ CSV, số lượng ảnh và SHA256 chung của archive.
 
 ```powershell
 .venv\Scripts\python.exe thuc_nghiem_1_diode_relative_depth_moge.py mask mask-flip bundle resolution
 .venv\Scripts\python.exe thuc_nghiem_1_diode_relative_depth_moge.py mask-vits mask-vitb
 ```
 
-Các lệnh đọc archive ở `.cache/moge-diode/DIODE.zip`. `mask` và `mask-flip` dùng cache ViT-L từ các lượt native đã chạy. `mask-vits` và `mask-vitb` dùng summary và cache native của hai encoder trong báo cáo follow-up. Để tạo lại chúng, chạy `evaluate_diode_relative.py --encoder vits` và `--encoder vitb` với `--output-dir results/diode-relative/followup --cache-dir .cache/diode-followup/native`.
+Các lệnh đọc archive ở `.cache/moge-diode/DIODE.zip`. `mask` và `mask-flip` dùng cache ViT-L từ các lượt native đã chạy. `mask-vits` và `mask-vitb` dùng summary và cache native của hai encoder trong báo cáo follow-up. Để tạo lại chúng, chạy `evaluate_diode_relative.py --encoder vits` và `--encoder vitb` với `--output-dir results/table2/diode/followup --cache-dir .cache/diode-followup/native`.
